@@ -63,3 +63,180 @@
 2022-09-15 05:10:41 info: ----------------------------------------------
 2022-09-15 05:10:47 info: All unit tests passed.
 2022-09-15 05:10:58 info: All steps were completed successfully
+2022-09-15 11:36:18 info: ------------------------------------------------------
+2022-09-15 11:36:18 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-15 11:36:18 info: ------------------------------------------------------
+2022-09-15 11:36:26 info: All unit tests passed.
+2022-09-15 11:36:37 info: All steps were completed successfully
+2022-09-16 12:08:47 info: ----------------------------------------------
+2022-09-16 12:08:47 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-16 12:08:47 info: ----------------------------------------------
+2022-09-16 12:08:55 info: All unit tests passed.
+2022-09-16 12:09:03 info: All steps were completed successfully
+2022-09-16 12:09:20 info: -------------------------------------------------
+2022-09-16 12:09:20 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-16 12:09:20 info: -------------------------------------------------
+2022-09-16 12:09:27 info: All unit tests passed.
+2022-09-16 12:09:30 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  36:9  warning  Results from `map` are unused. Replace `map` with `forEach`  no-restricted-syntax
+  36:9  error    Results from `map` are unused. Replace `map` with `forEach`  hyf/use-map-result
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2022-09-16 12:16:32 info: -------------------------------------------------
+2022-09-16 12:16:32 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-16 12:16:32 info: -------------------------------------------------
+2022-09-16 12:16:39 info: All unit tests passed.
+2022-09-16 12:16:46 info: All steps were completed successfully
+2022-09-16 12:37:37 info: -------------------------------------------------
+2022-09-16 12:37:37 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-16 12:37:37 info: -------------------------------------------------
+2022-09-16 12:37:47 info: All unit tests passed.
+2022-09-16 12:38:00 info: All steps were completed successfully
+2022-09-16 12:44:34 info: ------------------------------------------
+2022-09-16 12:44:34 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-16 12:44:34 info: ------------------------------------------
+2022-09-16 12:44:42 info: All unit tests passed.
+2022-09-16 12:44:50 info: All steps were completed successfully
+2022-09-16 01:03:09 info: --------------------------------------
+2022-09-16 01:03:09 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-16 01:03:09 info: --------------------------------------
+2022-09-16 01:03:17 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\lenovo\Desktop\MyHYF\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-16 01:05:38 info: ----------------------------------------------
+2022-09-16 01:05:38 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-16 01:05:38 info: ----------------------------------------------
+2022-09-16 01:05:46 info: All unit tests passed.
+2022-09-16 01:05:54 info: All steps were completed successfully
+2022-09-16 01:06:10 info: --------------------------------------
+2022-09-16 01:06:10 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-16 01:06:10 info: --------------------------------------
+2022-09-16 01:06:20 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\lenovo\Desktop\MyHYF\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-16 01:08:13 info: --------------------------------------
+2022-09-16 01:08:13 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-16 01:08:13 info: --------------------------------------
+2022-09-16 01:08:21 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\lenovo\Desktop\MyHYF\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-16 01:09:30 info: --------------------------------------
+2022-09-16 01:09:30 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-16 01:09:30 info: --------------------------------------
+2022-09-16 01:09:35 error: *** Unit Test Error Report ***
+
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\lenovo\Desktop\MyHYF\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-16 01:11:02 info: ------------------------------------------
+2022-09-16 01:11:02 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-16 01:11:02 info: ------------------------------------------
+2022-09-16 01:11:10 info: All unit tests passed.
+2022-09-16 01:11:17 info: All steps were completed successfully
+2022-09-16 01:18:08 info: --------------------------------------
+2022-09-16 01:18:08 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-16 01:18:08 info: --------------------------------------
+2022-09-16 01:18:17 info: All unit tests passed.
+2022-09-16 01:18:24 info: All steps were completed successfully
