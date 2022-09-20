@@ -1,0 +1,253 @@
+2022-09-20 10:05:04 info: ----------------------------------------------
+2022-09-20 10:05:04 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 10:05:04 info: ----------------------------------------------
+2022-09-20 10:05:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 10:05:08 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:18:02 info: ----------------------------------------------
+2022-09-20 11:18:02 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:18:02 info: ----------------------------------------------
+2022-09-20 11:18:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:18:05 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:18:09 info: Disclaimer turned off
+2022-09-20 11:23:37 info: ----------------------------------------------
+2022-09-20 11:23:37 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:23:37 info: ----------------------------------------------
+2022-09-20 11:23:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:23:40 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:27:52 info: ----------------------------------------------
+2022-09-20 11:27:52 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:27:52 info: ----------------------------------------------
+2022-09-20 11:27:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:27:56 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:33:51 info: ----------------------------------------------
+2022-09-20 11:33:51 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:33:51 info: ----------------------------------------------
+2022-09-20 11:33:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:33:55 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:37:26 info: ----------------------------------------------
+2022-09-20 11:37:26 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:37:26 info: ----------------------------------------------
+2022-09-20 11:37:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:37:29 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:39:55 info: ----------------------------------------------
+2022-09-20 11:39:55 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:39:55 info: ----------------------------------------------
+2022-09-20 11:39:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:39:59 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:45:20 info: ----------------------------------------------
+2022-09-20 11:45:20 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:45:20 info: ----------------------------------------------
+2022-09-20 11:45:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:45:24 error: *** Spell Checker Report ***
+
+
+2022-09-20 12:20:34 info: ----------------------------------------------
+2022-09-20 12:20:34 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 12:20:34 info: ----------------------------------------------
+2022-09-20 12:20:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 12:20:38 error: *** Spell Checker Report ***
+
+
