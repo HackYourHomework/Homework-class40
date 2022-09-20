@@ -22,21 +22,35 @@ instead!
 -----------------------------------------------------------------------------*/
 const cartForParty = {
   // TODO complete this object
+  lemonade: 1.5,
+  chips: 1.9,
+  beer: 1.1,
+  cola: 1.2,
+  water: 0.99,
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
+function calculateTotalPrice(data) {
   // TODO replace this comment with your code
+  const numValues = Object.values(data);
+  const sum = numValues.reduce((partialSum, a) => partialSum + a, 0);
+  return `Total: € ${sum}`;
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
   // TODO replace this comment with your code
+  const expected = 13;
+  const actual = calculateTotalPrice(cartForParty).length;
+  console.assert(actual === expected);
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
   // TODO replace this comment with your code
+  const expected = `Total: € 6.69`;
+  const actual = calculateTotalPrice(cartForParty);
+  console.assert(actual === expected);
 }
 
 function test() {
