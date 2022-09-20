@@ -32,7 +32,7 @@ const employeeRecords = [{
 function filterPrivateData(arr) {
     // TODO complete this function
     const newArr = [];
-    for (let obj of arr) {
+    for (const obj of arr) {
         const { name, occupation, email } = obj; // object destructing
         newArr.push({ name, occupation, email });
     }

@@ -17,7 +17,6 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 function addToShoppingCart(arr, item) {
-    // TODO complete this function
     const newArr = [...arr, item];
     if (newArr.length > 3) {
         newArr.shift();

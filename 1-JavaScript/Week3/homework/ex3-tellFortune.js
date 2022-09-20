@@ -33,50 +33,37 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(numKids, partnerNames, locations, jobTitles) {
-    // TODO complete this function
-    const resNumKids = numKids[Math.floor(Math.random() * numKids.length)];
-    const resPartnerNames = partnerNames[Math.floor(Math.random() * partnerNames.length)];
-    const resLocations = locations[Math.floor(Math.random() * locations.length)];
-    const resJobTitles = jobTitles[Math.floor(Math.random() * jobTitles.length)];
-    const obj = { resNumKids, resPartnerNames, resLocations, resJobTitles };
-    return obj;
+function selectRandomly(randomArr) {
+    return randomArr[Math.floor(Math.random() * randomArr.length)];
 }
 
 function tellFortune(numKids, partnerNames, locations, jobTitles) {
-    // TODO complete this function
-    let resObj = selectRandomly(numKids, partnerNames, locations, jobTitles);
-    const result = `You will be a ${resObj.resJobTitles} in ${resObj.resLocations}, 
-    married to ${resObj.resPartnerNames} with ${resObj.resNumKids} kids.`;
+    const result = `You will be a ${selectRandomly(
+    jobTitles
+  )} in ${selectRandomly(locations)}, married to ${selectRandomly(
+    partnerNames
+  )} with ${selectRandomly(numKids)} kids.`;
     return result;
-
 }
 
 function main() {
-    const numKids = [
-        // TODO add elements here
-        1, 2, 3, 4
-    ];
+    const numKids = [1, 2, 3, 4, 5];
 
-    const partnerNames = [
-        // TODO add elements here
-        "Jorien", "Rene", "Jan", "Juul"
-    ];
+    const partnerNames = ['Rene', 'Rene', 'Rene', 'Rene', 'Rene'];
 
-    const locations = [
-        // TODO add elements here
-        "Amsterdam", "Paris", "Munih", "Roma"
-    ];
+    const locations = ['Amsterdam', 'Paris', 'Ankara', 'Roma', 'Istanbul'];
 
     const jobTitles = [
-        // TODO add elements here
-        "Java Developer", "React Developer", "Test Engineer", "Full Stack Developer"
+        'Java Developer',
+        'React Developer',
+        'Test Engineer',
+        'Full Stack Developer',
+        'Back End Developer',
     ];
 
     console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
     console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
     console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
-
 }
 
 // ! Do not change or remove the code below
