@@ -17,9 +17,8 @@ calculate it!
 -----------------------------------------------------------------------------*/
 
 function calculateDogAge(number) {
-  // TODO complete this function
   const dogYear = number * 7;
-  const message = `your doggie is ${dogYear} years old in gog years! `;
+  const message = `Your doggie is ${dogYear} years old in dog years!`;
   return message;
 }
 

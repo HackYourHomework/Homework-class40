@@ -29,9 +29,7 @@ const employeeRecords = [
   },
 ];
 
-// ! Function under test
 function filterPrivateData(employeeRecords) {
-  // TODO complete this function
   const employeeRecordsWithoutPrivate = [];
 
   for (const element of employeeRecords) {
@@ -43,7 +41,6 @@ function filterPrivateData(employeeRecords) {
 
 filterPrivateData(employeeRecords);
 
-// ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('Test 1: filterPrivateData should take one parameters');
   console.assert(filterPrivateData.length === 1);
