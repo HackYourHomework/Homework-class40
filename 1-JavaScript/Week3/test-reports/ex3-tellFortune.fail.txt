@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+ex3-tellFortune.js:61:7 - Unknown word (Hani)
