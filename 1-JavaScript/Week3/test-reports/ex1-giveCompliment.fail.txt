@@ -1,26 +1,4 @@
-*** Unit Test Error Report ***
 
-Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
-● Deprecation Warning:
-
-  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
-
-  Please update your configuration.
-
-  Configuration Documentation:
-  https://jestjs.io/docs/configuration
-
-Error: Could not resolve a module for a custom reporter.
-  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
-    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
-    at Array.map (<anonymous>)
-    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
-    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
-    at Array.reduce (<anonymous>)
-    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
-    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
-    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
-    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
-    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
 *** Spell Checker Report ***
 
+ex1-giveCompliment.js:41:19 - Unknown word (Ensar)
