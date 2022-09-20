@@ -458,3 +458,23 @@ ex6-totalCost.js
 2022-09-20 11:11:02 info: -----------------------------------------
 2022-09-20 11:11:02 warn: A unit test file was not provided.
 2022-09-20 11:11:05 info: All steps were completed successfully
+2022-09-20 11:38:38 info: -------------------------------------------
+2022-09-20 11:38:38 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-20 11:38:38 info: -------------------------------------------
+2022-09-20 11:38:38 warn: A unit test file was not provided.
+2022-09-20 11:38:39 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  34:44   error  'three' is assigned a value but never used  no-unused-vars
+  34:70   error  'five' is assigned a value but never used   no-unused-vars
+  34:106  error  'c' is assigned a value but never used      no-unused-vars
+  34:125  error  'e' is assigned a value but never used      no-unused-vars
+
+✖ 4 problems (4 errors, 0 warnings)
+
+
+2022-09-20 11:40:45 info: -------------------------------------------
+2022-09-20 11:40:45 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-20 11:40:45 info: -------------------------------------------
+2022-09-20 11:40:45 warn: A unit test file was not provided.
+2022-09-20 11:40:48 info: All steps were completed successfully
