@@ -19,18 +19,23 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
    `giveCompliment` function to the console.
 -----------------------------------------------------------------------------*/
 function giveCompliment(name) {
-  const Compliment = ['great' ,'awesome','nice','amazing','cool','smart','wonderful','Clever',];
-// Math.floor() rounds a number DOWN to the nearest integer.
-  const index = Math.floor(Math.random()* Compliment.length);
-// return 'you are '+ Compliment[index] + ' ' +name +'!'; ES5
-
-return `You are ${Compliment[index]},${name}!`;  //ES6
-
-  
+  const compliments = [
+    'great',
+    'awesome',
+    'nice',
+    'amazing',
+    'cool',
+    'smart',
+    'wonderful',
+    'Clever',
+    'beautiful',
+    'respectful',
+  ];
+  const index = Math.floor(Math.random() * compliments.length);
+  return `You are ${compliments[index]}, ${name}!`;
 }
 
 function main() {
-  // TODO substitute your own name for "HackYourFuture"
   const myName = 'Alan';
 
   console.log(giveCompliment(myName));
@@ -44,7 +49,6 @@ function main() {
   console.log(giveCompliment(yourName));
 }
 
-// ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
 }

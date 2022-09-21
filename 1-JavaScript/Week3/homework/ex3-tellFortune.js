@@ -34,21 +34,31 @@ body, this code is now written once only in a separated function.
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
 function selectRandomly(arr) {
-  return arr[Math.floor(Math.random()* arr.length)] //Math.floor() rounds a number DOWN to the nearest integer.
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
-function tellFortune(numKids,partnerName,locations,jobTitles) {
-  return `you will be a ${selectRandomly(jobTitles)} in ${selectRandomly(locations)} married to ${selectRandomly(partnerName)} with ${selectRandomly(numKids)} Kids.`
+function tellFortune(numKids, partnerName, locations, jobTitles) {
+  return `You will be a ${selectRandomly(jobTitles)} in ${selectRandomly(
+    locations
+  )}, married to ${selectRandomly(partnerName)} with ${selectRandomly(
+    numKids
+  )} kids.`;
 }
 
 function main() {
-  const numKids = [1,2,3,4,5];
+  const numKids = [1, 2, 3, 4, 5];
 
-  const partnerNames = ['lama','nor','alaa','sara','saly'];
+  const partnerNames = ['lama', 'nor', 'lora', 'sara', 'maria'];
 
-  const locations = ['Amesterdam','Rotterdam','Leeuwarden','Utrecht','Den Haag' ];
+  const locations = [
+    'Amsterdam',
+    'Rotterdam',
+    'Leeuwarden',
+    'Utrecht',
+    'Zwolle',
+  ];
 
-  const jobTitles = ['Doctor','Web devloper','Engineer','Chef','Delivery'];
+  const jobTitles = ['Doctor', 'Web developer', 'Engineer', 'Chef', 'Delivery'];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
