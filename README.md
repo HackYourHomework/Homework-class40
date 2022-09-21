@@ -27,7 +27,7 @@ This command:
 You will be spending a lot of time in [VSCode](https://code.visualstudio.com/) while working with this repository. To open it with VSCode you can use the command line:
 
 ```text
-code Homework-classXX
+code Homework-class40
 ```
 
 > When working on your homework it is strongly recommended to open `Homework-classXX` folder itself in VSCode rather than one of its sub-folders. This gives VSCode and all its extensions the full view on the repo for the best overall developer experience.
