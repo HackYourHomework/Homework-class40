@@ -1,0 +1,34 @@
+*** Unit Test Error Report ***
+
+✕ tellFortune should have all TODO comments removed
+✕ tellFortune `numKids` should be an array initialized with 5 elements
+✕ tellFortune `locations` should be an array initialized with 5 elements
+✕ tellFortune `partnerNames` should be an array initialized with 5 elements
+✕ tellFortune `jobTitles` should be an array initialized with 5 elements
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a undefined in undefined, married to undefined with undefined kids.
+  Received: you will be undefined in undefined married to undefined with undefined kids
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hyf/Desktop/hack-your-future/Homework-class40/test-runner/CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
