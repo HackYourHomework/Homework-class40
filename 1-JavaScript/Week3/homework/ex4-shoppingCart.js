@@ -24,18 +24,15 @@ const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
 function addToShoppingCart(item) {
-  if(item){ //one argument
-    if(shoppingCart.length >= 3){
-      shoppingCart.shift()
-      shoppingCart.push(item)
+  if (item) {
+    //one argument
+    if (shoppingCart.length >= 3) {
+      shoppingCart.shift();
     }
-    else{
-      shoppingCart.push(item)
-    }
+    shoppingCart.push(item);
   }
-  return `You bought ${shoppingCart.join(', ')}!`
+  return `You bought ${shoppingCart.join(', ')}!`;
 }
-
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {

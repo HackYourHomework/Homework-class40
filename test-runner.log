@@ -1,0 +1,748 @@
+2022-09-21 05:45:12 info: ----------------------------------------------
+2022-09-21 05:45:12 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 05:45:12 info: ----------------------------------------------
+2022-09-21 05:45:19 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 05:45:23 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  22:9  warning  Identifier 'Compliment' is not in camelCase  hyf/camelcase
+  23:1  warning  Remove commented-out code                    hyf/no-commented-out-code
+  25:1  warning  Remove commented-out code                    hyf/no-commented-out-code
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2022-09-21 05:47:02 info: ----------------------------------------------
+2022-09-21 05:47:02 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 05:47:02 info: ----------------------------------------------
+2022-09-21 05:47:07 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 05:47:11 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  22:9   error    'cnpompliment' is assigned a value but never used  no-unused-vars
+  32:3   warning  Remove commented-out code                          hyf/no-commented-out-code
+  33:44  error    'Compliment' is not defined                        no-undef
+  34:3   warning  Remove commented-out code                          hyf/no-commented-out-code
+  36:21  error    'compliment' is not defined                        no-undef
+
+✖ 5 problems (3 errors, 2 warnings)
+
+
+2022-09-21 05:47:14 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:22:9 - Unknown word (cnpompliment)
+
+2022-09-21 05:50:35 info: ----------------------------------------------
+2022-09-21 05:50:35 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 05:50:35 info: ----------------------------------------------
+2022-09-21 05:50:40 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great,HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 05:50:43 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  32:3  warning  Remove commented-out code  hyf/no-commented-out-code
+  34:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-09-21 05:52:00 info: ----------------------------------------------
+2022-09-21 05:52:00 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 05:52:00 info: ----------------------------------------------
+2022-09-21 05:52:06 error: *** Unit Test Error Report ***
+
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great,HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 05:56:43 info: ----------------------------------------------
+2022-09-21 05:56:43 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 05:56:43 info: ----------------------------------------------
+2022-09-21 05:56:47 error: *** Unit Test Error Report ***
+
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 05:57:51 info: ----------------------------------------
+2022-09-21 05:57:51 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 05:57:51 info: ----------------------------------------
+2022-09-21 05:57:56 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: your doggie is 7 in dog years!
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: your doggie is 14 in dog years!
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: your doggie is 21 in dog years!
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 06:09:46 info: ----------------------------------------------
+2022-09-21 06:09:46 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 06:09:46 info: ----------------------------------------------
+2022-09-21 06:09:50 error: *** Unit Test Error Report ***
+
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:11:53 info: ----------------------------------------------
+2022-09-21 06:11:53 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 06:11:53 info: ----------------------------------------------
+2022-09-21 06:11:57 info: All unit tests passed.
+2022-09-21 06:12:03 info: All steps were completed successfully
+2022-09-21 06:13:10 info: ----------------------------------------
+2022-09-21 06:13:10 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 06:13:10 info: ----------------------------------------
+2022-09-21 06:13:14 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: your doggie is 7 in dog years!
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: your doggie is 14 in dog years!
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: your doggie is 21 in dog years!
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:14:21 info: ----------------------------------------
+2022-09-21 06:14:21 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 06:14:21 info: ----------------------------------------
+2022-09-21 06:14:25 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: your doggie is 7 years old in dog years!
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: your doggie is 14 years old in dog years!
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: your doggie is 21 years old in dog years!
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:16:04 info: ----------------------------------------
+2022-09-21 06:16:04 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 06:16:04 info: ----------------------------------------
+2022-09-21 06:16:09 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: your doggie is 7 years old in dog years!
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: your doggie is 14 years old in dog years!
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: your doggie is 21 years old in dog years!
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:18:23 info: ----------------------------------------
+2022-09-21 06:18:23 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 06:18:23 info: ----------------------------------------
+2022-09-21 06:18:27 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: your doggie is 7 years old in dog years!
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: your doggie is 14 years old in dog years!
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: your doggie is 21 years old in dog years!
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:19:31 info: ----------------------------------------
+2022-09-21 06:19:31 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 06:19:31 info: ----------------------------------------
+2022-09-21 06:19:35 info: All unit tests passed.
+2022-09-21 06:19:41 info: All steps were completed successfully
+2022-09-21 06:20:19 info: -------------------------------------------
+2022-09-21 06:20:19 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:20:19 info: -------------------------------------------
+2022-09-21 06:20:24 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amesterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amesterdam married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:20:27 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  37:53  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-21 06:20:30 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:47:39 - Unknown word (alaa)
+ex3-tellFortune.js:47:53 - Unknown word (saly)
+ex3-tellFortune.js:49:23 - Unknown word (Amesterdam)
+ex3-tellFortune.js:49:75 - Unknown word (Haag)
+ex3-tellFortune.js:51:36 - Unknown word (devloper)
+
+2022-09-21 06:22:01 info: -------------------------------------------
+2022-09-21 06:22:01 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:22:01 info: -------------------------------------------
+2022-09-21 06:22:05 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amesterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amesterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:22:08 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  37:55  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-21 06:22:11 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:51:41 - Unknown word (alaa)
+ex3-tellFortune.js:51:57 - Unknown word (saly)
+ex3-tellFortune.js:54:6 - Unknown word (Amesterdam)
+ex3-tellFortune.js:58:10 - Unknown word (Haag)
+ex3-tellFortune.js:61:37 - Unknown word (devloper)
+
+2022-09-21 06:25:40 info: -------------------------------------------
+2022-09-21 06:25:40 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:25:40 info: -------------------------------------------
+2022-09-21 06:25:44 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:25:47 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  37:55  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-21 06:25:51 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:51:41 - Unknown word (alaa)
+ex3-tellFortune.js:51:57 - Unknown word (saly)
+ex3-tellFortune.js:58:9 - Unknown word (Haag)
+ex3-tellFortune.js:61:37 - Unknown word (devloper)
+
+2022-09-21 06:28:41 info: -------------------------------------------
+2022-09-21 06:28:41 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:28:41 info: -------------------------------------------
+2022-09-21 06:28:45 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:28:52 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:51:57 - Unknown word (heba)
+ex3-tellFortune.js:58:6 - Unknown word (Drachten)
+
+2022-09-21 06:31:02 info: -------------------------------------------
+2022-09-21 06:31:02 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:31:02 info: -------------------------------------------
+2022-09-21 06:31:06 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:31:12 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:51:57 - Unknown word (yara)
+
+2022-09-21 06:32:33 info: -------------------------------------------
+2022-09-21 06:32:33 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:32:33 info: -------------------------------------------
+2022-09-21 06:32:38 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:33:40 info: -------------------------------------------
+2022-09-21 06:33:40 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:33:40 info: -------------------------------------------
+2022-09-21 06:33:45 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: You will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:34:54 info: --------------------------------------------
+2022-09-21 06:34:54 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-09-21 06:34:54 info: --------------------------------------------
+2022-09-21 06:34:54 warn: A unit test file was not provided.
+2022-09-21 06:35:01 info: All steps were completed successfully
+2022-09-21 06:35:20 info: ------------------------------------------------
+2022-09-21 06:35:20 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-09-21 06:35:20 info: ------------------------------------------------
+2022-09-21 06:35:20 warn: A unit test file was not provided.
+2022-09-21 06:35:26 error: *** Spell Checker Report ***
+
+ex5-shoppingCartPure.js:19:28 - Unknown word (groceryitem)
+ex5-shoppingCartPure.js:20:26 - Unknown word (groceryitem)
+
+2022-09-21 06:36:46 info: ------------------------------------------------
+2022-09-21 06:36:46 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-09-21 06:36:46 info: ------------------------------------------------
+2022-09-21 06:36:46 warn: A unit test file was not provided.
+2022-09-21 06:36:52 info: All steps were completed successfully
+2022-09-21 06:37:22 info: -----------------------------------------
+2022-09-21 06:37:22 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-21 06:37:22 info: -----------------------------------------
+2022-09-21 06:37:22 warn: A unit test file was not provided.
+2022-09-21 06:37:28 error: *** Spell Checker Report ***
+
+ex6-totalCost.js:24:3 - Unknown word (berrs)
+
+2022-09-21 06:38:24 info: -----------------------------------------
+2022-09-21 06:38:24 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-21 06:38:24 info: -----------------------------------------
+2022-09-21 06:38:24 warn: A unit test file was not provided.
+2022-09-21 06:38:29 info: All steps were completed successfully
+2022-09-21 06:38:50 info: -------------------------------------------
+2022-09-21 06:38:50 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-21 06:38:50 info: -------------------------------------------
+2022-09-21 06:38:50 warn: A unit test file was not provided.
+2022-09-21 06:38:56 info: All steps were completed successfully
+2022-09-21 06:39:29 info: -------------------------------------------
+2022-09-21 06:39:29 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:39:29 info: -------------------------------------------
+2022-09-21 06:39:34 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: You will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:41:42 info: -------------------------------------------
+2022-09-21 06:41:42 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:41:42 info: -------------------------------------------
+2022-09-21 06:41:47 info: All unit tests passed.
+2022-09-21 06:41:54 info: All steps were completed successfully
+2022-09-21 06:42:31 info: -------------------------------------------
+2022-09-21 06:42:31 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:42:31 info: -------------------------------------------
+2022-09-21 06:42:36 info: All unit tests passed.
+2022-09-21 06:42:43 info: All steps were completed successfully
