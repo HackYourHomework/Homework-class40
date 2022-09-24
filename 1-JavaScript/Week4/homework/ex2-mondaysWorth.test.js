@@ -33,7 +33,7 @@ const hourlyRate = 25;
 
 function computeEarnings(tasks, rate) {
   const total = tasks
-    .map((task) => task.duration / 60)
+    .map((task) => typeof task.duration === 'number' && task.duration / 60)
     .reduce((prev, curr) => prev + curr, 0);
   return `€${(total * rate).toFixed(2)}`;
 }
