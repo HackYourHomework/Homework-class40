@@ -1,7 +1,5 @@
 'use strict';
 
-const { sum } = require("lodash");
-
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-6-total-cost-is
 
@@ -28,11 +26,14 @@ const cartForParty = {
   fruits: 2.7,
   chips: 0.87,
   waters: 1,
-  nuts: 2.2
+  nuts: 2.2,
 };
 
 function calculateTotalPrice(objects) {
-  const total = sum(Object.values(objects));
+  const objectValues = Object.values(objects);
+  const total = objectValues.reduce((sum, val) => {
+    return sum + val;
+  }, 0);
   return `Total: €${total}`;
 }
 
@@ -44,7 +45,7 @@ function test1() {
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  const expected = "Total: €8.27";
+  const expected = 'Total: €8.27';
   const actual = calculateTotalPrice(cartForParty);
   console.assert(actual === expected);
 }
