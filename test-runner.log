@@ -501,3 +501,8 @@ ex7-mindPrivacy.js
 2022-09-25 10:12:48 info: -------------------------------------------
 2022-09-25 10:12:48 warn: A unit test file was not provided.
 2022-09-25 10:12:51 info: All steps were completed successfully
+2022-09-25 10:53:57 info: ------------------------------------------------
+2022-09-25 10:53:57 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-09-25 10:53:57 info: ------------------------------------------------
+2022-09-25 10:53:57 warn: A unit test file was not provided.
+2022-09-25 10:54:00 info: All steps were completed successfully
