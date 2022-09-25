@@ -483,3 +483,21 @@ ex7-mindPrivacy.js
 2022-09-25 09:49:36 info: -----------------------------------------
 2022-09-25 09:49:36 warn: A unit test file was not provided.
 2022-09-25 09:49:40 info: All steps were completed successfully
+2022-09-25 10:11:56 info: -------------------------------------------
+2022-09-25 10:11:56 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-25 10:11:56 info: -------------------------------------------
+2022-09-25 10:11:56 warn: A unit test file was not provided.
+2022-09-25 10:11:58 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  35:14  warning  Identifier 'DataObject' is not in camelCase  hyf/camelcase
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-25 10:12:34 info: Disclaimer turned off
+2022-09-25 10:12:48 info: -------------------------------------------
+2022-09-25 10:12:48 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-25 10:12:48 info: -------------------------------------------
+2022-09-25 10:12:48 warn: A unit test file was not provided.
+2022-09-25 10:12:51 info: All steps were completed successfully

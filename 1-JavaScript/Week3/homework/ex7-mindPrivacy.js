@@ -31,8 +31,12 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(arrayOfEmployeeRecords) {
-  const [{name:one, occupation:two, email:four},{name:a, occupation:b, email:d }] = arrayOfEmployeeRecords;
-  return [{name:one, occupation:two, email:four},{name:a, occupation:b, email:d}]
+  const privateData = [];
+  for (const dataObject of arrayOfEmployeeRecords) {
+    const { name, occupation, email } = dataObject;
+    privateData.push({ name, occupation, email });
+  }
+  return privateData;
 }
 
 // ! Test functions (plain vanilla JavaScript)
