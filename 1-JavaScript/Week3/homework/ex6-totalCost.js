@@ -23,24 +23,26 @@ instead!
 const cartForParty = {
   chips: 1.75,
   meet: 7.3,
-  rice: 2.5, 
-  breed: 5, 
-  chocolate: 9.7
+  rice: 2.5,
+  breed: 5,
+  chocolate: 9.7,
 };
 
 function calculateTotalPrice(cartForParty) {
-  return `€${Object.values(cartForParty).reduce((sum,item) => sum + item  , 0)}`
+  return `€${Object.values(cartForParty)
+    .reduce((sum, item) => sum + item, 0)
+    .toFixed(2)}`;
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  console.assert(calculateTotalPrice.length === 1)
+  console.assert(calculateTotalPrice.length === 1);
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  console.assert(calculateTotalPrice(cartForParty) === '€26.25')
+  console.assert(calculateTotalPrice(cartForParty) === '€26.25');
 }
 
 function test() {
