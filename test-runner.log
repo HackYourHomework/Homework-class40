@@ -519,3 +519,424 @@ ex7-mindPrivacy.js
 
 ex1-giveCompliment.js:41:19 - Unknown word (Ensar)
 
+2022-09-26 12:07:17 info: ------------------------------------------------------
+2022-09-26 12:07:17 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-26 12:07:17 info: ------------------------------------------------------
+2022-09-26 12:07:19 info: All unit tests passed.
+2022-09-26 12:07:22 info: All steps were completed successfully
+2022-09-26 06:52:01 info: ------------------------------------------------------
+2022-09-26 06:52:01 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-26 06:52:01 info: ------------------------------------------------------
+2022-09-26 06:52:04 info: All unit tests passed.
+2022-09-26 06:52:07 info: All steps were completed successfully
+2022-09-26 07:15:18 info: -------------------------------------------------
+2022-09-26 07:15:18 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 07:15:18 info: -------------------------------------------------
+2022-09-26 07:15:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    √ should take two parameters (2 ms)
+    × should compute the earnings as a formatted Euro amount (3 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      54 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      55 |     const expected = '€187.50';
+    > 56 |     expect(result).toBe(expected);
+         |                    ^
+      57 |   });
+      58 | });
+      59 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:56:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.529 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-09-26 07:16:43 info: -------------------------------------------------
+2022-09-26 07:16:43 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 07:16:43 info: -------------------------------------------------
+2022-09-26 07:16:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    √ should take two parameters (2 ms)
+    × should compute the earnings as a formatted Euro amount (4 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€012.5050.00100.0025.00"
+
+      54 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      55 |     const expected = '€187.50';
+    > 56 |     expect(result).toBe(expected);
+         |                    ^
+      57 |   });
+      58 | });
+      59 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:56:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.516 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-09-26 07:19:46 info: -------------------------------------------------
+2022-09-26 07:19:46 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 07:19:46 info: -------------------------------------------------
+2022-09-26 07:19:48 info: All unit tests passed.
+2022-09-26 07:19:51 info: All steps were completed successfully
+2022-09-26 07:50:26 info: -------------------------------------------------
+2022-09-26 07:50:26 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 07:50:26 info: -------------------------------------------------
+2022-09-26 07:50:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (1 ms)
+    × should not modify the original `fruitBasket` array (4 ms)
+    × should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      43 |     // Save the original contents of the fruit basket
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+    > 45 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:45:25)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      49 |     const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      50 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 51 |     expect(result).toBe(expected);
+         |                    ^
+      52 |   });
+      53 | });
+      54 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:51:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.526 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-09-26 08:16:02 info: -------------------------------------------------
+2022-09-26 08:16:02 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 08:16:02 info: -------------------------------------------------
+2022-09-26 08:16:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    × should not modify the original `fruitBasket` array (4 ms)
+    × should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      43 |     // Save the original contents of the fruit basket
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+    > 45 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:45:25)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      49 |     const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      50 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 51 |     expect(result).toBe(expected);
+         |                    ^
+      52 |   });
+      53 | });
+      54 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:51:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.468 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-09-26 08:24:18 info: -------------------------------------------------
+2022-09-26 08:24:18 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 08:24:18 info: -------------------------------------------------
+2022-09-26 08:24:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (1 ms)
+    × should not modify the original `fruitBasket` array (3 ms)
+    × should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      43 |     // Save the original contents of the fruit basket
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+    > 45 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:45:25)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    - Expected  - 3
+    + Received  + 0
+
+      Array [
+        "apple",
+    -   "lemon",
+        "grapefruit",
+    -   "lemon",
+        "banana",
+        "watermelon",
+    -   "lemon",
+      ]
+
+      57 |       'lemon',
+      58 |     ];
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.524 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-09-26 09:02:34 info: -------------------------------------------------
+2022-09-26 09:02:34 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 09:02:34 info: -------------------------------------------------
+2022-09-26 09:02:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    × should not modify the original `fruitBasket` array (4 ms)
+    √ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      43 |     // Save the original contents of the fruit basket
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+    > 45 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:45:25)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.528 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-09-26 09:05:26 info: -------------------------------------------------
+2022-09-26 09:05:26 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 09:05:26 info: -------------------------------------------------
+2022-09-26 09:05:28 info: All unit tests passed.
+2022-09-26 09:05:32 info: All steps were completed successfully
