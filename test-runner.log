@@ -1,0 +1,79 @@
+2022-09-25 01:24:32 info: ------------------------------------------------------
+2022-09-25 01:24:32 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-25 01:24:32 info: ------------------------------------------------------
+2022-09-25 01:24:53 info: All unit tests passed.
+2022-09-25 01:25:21 info: All steps were completed successfully
+2022-09-26 02:05:58 info: -------------------------------------------------
+2022-09-26 02:05:58 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 02:05:58 info: -------------------------------------------------
+2022-09-26 02:06:01 info: All unit tests passed.
+2022-09-26 02:06:05 info: All steps were completed successfully
+2022-09-26 02:21:44 info: -------------------------------------------------
+2022-09-26 02:21:44 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 02:21:44 info: -------------------------------------------------
+2022-09-26 02:21:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (1 ms)
+    ✓ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (5 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      50 |     const result=sanitizeFruitBasket(fruitBasket, 'lemon');
+      51 |     const expected=[ 'apple', 'grapefruit', 'banana', 'watermelon' ]
+    > 52 |     expect(result).toBe(expected);
+         |                    ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.678 s, estimated 3 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-09-26 02:22:16 info: -------------------------------------------------
+2022-09-26 02:22:16 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 02:22:16 info: -------------------------------------------------
+2022-09-26 02:22:18 info: All unit tests passed.
+2022-09-26 02:22:21 info: All steps were completed successfully
+2022-09-26 03:16:31 info: ------------------------------------------
+2022-09-26 03:16:31 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-26 03:16:31 info: ------------------------------------------
+2022-09-26 03:16:34 info: All unit tests passed.
+2022-09-26 03:16:38 info: All steps were completed successfully
+2022-09-26 05:29:26 info: --------------------------------------
+2022-09-26 05:29:26 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-26 05:29:26 info: --------------------------------------
+2022-09-26 05:29:29 info: All unit tests passed.
+2022-09-26 05:29:32 info: All steps were completed successfully
