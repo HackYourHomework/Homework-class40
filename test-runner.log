@@ -1,0 +1,409 @@
+2022-09-26 01:37:54 info: ----------------------------------------------
+2022-09-26 01:37:54 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-26 01:37:54 info: ----------------------------------------------
+2022-09-26 01:37:56 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: you are great, HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/riamalali/Desktop/Homework-class40/test-runner/CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-26 01:37:59 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:30:19 - Unknown word (Riam)
+
+2022-09-26 01:40:13 info: ----------------------------------------------
+2022-09-26 01:40:13 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-26 01:40:13 info: ----------------------------------------------
+2022-09-26 01:40:14 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: you are great, HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/riamalali/Desktop/Homework-class40/test-runner/CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-26 01:44:36 info: ----------------------------------------------
+2022-09-26 01:44:36 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-26 01:44:36 info: ----------------------------------------------
+2022-09-26 01:44:38 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: you are great, HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/riamalali/Desktop/Homework-class40/test-runner/CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-26 01:53:56 info: ----------------------------------------
+2022-09-26 01:53:56 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-26 01:53:56 info: ----------------------------------------
+2022-09-26 01:53:58 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should have all TODO comments removed
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/Users/riamalali/Desktop/Homework-class40/test-runner/CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-26 01:56:25 info: ----------------------------------------
+2022-09-26 01:56:25 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-26 01:56:25 info: ----------------------------------------
+2022-09-26 01:56:26 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should have all TODO comments removed
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/Users/riamalali/Desktop/Homework-class40/test-runner/CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-26 08:01:16 info: ----------------------------------------------
+2022-09-26 08:01:16 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-26 08:01:16 info: ----------------------------------------------
+2022-09-26 08:01:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/riamalali/Desktop/Homework-class40:old/test-runner/CustomReporter.js"
+sh: jest: command not found
+2022-09-26 08:01:18 error: *** Spell Checker Report ***
+
+
+2022-09-26 08:08:07 info: ----------------------------------------------
+2022-09-26 08:08:07 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-26 08:08:07 info: ----------------------------------------------
+2022-09-26 08:08:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/riamalali/Desktop/Homework-class40:old/test-runner/CustomReporter.js"
+sh: jest: command not found
+2022-09-26 08:08:09 error: *** Spell Checker Report ***
+
+
+2022-09-26 08:25:10 info: ----------------------------------------------
+2022-09-26 08:25:10 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-26 08:25:10 info: ----------------------------------------------
+2022-09-26 08:25:12 info: All unit tests passed.
+2022-09-26 08:25:14 info: All steps were completed successfully
+2022-09-26 08:26:00 info: ----------------------------------------
+2022-09-26 08:26:00 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-26 08:26:00 info: ----------------------------------------
+2022-09-26 08:26:01 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should have all TODO comments removed
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/Users/riamalali/Desktop/Homework-class40/test-runner/CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-26 08:27:15 info: ----------------------------------------
+2022-09-26 08:27:15 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-26 08:27:15 info: ----------------------------------------
+2022-09-26 08:27:17 info: All unit tests passed.
+2022-09-26 08:27:19 info: All steps were completed successfully
+2022-09-26 08:27:42 info: -------------------------------------------
+2022-09-26 08:27:42 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-26 08:27:42 info: -------------------------------------------
+2022-09-26 08:27:44 error: *** Unit Test Error Report ***
+
+✕ tellFortune should have all TODO comments removed
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a FrontEnd developer in Libya, married to 😎 with 1 kids.
+  Received: You will be a FrontEnd developer in Libya, 
+  married to 😎 with 1 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/riamalali/Desktop/Homework-class40/test-runner/CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-26 08:34:20 info: -------------------------------------------
+2022-09-26 08:34:20 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-26 08:34:20 info: -------------------------------------------
+2022-09-26 08:34:22 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a FrontEnd developer in Libya, married to 😎 with 1 kids.
+  Received: You will be a FrontEnd developer in Libya, married to 😎 with 1kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/riamalali/Desktop/Homework-class40/test-runner/CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-26 08:35:00 info: -------------------------------------------
+2022-09-26 08:35:00 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-26 08:35:00 info: -------------------------------------------
+2022-09-26 08:35:01 info: All unit tests passed.
+2022-09-26 08:35:03 info: All steps were completed successfully
+2022-09-26 08:38:40 info: --------------------------------------------
+2022-09-26 08:38:40 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-09-26 08:38:40 info: --------------------------------------------
+2022-09-26 08:38:40 warn: A unit test file was not provided.
+2022-09-26 08:38:42 info: All steps were completed successfully
+2022-09-26 08:51:55 info: --------------------------------------
+2022-09-26 08:51:55 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-26 08:51:55 info: --------------------------------------
+2022-09-26 08:51:57 info: All unit tests passed.
+2022-09-26 08:51:59 info: All steps were completed successfully
+2022-09-26 08:53:16 info: ------------------------------------------------------
+2022-09-26 08:53:16 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-26 08:53:16 info: ------------------------------------------------------
+2022-09-26 08:53:17 info: All unit tests passed.
+2022-09-26 08:53:19 info: All steps were completed successfully
+2022-09-26 08:53:55 info: -------------------------------------------------
+2022-09-26 08:53:55 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 08:53:55 info: -------------------------------------------------
+2022-09-26 08:53:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: /Users/riamalali/Desktop/Homework-class40/1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js: Unexpected token (60:0)
+
+      58 |   });
+      59 | });
+    > 60 |
+         | ^
+
+      at Parser._raise (node_modules/@babel/parser/src/parser/error.js:147:45)
+      at Parser._raise [as raiseWithData] (node_modules/@babel/parser/src/parser/error.js:142:17)
+      at Parser.raiseWithData [as raise] (node_modules/@babel/parser/src/parser/error.js:91:17)
+      at Parser.raise [as unexpected] (node_modules/@babel/parser/src/parser/util.js:190:16)
+      at Parser.unexpected [as parseExprAtom] (node_modules/@babel/parser/src/parser/expression.js:1323:22)
+      at Parser.parseExprAtom [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.js:668:23)
+      at Parser.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.js:648:21)
+      at Parser.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.js:619:23)
+      at Parser.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.js:372:14)
+      at Parser.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.js:382:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.467 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-09-26 08:53:57 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  60:1  error  Parsing error: Unexpected token
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 08:54:44 info: --------------------------------------------
+2022-09-26 08:54:44 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-09-26 08:54:44 info: --------------------------------------------
+2022-09-26 08:54:44 warn: A unit test file was not provided.
+2022-09-26 08:54:46 info: All steps were completed successfully
+2022-09-26 08:54:58 info: ------------------------------------------------
+2022-09-26 08:54:58 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-09-26 08:54:58 info: ------------------------------------------------
+2022-09-26 08:54:58 warn: A unit test file was not provided.
+2022-09-26 08:55:00 info: All steps were completed successfully
+2022-09-26 08:55:17 info: -----------------------------------------
+2022-09-26 08:55:17 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-26 08:55:17 info: -----------------------------------------
+2022-09-26 08:55:17 warn: A unit test file was not provided.
+2022-09-26 08:55:19 info: All steps were completed successfully
+2022-09-26 08:55:41 info: -------------------------------------------
+2022-09-26 08:55:41 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-26 08:55:41 info: -------------------------------------------
+2022-09-26 08:55:41 warn: A unit test file was not provided.
+2022-09-26 08:55:43 info: All steps were completed successfully
+2022-09-26 08:57:53 info: -------------------------------------------------
+2022-09-26 08:57:53 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 08:57:53 info: -------------------------------------------------
+2022-09-26 08:57:54 info: All unit tests passed.
+2022-09-26 08:57:56 info: All steps were completed successfully
+2022-09-26 08:58:41 info: ------------------------------------------
+2022-09-26 08:58:41 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-26 08:58:41 info: ------------------------------------------
+2022-09-26 08:58:42 info: All unit tests passed.
+2022-09-26 08:58:44 info: All steps were completed successfully
+2022-09-26 09:06:09 info: ------------------------------------------
+2022-09-26 09:06:09 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-26 09:06:09 info: ------------------------------------------
+2022-09-26 09:06:10 info: All unit tests passed.
+2022-09-26 09:06:12 info: All steps were completed successfully
+2022-09-26 09:09:15 info: -------------------------------------------------
+2022-09-26 09:09:15 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 09:09:15 info: -------------------------------------------------
+2022-09-26 09:09:16 info: All unit tests passed.
+2022-09-26 09:09:18 info: All steps were completed successfully
