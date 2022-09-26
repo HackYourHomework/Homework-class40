@@ -1,0 +1,8 @@
+
+*** ESLint Report ***
+
+ex4-shoppingCart.js
+  34:7  warning  'str' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+

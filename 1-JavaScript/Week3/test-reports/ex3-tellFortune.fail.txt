@@ -1,0 +1,54 @@
+*** Unit Test Error Report ***
+
+✕ tellFortune should have all TODO comments removed
+✕ tellFortune should call function `selectRandomly` for each of its arguments
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a astronaut in London, married to Sam with 2 kids.
+  Received: You will be a astronaut in London, 
+    married to Sam with 2 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/yuliannikolaiev/Desktop/Homework-class40-1/test-runner/CustomReporter.js"
+Debugger listening on ws://127.0.0.1:57268/a4f9d794-647c-4d7a-810e-2618e677e0b0
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:57275/8ec019a7-70d3-447a-b554-cebe3f230e19
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+*** ESLint Report ***
+
+ex3-tellFortune.js
+  37:7  warning  'randomNum' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+  47:7  warning  'randomItem' is never reassigned. Use 'const' instead    no-autofix/prefer-const
+  48:7  warning  'selectedItem' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  54:7  warning  'kidsNum' is never reassigned. Use 'const' instead       no-autofix/prefer-const
+  55:7  warning  'name' is never reassigned. Use 'const' instead          no-autofix/prefer-const
+  56:7  warning  'city' is never reassigned. Use 'const' instead          no-autofix/prefer-const
+  57:7  warning  'job' is never reassigned. Use 'const' instead           no-autofix/prefer-const
+  58:7  warning  'fortuna' is never reassigned. Use 'const' instead       no-autofix/prefer-const
+
+✖ 8 problems (0 errors, 8 warnings)
+

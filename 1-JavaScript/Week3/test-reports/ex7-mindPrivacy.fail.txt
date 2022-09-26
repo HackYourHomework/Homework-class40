@@ -1,0 +1,9 @@
+
+*** ESLint Report ***
+
+ex7-mindPrivacy.js
+  35:7  warning  'newArr' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+  39:9  warning  'newObject' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+

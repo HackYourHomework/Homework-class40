@@ -1,0 +1,1264 @@
+2022-09-25 10:45:56 info: ------------------------------------------------------
+2022-09-25 10:45:56 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-25 10:45:56 info: ------------------------------------------------------
+2022-09-25 10:45:56 info: Exercise has not yet been modified
+2022-09-25 10:46:03 info: All unit tests passed.
+2022-09-25 10:46:09 info: All steps were completed successfully
+2022-09-25 10:53:10 info: ------------------------------------------------------
+2022-09-25 10:53:10 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-25 10:53:10 info: ------------------------------------------------------
+2022-09-25 10:53:16 info: All unit tests passed.
+2022-09-25 10:53:19 error: *** ESLint Report ***
+
+ex1-doubleEvenNumbers.test.js
+  20:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-25 10:55:48 info: ------------------------------------------------------
+2022-09-25 10:55:48 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-25 10:55:48 info: ------------------------------------------------------
+2022-09-25 10:55:54 info: All unit tests passed.
+2022-09-25 10:55:57 error: *** ESLint Report ***
+
+ex1-doubleEvenNumbers.test.js
+  20:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-25 10:57:24 info: Disclaimer turned off
+2022-09-25 10:57:52 info: ------------------------------------------------------
+2022-09-25 10:57:52 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-25 10:57:52 info: ------------------------------------------------------
+2022-09-25 10:57:58 info: All unit tests passed.
+2022-09-25 10:58:04 info: All steps were completed successfully
+2022-09-26 12:45:39 info: -------------------------------------------------
+2022-09-26 12:45:39 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 12:45:39 info: -------------------------------------------------
+2022-09-26 12:45:45 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Debugger listening on ws://127.0.0.1:51081/8c8513c3-6279-4e90-bb27-02fc723e6598
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:51084/93c10f66-d8ba-4b3b-963e-7e1deaa8e623
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (3 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: 11250
+
+      57 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      58 |     const expected = '€187.50';
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.383 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 12:45:49 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 12:45:52 error: *** Spell Checker Report ***
+
+ex2-mondaysWorth.test.js:42:14 - Unknown word (partitial)
+ex2-mondaysWorth.test.js:43:14 - Unknown word (partitial)
+
+2022-09-26 12:47:09 info: -------------------------------------------------
+2022-09-26 12:47:09 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 12:47:09 info: -------------------------------------------------
+2022-09-26 12:47:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Debugger listening on ws://127.0.0.1:51134/d2f365ec-981e-40b5-a74e-9d259717e365
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:51138/0c33f52e-c34d-45d5-b044-b7b5f9276c3f
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (3 ms)
+    ✕ should compute the earnings as a formatted Euro amount (3 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: 11250
+
+      57 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      58 |     const expected = '€187.50';
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.432 s, estimated 2 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 12:47:17 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 12:47:20 error: *** Spell Checker Report ***
+
+ex2-mondaysWorth.test.js:42:14 - Unknown word (partitial)
+ex2-mondaysWorth.test.js:43:14 - Unknown word (partitial)
+
+2022-09-26 12:52:18 info: -------------------------------------------------
+2022-09-26 12:52:18 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 12:52:18 info: -------------------------------------------------
+2022-09-26 12:52:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Debugger listening on ws://127.0.0.1:51197/12a11377-77b6-4433-ba81-050b7eda42d3
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:51201/8284953e-2524-4406-95ee-de9331690ff7
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (3 ms)
+    ✕ should compute the earnings as a formatted Euro amount (1 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    ReferenceError: Cannot access 'totalEarning' before initialization
+
+      43 |       return partitialSum + value;
+      44 |     }, 0)
+    > 45 |     .toString(totalEarning);
+         |               ^
+      46 |   return totalEarning;
+      47 | }
+      48 |
+
+      at totalEarning (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:45:15)
+      at Object.computeEarnings (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:58:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.426 s, estimated 2 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 12:52:26 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 12:52:30 error: *** Spell Checker Report ***
+
+ex2-mondaysWorth.test.js:42:14 - Unknown word (partitial)
+ex2-mondaysWorth.test.js:43:14 - Unknown word (partitial)
+
+2022-09-26 12:55:41 info: -------------------------------------------------
+2022-09-26 12:55:41 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 12:55:41 info: -------------------------------------------------
+2022-09-26 12:55:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Debugger listening on ws://127.0.0.1:51260/54024855-7a65-4e70-b8d3-400213527a02
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:51263/c37d1d9e-06bb-4bc7-8fea-9eb4ed7e1802
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (1 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    ReferenceError: Cannot access 'totalEarning' before initialization
+
+      43 |       return partitialSum + value;
+      44 |     }, 0)
+    > 45 |     .toString(totalEarning);
+         |               ^
+      46 |   totalEarning = `€ ${totalEarning}`;
+      47 |   return totalEarning;
+      48 | }
+
+      at totalEarning (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:45:15)
+      at Object.computeEarnings (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.385 s, estimated 2 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 12:55:51 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 12:55:55 error: *** Spell Checker Report ***
+
+ex2-mondaysWorth.test.js:42:14 - Unknown word (partitial)
+ex2-mondaysWorth.test.js:43:14 - Unknown word (partitial)
+
+2022-09-26 12:56:19 info: -------------------------------------------------
+2022-09-26 12:56:19 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 12:56:19 info: -------------------------------------------------
+2022-09-26 12:56:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Debugger listening on ws://127.0.0.1:51312/47a7b175-913a-413a-bf0c-004535fe4a13
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:51316/c86d1f8c-d942-40cc-9fe0-8420a5f8d85f
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (3 ms)
+    ✕ should compute the earnings as a formatted Euro amount
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    ReferenceError: Cannot access 'totalEarning' before initialization
+
+      43 |       return partitialSum + value;
+      44 |     }, 0)
+    > 45 |     .toString(totalEarning);
+         |               ^
+      46 |   totalEarning = `€ ${totalEarning}`;
+      47 |   return totalEarning;
+      48 | }
+
+      at totalEarning (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:45:15)
+      at Object.computeEarnings (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.387 s, estimated 2 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 12:56:29 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 12:56:33 error: *** Spell Checker Report ***
+
+ex2-mondaysWorth.test.js:42:14 - Unknown word (partitial)
+ex2-mondaysWorth.test.js:43:14 - Unknown word (partitial)
+
+2022-09-26 01:02:28 info: -------------------------------------------------
+2022-09-26 01:02:28 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 01:02:28 info: -------------------------------------------------
+2022-09-26 01:02:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Debugger listening on ws://127.0.0.1:51383/70dcf5a9-c815-465a-88fa-24edc21b65c3
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:51386/aa8a05da-0f47-4873-a705-695f5c9127ef
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (3 ms)
+    ✕ should compute the earnings as a formatted Euro amount (5 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€ 11250"
+
+      57 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      58 |     const expected = '€187.50';
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.493 s, estimated 2 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 01:02:36 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 01:09:49 info: -------------------------------------------------
+2022-09-26 01:09:49 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 01:09:49 info: -------------------------------------------------
+2022-09-26 01:09:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Debugger listening on ws://127.0.0.1:51463/1ed2179a-110a-4252-b76d-cb5e986c7c66
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:51467/efb8d12f-522d-4f8f-99f6-955f9e79537a
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (3 ms)
+    ✕ should compute the earnings as a formatted Euro amount (5 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€112.5"
+
+      57 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      58 |     const expected = '€187.50';
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.402 s, estimated 2 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 01:09:57 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 01:14:34 info: -------------------------------------------------
+2022-09-26 01:14:34 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 01:14:34 info: -------------------------------------------------
+2022-09-26 01:14:41 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Debugger listening on ws://127.0.0.1:51530/6142c8c6-95a8-4fb6-bed5-c997975d1259
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:51534/86f438ee-630a-434b-abc2-46b12f899b08
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (5 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€1.875"
+
+      57 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      58 |     const expected = '€187.50';
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.557 s, estimated 2 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 01:14:44 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 01:16:16 info: -------------------------------------------------
+2022-09-26 01:16:16 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 01:16:16 info: -------------------------------------------------
+2022-09-26 01:16:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Debugger listening on ws://127.0.0.1:51586/bf00e474-aef8-4922-9867-a8a6846e6ff1
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:51590/e218fe37-633c-45a0-9e8b-1afabe93b597
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (4 ms)
+    ✕ should compute the earnings as a formatted Euro amount (4 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      57 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      58 |     const expected = '€187.50';
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.482 s, estimated 2 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 01:16:25 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 01:20:01 info: -------------------------------------------------
+2022-09-26 01:20:01 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 01:20:01 info: -------------------------------------------------
+2022-09-26 01:20:07 info: All unit tests passed.
+2022-09-26 01:20:10 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-09-26 05:37:21 info: -------------------------------------------------
+2022-09-26 05:37:21 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 05:37:21 info: -------------------------------------------------
+2022-09-26 05:37:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Debugger listening on ws://127.0.0.1:52349/9b389872-8334-4344-9f15-45440e131103
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:52352/d1aca5ba-e1ca-4e53-be44-6550878ccec8
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    TypeError: newArr.include is not a function
+
+      53 |     // TODO replace next line with your code
+      54 |     const newArr = sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 55 |     expect(!newArr.include('lemon')).toBe(
+         |                    ^
+      56 |       sanitizeFruitBasket(fruitBasket, 'lemon')
+      57 |     );
+      58 |   });
+
+      at Object.include (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:55:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.58 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 05:59:36 info: -------------------------------------------------
+2022-09-26 05:59:36 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 05:59:36 info: -------------------------------------------------
+2022-09-26 05:59:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Debugger listening on ws://127.0.0.1:52439/3062300d-1584-4de7-81a1-3485f5128a43
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:52443/c4b7b159-2808-42dc-8cc9-ac9f58eecbcc
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    TypeError: newArr.include is not a function
+
+      53 |     // TODO replace next line with your code
+      54 |     const newArr = sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 55 |     expect(!newArr.include('lemon')).toBe(
+         |                    ^
+      56 |       sanitizeFruitBasket(fruitBasket, 'lemon')
+      57 |     );
+      58 |   });
+
+      at Object.include (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:55:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.544 s, estimated 2 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 06:05:00 info: -------------------------------------------------
+2022-09-26 06:05:00 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 06:05:00 info: -------------------------------------------------
+2022-09-26 06:05:06 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Debugger listening on ws://127.0.0.1:52505/8d443fcc-0230-4936-b251-9333681b2888
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:52509/f6901981-3ccc-4c85-a5f6-77b7ffcccc0c
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array
+    ✕ should return a new array that does not include the unwanted `lemon` (5 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      53 |     // TODO replace next line with your code
+      54 |     const noLemonArr = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 55 |     expect(noLemonArr).toBe(sanitizeFruitBasket(fruitBasket, 'lemon'));
+         |                        ^
+      56 |   });
+      57 | });
+      58 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:55:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.598 s, estimated 2 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 06:08:57 info: -------------------------------------------------
+2022-09-26 06:08:57 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 06:08:57 info: -------------------------------------------------
+2022-09-26 06:09:03 error: *** Unit Test Error Report ***
+
+console.log
+    [ 'apple', 'grapefruit', 'banana', 'watermelon' ]
+
+      at log (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:32:11)
+
+  console.log
+    [ 'apple', 'grapefruit', 'banana', 'watermelon' ]
+
+      at log (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:32:11)
+
+  console.log
+    [ 'apple', 'grapefruit', 'banana', 'watermelon' ]
+
+      at log (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:32:11)
+
+
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Debugger listening on ws://127.0.0.1:52584/803c8861-9925-456b-9fd6-c7a7e7aed53b
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:52588/41d560a4-ce76-4b9b-999e-34df60553984
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (4 ms)
+    ✓ should not modify the original `fruitBasket` array (23 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (6 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      54 |     // TODO replace next line with your code
+      55 |     const noLemonArr = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 56 |     expect(noLemonArr).toBe(sanitizeFruitBasket(fruitBasket, 'lemon'));
+         |                        ^
+      57 |   });
+      58 | });
+      59 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:56:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.425 s, estimated 2 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 06:11:09 info: -------------------------------------------------
+2022-09-26 06:11:09 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 06:11:09 info: -------------------------------------------------
+2022-09-26 06:11:14 info: All unit tests passed.
+2022-09-26 06:11:19 info: All steps were completed successfully
+2022-09-26 06:22:17 info: -------------------------------------------------
+2022-09-26 06:22:17 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 06:22:17 info: -------------------------------------------------
+2022-09-26 06:22:22 error: *** Unit Test Error Report ***
+
+console.log
+    [ 'apple', 'grapefruit', 'banana', 'watermelon' ]
+
+      at log (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:32:11)
+
+  console.log
+    [ 'apple', 'grapefruit', 'banana', 'watermelon' ]
+
+      at log (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:32:11)
+
+  console.log
+    [ 'apple', 'grapefruit', 'banana', 'watermelon' ]
+
+      at log (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:32:11)
+
+
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Debugger listening on ws://127.0.0.1:52714/fdd6f877-1f25-429c-a1dd-2927b12a5d6b
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:52718/ca78e09d-2733-4f04-958e-dd2eb3164fc2
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (3 ms)
+    ✓ should not modify the original `fruitBasket` array (26 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (3 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    TypeError: newArr.include is not a function
+
+      56 |     // expect(noLemonArr).toEqual(sanitizeFruitBasket(fruitBasket, 'lemon'));
+      57 |     const newArr = sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 58 |     expect(!newArr.include('lemon')).toEqual(
+         |                    ^
+      59 |       sanitizeFruitBasket(fruitBasket, 'lemon')
+      60 |     );
+      61 |   });
+
+      at Object.include (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:58:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.426 s, estimated 2 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 06:22:25 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  55:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-26 06:26:05 info: -------------------------------------------------
+2022-09-26 06:26:05 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 06:26:05 info: -------------------------------------------------
+2022-09-26 06:26:10 info: All unit tests passed.
+2022-09-26 06:26:17 info: All steps were completed successfully
+2022-09-26 07:55:45 info: ------------------------------------------
+2022-09-26 07:55:45 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-26 07:55:45 info: ------------------------------------------
+2022-09-26 07:55:52 info: All unit tests passed.
+2022-09-26 07:55:58 info: All steps were completed successfully
+2022-09-26 10:08:38 info: ----------------------------------------------
+2022-09-26 10:08:38 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-26 10:08:38 info: ----------------------------------------------
+2022-09-26 10:08:44 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/yuliannikolaiev/Desktop/Homework-class40-1/test-runner/CustomReporter.js"
+Debugger listening on ws://127.0.0.1:55723/06fa397d-4427-4620-a90f-cda316dfa3cc
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:55730/c0a9f3e1-6be9-4bd2-b9a6-f3d7cb82144d
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 10:08:48 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  35:7  warning  'randomIndex' is never reassigned. Use 'const' instead    no-autofix/prefer-const
+  36:7  warning  'complimentStr' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-09-26 10:08:51 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:42:19 - Unknown word (Svitlana)
+
+2022-09-26 10:13:09 info: ----------------------------------------
+2022-09-26 10:13:09 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-26 10:13:09 info: ----------------------------------------
+2022-09-26 10:13:15 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should have all TODO comments removed
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/Users/yuliannikolaiev/Desktop/Homework-class40-1/test-runner/CustomReporter.js"
+Debugger listening on ws://127.0.0.1:56864/eb68d3ff-4675-4d2d-ab2d-cf7681754bee
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:56875/e7fa25df-bcfe-43cc-aedb-2077bb0a9d9a
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 10:13:18 error: *** ESLint Report ***
+
+ex2-dogYears.js
+  21:7  warning  'dogYears' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-26 10:14:37 info: -------------------------------------------
+2022-09-26 10:14:37 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-26 10:14:37 info: -------------------------------------------
+2022-09-26 10:14:43 error: *** Unit Test Error Report ***
+
+✕ tellFortune should have all TODO comments removed
+✕ tellFortune should call function `selectRandomly` for each of its arguments
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a astronaut in London, married to Sam with 2 kids.
+  Received: You will be a astronaut in London, 
+    married to Sam with 2 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/yuliannikolaiev/Desktop/Homework-class40-1/test-runner/CustomReporter.js"
+Debugger listening on ws://127.0.0.1:57268/a4f9d794-647c-4d7a-810e-2618e677e0b0
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:57275/8ec019a7-70d3-447a-b554-cebe3f230e19
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-09-26 10:14:46 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  37:7  warning  'randomNum' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+  47:7  warning  'randomItem' is never reassigned. Use 'const' instead    no-autofix/prefer-const
+  48:7  warning  'selectedItem' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  54:7  warning  'kidsNum' is never reassigned. Use 'const' instead       no-autofix/prefer-const
+  55:7  warning  'name' is never reassigned. Use 'const' instead          no-autofix/prefer-const
+  56:7  warning  'city' is never reassigned. Use 'const' instead          no-autofix/prefer-const
+  57:7  warning  'job' is never reassigned. Use 'const' instead           no-autofix/prefer-const
+  58:7  warning  'fortuna' is never reassigned. Use 'const' instead       no-autofix/prefer-const
+
+✖ 8 problems (0 errors, 8 warnings)
+
+
+2022-09-26 10:15:45 info: --------------------------------------------
+2022-09-26 10:15:45 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-09-26 10:15:45 info: --------------------------------------------
+2022-09-26 10:15:45 warn: A unit test file was not provided.
+2022-09-26 10:15:48 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  34:7  warning  'str' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-26 10:16:42 info: ------------------------------------------------
+2022-09-26 10:16:42 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-09-26 10:16:42 info: ------------------------------------------------
+2022-09-26 10:16:42 warn: A unit test file was not provided.
+2022-09-26 10:16:46 error: *** ESLint Report ***
+
+ex5-shoppingCartPure.js
+  21:7  warning  'newCart' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-26 10:17:23 info: -----------------------------------------
+2022-09-26 10:17:23 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-26 10:17:23 info: -----------------------------------------
+2022-09-26 10:17:23 warn: A unit test file was not provided.
+2022-09-26 10:17:29 info: All steps were completed successfully
+2022-09-26 10:19:25 info: -------------------------------------------
+2022-09-26 10:19:25 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-26 10:19:25 info: -------------------------------------------
+2022-09-26 10:19:25 warn: A unit test file was not provided.
+2022-09-26 10:19:28 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  35:7  warning  'newArr' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+  39:9  warning  'newObject' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
