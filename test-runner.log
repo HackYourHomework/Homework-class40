@@ -940,3 +940,214 @@ Ran all test suites matching /ex3-lemonAllergy.test.js/i.
 2022-09-26 09:05:26 info: -------------------------------------------------
 2022-09-26 09:05:28 info: All unit tests passed.
 2022-09-26 09:05:32 info: All steps were completed successfully
+2022-09-26 09:53:41 info: ------------------------------------------
+2022-09-26 09:53:41 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-26 09:53:41 info: ------------------------------------------
+2022-09-26 09:53:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (1 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: Hi! is not a function
+        at Array.forEach (<anonymous>)
+
+      21 |     },
+      22 |     notify: function (message) {
+    > 23 |       subscribers.forEach(message);
+         |                   ^
+      24 |     },
+      25 |   };
+      26 | }
+
+      at Object.forEach [as notify] (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.614 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-09-26 10:11:34 info: ------------------------------------------
+2022-09-26 10:11:34 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-26 10:11:34 info: ------------------------------------------
+2022-09-26 10:11:36 info: All unit tests passed.
+2022-09-26 10:11:40 info: All steps were completed successfully
+2022-09-27 12:10:15 info: --------------------------------------
+2022-09-27 12:10:15 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 12:10:15 info: --------------------------------------
+2022-09-27 12:10:18 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\ebektas\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-27 12:10:20 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2022-09-27 12:32:42 info: --------------------------------------
+2022-09-27 12:32:42 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 12:32:42 info: --------------------------------------
+2022-09-27 12:32:45 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\ebektas\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-27 12:32:46 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2022-09-27 12:36:03 info: --------------------------------------
+2022-09-27 12:36:03 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 12:36:03 info: --------------------------------------
+2022-09-27 12:36:05 error: *** Unit Test Error Report ***
+
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\ebektas\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-27 02:26:21 info: --------------------------------------
+2022-09-27 02:26:21 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 02:26:21 info: --------------------------------------
+2022-09-27 02:26:24 info: All unit tests passed.
+2022-09-27 02:26:27 info: All steps were completed successfully
+2022-09-27 02:27:29 info: ------------------------------------------------------
+2022-09-27 02:27:29 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-27 02:27:29 info: ------------------------------------------------------
+2022-09-27 02:27:31 info: All unit tests passed.
+2022-09-27 02:27:34 info: All steps were completed successfully
+2022-09-27 02:31:49 info: -------------------------------------------------
+2022-09-27 02:31:49 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-27 02:31:49 info: -------------------------------------------------
+2022-09-27 02:31:51 info: All unit tests passed.
+2022-09-27 02:31:54 info: All steps were completed successfully
+2022-09-27 02:32:02 info: -------------------------------------------------
+2022-09-27 02:32:02 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-27 02:32:02 info: -------------------------------------------------
+2022-09-27 02:32:04 info: All unit tests passed.
+2022-09-27 02:32:07 info: All steps were completed successfully
+2022-09-27 02:32:19 info: ------------------------------------------
+2022-09-27 02:32:19 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-27 02:32:19 info: ------------------------------------------
+2022-09-27 02:32:21 info: All unit tests passed.
+2022-09-27 02:32:24 info: All steps were completed successfully
+2022-09-27 02:32:31 info: --------------------------------------
+2022-09-27 02:32:31 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 02:32:31 info: --------------------------------------
+2022-09-27 02:32:33 info: All unit tests passed.
+2022-09-27 02:32:36 info: All steps were completed successfully
