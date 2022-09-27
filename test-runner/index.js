@@ -204,6 +204,7 @@ async function execSpellChecker(exercisePath) {
     return '';
   } catch (err) {
     // remove full path
+    console.log(err);
     const output = err.stdout
       .replace(/\\/g, '/')
       .replace(/^.*\/\.?@?homework\//gm, '');

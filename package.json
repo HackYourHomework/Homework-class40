@@ -10,7 +10,6 @@
     "alt": "node ./test-runner/run-it @homework",
     "reset-reports": "node ./test-runner/reset-reports",
     "sysinfo": "node ./test-runner/sysinfo",
-    "postinstall": "npm run sysinfo",
     "cleanup": "node ./test-runner/cleanup",
     "encrypt": "node ./test-runner/encrypt",
     "decrypt": "node ./test-runner/decrypt",
@@ -63,7 +62,6 @@
     "rimraf": "^3.0.2",
     "serve-handler": "^6.1.3",
     "strip-ansi": "^7.0.1",
-    "systeminformation": "^5.9.12",
     "winston": "^3.8.1"
   }
 }
