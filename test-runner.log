@@ -83,3 +83,8 @@
 2022-09-27 09:35:08 info: ------------------------------------------------
 2022-09-27 09:35:08 warn: A unit test file was not provided.
 2022-09-27 09:35:29 info: All steps were completed successfully
+2022-09-27 11:53:06 info: --------------------------------------------
+2022-09-27 11:53:06 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-09-27 11:53:06 info: --------------------------------------------
+2022-09-27 11:53:06 warn: A unit test file was not provided.
+2022-09-27 11:53:17 info: All steps were completed successfully
