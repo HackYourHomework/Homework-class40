@@ -16,8 +16,7 @@ it pure. Do the following:
 5. Confirm that you function passes the provided unit tests.
 ------------------------------------------------------------------------------*/
 // ! Function under test
-function addToShoppingCart(shoppingCart,groceryItem) {
-  // TODO complete this function
+function addToShoppingCart(shoppingCart, groceryItem) {
   const newShoppingCart = [...shoppingCart];
 
   newShoppingCart.push(groceryItem);
@@ -32,16 +31,16 @@ function addToShoppingCart(shoppingCart,groceryItem) {
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   const initialCart = ['bananas'];
-  console.log(addToShoppingCart(initialCart,'milk') );
+  console.log(addToShoppingCart(initialCart, 'milk'));
   console.assert(addToShoppingCart.length === 2);
 }
 
 function test2() {
   const initialCart = ['bananas', 'milk'];
-  console.log(addToShoppingCart(initialCart,'chocolate'));
+  console.log(addToShoppingCart(initialCart, 'chocolate'));
   // A pure function should return the same result when called with
   // identical arguments. It should also have no side effects (not tested here).
-  // const initialCart = ['bananas', 'milk'];
+
   const result1 = addToShoppingCart(initialCart, 'chocolate');
   const result2 = addToShoppingCart(initialCart, 'chocolate');
   console.assert(JSON.stringify(result1) === JSON.stringify(result2));
@@ -52,7 +51,7 @@ function test2() {
 
 function test3() {
   const initialCart = ['bananas', 'milk'];
-  console.log(addToShoppingCart(initialCart,'chocolate'));  
+  console.log(addToShoppingCart(initialCart, 'chocolate'));
   const result = addToShoppingCart(initialCart, 'chocolate');
   console.assert(result.length === 3);
   console.assert(result.includes('chocolate'));
@@ -60,7 +59,7 @@ function test3() {
 
 function test4() {
   const initialCart = ['bananas', 'milk', 'chocolate'];
-  console.log(addToShoppingCart(initialCart, 'waffles')); 
+  console.log(addToShoppingCart(initialCart, 'waffles'));
   const result = addToShoppingCart(initialCart, 'waffles');
   console.assert(result.length === 3);
   console.assert(result.includes('waffles'));
