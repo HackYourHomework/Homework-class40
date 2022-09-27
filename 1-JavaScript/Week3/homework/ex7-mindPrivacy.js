@@ -31,31 +31,30 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(employeeRecords) {
-  // TODO complete this function
   const newArray = [];
   employeeRecords.forEach((employeeRecords) => {
-    const {name , occupation , email} = employeeRecords;
+    const { name, occupation, email } = employeeRecords;
 
-    const nonPrivate ={
+    const nonPrivate = {
       name,
       occupation,
-      email
+      email,
     };
 
     newArray.push(nonPrivate);
-  })
+  });
 
   return newArray;
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
-  console.log('Test 1: filterPrivateData should take one parameters');
+  console.log(filterPrivateData.length);
   console.assert(filterPrivateData.length === 1);
 }
 
 function test2() {
-  console.log('Test 2: gender and salary should be filtered out');
+  console.log(filterPrivateData(employeeRecords));
   const expected = [
     {
       name: 'John',
