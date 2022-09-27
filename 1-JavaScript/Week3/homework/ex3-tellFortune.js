@@ -34,47 +34,38 @@ body, this code is now written once only in a separated function.
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
 
-
 function selectRandomly(myArr) {
-  // TODO complete this function
   return myArr[Math.floor(Math.random() * myArr.length)];
-  
 }
-
-
 
 function tellFortune(numKids, partnerNames, locations, jobTitles) {
-  // TODO complete this function 
-  // const arr = [Math.floor(Math.random()*partnerNames.length)];
-
-  return  `You will be a ${selectRandomly(...[jobTitles])}  in ${selectRandomly(...[locations]) }
-  married to ${selectRandomly(...[partnerNames])} with ${selectRandomly(...[numKids])} kids.`;
+  const numberOfKids = selectRandomly(numKids);
+  const partnerName = selectRandomly(partnerNames);
+  const location = selectRandomly(locations);
+  const jobTitle = selectRandomly(jobTitles);
+  return `You will be a ${jobTitle} in ${location}, married to ${partnerName} with ${numberOfKids} kids.`;
 }
 
-
-
 function main() {
-  const numKids = [
-    // TODO add elements here
-    2,1,4,6,3
-  ];
+  const numKids = [2, 1, 4, 6, 3];
 
-  const partnerNames = [
-    // TODO add elements here
-    "sophie" , "Mari" , "Tea" , "Kate", "Dory"
-  ];
+  const partnerNames = ['sophie', 'Mari', 'Tea', 'Kate', 'Dory'];
 
   const locations = [
-    // TODO add elements here
-    "winterswijk" , "almera" ,"deventer","amsterdam","Rotterdam"
+    'winterswijk',
+    'almera',
+    'deventer',
+    'amsterdam',
+    'Rotterdam',
   ];
 
   const jobTitles = [
-    // TODO add elements here
-    "full stack developer" , "designer" , "sales man" , "accounter" , "tester"
+    'full stack developer',
+    'designer',
+    'sales man',
+    'accounter',
+    'tester',
   ];
-
-  
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
