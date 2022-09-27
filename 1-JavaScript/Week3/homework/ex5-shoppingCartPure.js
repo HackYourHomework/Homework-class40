@@ -17,16 +17,8 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 function addToShoppingCart(grocery, item) {
-  const groceryList = [...grocery];
-  item &&
-    groceryList.splice(
-      0,
-      groceryList.length,
-      groceryList[groceryList.length - 2],
-      groceryList[groceryList.length - 1],
-      item
-    );
-  return groceryList;
+  const groceryList = [...grocery, item];
+  return groceryList.slice(groceryList.length -3);
 }
 
 // ! Test functions (plain vanilla JavaScript)
