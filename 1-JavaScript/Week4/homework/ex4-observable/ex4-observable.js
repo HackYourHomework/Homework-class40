@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week4#exercise-4-observable
@@ -17,10 +18,10 @@ function createObservable() {
   const subscribers = [];
   return {
     subscribe: function (subscriber) {
-      // TODO complete this function
+      subscribers.push(subscriber);
     },
     notify: function (message) {
-      // TODO complete this function
+      subscribers.forEach((subscriber) => subscriber(message));
     },
   };
 }
