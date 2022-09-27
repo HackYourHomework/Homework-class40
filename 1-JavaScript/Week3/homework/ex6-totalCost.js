@@ -1,3 +1,6 @@
+/* eslint-disable no-autofix/prefer-const */
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable no-unused-vars */
 'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-6-total-cost-is
@@ -21,34 +24,30 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
   beer: 1.75,
-  ships:0.99,
-  eggs: 2.80,
-  tea: 1.20,
-  water: 1
+  ships: 0.99,
+  eggs: 2.8,
+  tea: 1.2,
+  water: 1,
 };
 
 function calculateTotalPrice(cartForParty) {
-  // TODO replace this comment with your code
-  let totalPrice = 0;
-  
-  for (const price of object.values(cartForParty)) {
-    totalPrice += price;
+  let amount = 0;
+  for (let i in cartForParty) {
+    amount = +cartForParty[i];
   }
-  return `Total :€${totalPrice}`;
+  return `Total: €${amount}`;
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
-  console.log(calculateTotalPrice(1));
-  // TODO replace this comment with your code
+  console.log('\nTest 1: calculateTotalPrice should take one parameter');
+
   console.assert(calculateTotalPrice.length === 1);
 }
 
 function test2() {
-  console.log(calculateTotalPrice());
-  // TODO replace this comment with your code
+  console.log('\nTest 2: return correct output when passed cartForParty');
 }
 
 function test() {
