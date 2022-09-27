@@ -19,7 +19,7 @@ function addToShoppingCart(shoppingCart, shoppingItem) {
   const newShoppingCart = [...shoppingCart, shoppingItem];
 
   if (newShoppingCart.length > 3) {
-    newShoppingCart.shift();
+    return newShoppingCart.slice(-3);
   }
   return newShoppingCart;
 }

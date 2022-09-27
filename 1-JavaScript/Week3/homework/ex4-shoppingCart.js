@@ -30,8 +30,7 @@ function addToShoppingCart(groceryItem) {
   if (shoppingCart.length > 3) {
     shoppingCart.shift();
   }
-  const message = `You bought ${shoppingCart.join(', ')}!`;
-  return message;
+  return `You bought ${shoppingCart.join(', ')}!`;
 }
 
 function test1() {

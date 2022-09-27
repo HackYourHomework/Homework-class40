@@ -31,7 +31,7 @@ function giveCompliment(name) {
     'Well done',
     'Nice work',
   ];
-  const randomNumber = Math.floor(Math.random() * (10 - 0) + 0);
+  const randomNumber = Math.floor(Math.random() * (compliments.length - 0) + 0);
 
   return `You are ${compliments[randomNumber]}, ${name}!`;
 }
