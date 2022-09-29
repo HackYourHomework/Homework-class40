@@ -1,7 +1,6 @@
 'use strict';
 /*------------------------------------------------------------------------------
 Full description atL https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week4#exercise-2-whats-your-monday-worth
-
 - Complete the function names `computeEarnings`. It should take an array of
   tasks and an hourly rate as arguments and return a formatted Euro amount
   (e.g: `€11.34`) comprising the total earnings.
@@ -31,8 +30,13 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(tasks, rate) {
+  const total = tasks
+    .map((task) => (task.duration / 60) * rate)
+    .reduce((sum, amount) => sum + amount)
+    .toFixed(2);
+
+  return `€` + total;
 }
 
 // ! Unit tests (using Jest)

@@ -1,0 +1,25 @@
+2022-09-27 08:35:00 info: ------------------------------------------------------
+2022-09-27 08:35:00 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-27 08:35:00 info: ------------------------------------------------------
+2022-09-27 08:35:02 info: All unit tests passed.
+2022-09-27 08:35:04 info: All steps were completed successfully
+2022-09-27 08:35:35 info: -------------------------------------------------
+2022-09-27 08:35:35 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-27 08:35:35 info: -------------------------------------------------
+2022-09-27 08:35:37 info: All unit tests passed.
+2022-09-27 08:35:39 info: All steps were completed successfully
+2022-09-27 08:35:52 info: -------------------------------------------------
+2022-09-27 08:35:52 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-27 08:35:52 info: -------------------------------------------------
+2022-09-27 08:35:53 info: All unit tests passed.
+2022-09-27 08:35:55 info: All steps were completed successfully
+2022-09-27 08:36:23 info: ------------------------------------------
+2022-09-27 08:36:23 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-27 08:36:23 info: ------------------------------------------
+2022-09-27 08:36:25 info: All unit tests passed.
+2022-09-27 08:36:27 info: All steps were completed successfully
+2022-09-27 08:36:43 info: --------------------------------------
+2022-09-27 08:36:43 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 08:36:43 info: --------------------------------------
+2022-09-27 08:36:44 info: All unit tests passed.
+2022-09-27 08:36:46 info: All steps were completed successfully
