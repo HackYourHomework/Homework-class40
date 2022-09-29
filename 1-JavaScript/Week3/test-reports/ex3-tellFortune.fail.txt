@@ -1,0 +1,35 @@
+*** Unit Test Error Report ***
+
+✕ tellFortune should call function `selectRandomly` for each of its arguments
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/yuliannikolaiev/Desktop/Homework-class40-1/test-runner/CustomReporter.js"
+Debugger listening on ws://127.0.0.1:58565/04f623a6-1337-4b20-a1b9-9d2a5068c9a1
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:58568/5d71c200-4082-45b5-82fb-03f78f4cb011
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
