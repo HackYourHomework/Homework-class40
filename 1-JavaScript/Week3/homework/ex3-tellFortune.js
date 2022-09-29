@@ -33,31 +33,24 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function randomNumber() {
-  let randomNum = Math.round(Math.random() * 10);
-  if (randomNum < 5) {
-    return randomNum;
-  } else {
-    return randomNumber();
-  }
+
+
+function randomize(biggestValue) {
+  return Math.floor(Math.random() * biggestValue);
 }
 
 function selectRandomly(...items) {
-  // TODO complete this function
-  let randomItem = randomNumber();
-  let selectedItem = items[randomItem];
+  const randomNumber = randomize(items.length);
+  const selectedItem = items[randomNumber];
   return selectedItem;
 }
 
 function tellFortune(numKids, partnerNames, locations, jobTitles) {
-  // TODO complete this function
-  let kidsNum = selectRandomly(...numKids);
-  let name = selectRandomly(...partnerNames);
-  let city = selectRandomly(...locations);
-  let job = selectRandomly(...jobTitles);
-  let fortuna = `You will be a ${job} in ${city}, 
-    married to ${name} with ${kidsNum} kids.`;
-  return fortuna;
+  const kidsNum = selectRandomly(...numKids);
+  const name = selectRandomly(...partnerNames);
+  const city = selectRandomly(...locations);
+  const job = selectRandomly(...jobTitles);
+  return `You will be a ${job} in ${city}, married to ${name} with ${kidsNum} kids.`;
 }
 
 function main() {

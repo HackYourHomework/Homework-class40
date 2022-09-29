@@ -1,4 +1,7 @@
 'use strict';
+
+const { Console } = require('winston/lib/winston/transports');
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-5-improved-shopping-at-the-supermarket
 
@@ -17,18 +20,10 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 function addToShoppingCart(initialCart, groceryItem) {
-  // TODO complete this function
-  let newCart = [...initialCart];
-  if (initialCart && groceryItem) {
-    newCart.push(groceryItem);
-  }
-  if (newCart.length > 3) {
-    newCart.shift();
-  }
-
+  let newCart = [...initialCart, groceryItem];
+  newCart = newCart.slice(-3);
   return newCart;
 }
-
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
