@@ -1,4 +1,7 @@
 'use strict';
+
+const { values } = require("lodash");
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-6-total-cost-is
 
@@ -22,21 +25,38 @@ instead!
 -----------------------------------------------------------------------------*/
 const cartForParty = {
   // TODO complete this object
+  // five properties. Each property should be a grocery item
+  Beeers: 1.75,
+  chips: 0.99,
+  chocolate: 1.05,
+  chees: 2.05,
+  milk: 2.50
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
+function calculateTotalPrice(cartForParty) {
   // TODO replace this comment with your code
+  //return `Total: €${Object.values(cartForParty).reduce((sum,item) => sum + item  , 0)}`
+
+  const values = Object.values(cartForParty);
+   
+  const sum = values.reduce((a, b) => {
+    return a + b;
+  }, 0);
+  return `Total: € ${sum}`;
+
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
   // TODO replace this comment with your code
+  console.assert(calculateTotalPrice.length === 1);
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
   // TODO replace this comment with your code
+  console.log(calculateTotalPrice(cartForParty) === '€0.99');
 }
 
 function test() {

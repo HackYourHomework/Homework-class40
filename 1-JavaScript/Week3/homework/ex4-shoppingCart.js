@@ -23,8 +23,24 @@ you have more than 3 items in your shopping cart the first item gets taken out.
 const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
-function addToShoppingCart(/* parameters go here */) {
+// - It should take one argument: a grocery item (string)
+function addToShoppingCart(items) {
   // TODO complete this function
+  //create if statement if the grocery item is more than three remove the first one in the array 
+
+  if (shoppingCart.length > 3){
+    shoppingCart.push(items)
+  }
+
+  else
+  {
+    shoppingCart.shift()
+    shoppingCart.push(items)
+  }
+
+  // It should return a string "You bought <list-of-items>!", where <list-of-items>is a comma-separated list of items from the shopping cart array.
+  return `You bought ${shoppingCart.join(', ')}`
+
 }
 
 // ! Test functions (plain vanilla JavaScript)
