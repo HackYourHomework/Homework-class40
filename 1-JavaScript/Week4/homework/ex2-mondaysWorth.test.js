@@ -31,8 +31,19 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
+// take an array of tasks and an hourly rate as arguments and return a formatted Euro amount (e.g: `€11.34`) comprising the total earnings.
+function computeEarnings(tasks, hourlyRate) {
   // TODO complete this function
+  // Use the `map` array function to take out the duration time for each /*task*/.
+  const durationTime = tasks.map(
+    // Multiply each duration by a hourly rate for billing and sum it all up // using Reduce()...
+    (x) => (x.duration * hourlyRate) / 60
+  );
+  const calculateAll = durationTime.reduce(
+    (previousValue, currentValue) => previousValue + currentValue,
+    0
+  );
+  return '€' + calculateAll.toFixed(2);
 }
 
 // ! Unit tests (using Jest)

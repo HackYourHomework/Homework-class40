@@ -18,9 +18,12 @@ function createObservable() {
   return {
     subscribe: function (subscriber) {
       // TODO complete this function
+      subscribers.push(subscriber);
     },
     notify: function (message) {
       // TODO complete this function
+      // for iterate we use forEach...
+      subscribers.forEach((element) => element(message));
     },
   };
 }

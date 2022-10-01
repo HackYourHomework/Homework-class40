@@ -1,0 +1,20 @@
+2022-10-01 11:22:08 info: ------------------------------------------------------
+2022-10-01 11:22:08 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-10-01 11:22:08 info: ------------------------------------------------------
+2022-10-01 11:22:30 info: All unit tests passed.
+2022-10-01 11:22:54 info: All steps were completed successfully
+2022-10-01 11:26:42 info: -------------------------------------------------
+2022-10-01 11:26:42 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-10-01 11:26:42 info: -------------------------------------------------
+2022-10-01 11:26:50 info: All unit tests passed.
+2022-10-01 11:27:01 info: All steps were completed successfully
+2022-10-01 11:30:40 info: -------------------------------------------------
+2022-10-01 11:30:40 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-10-01 11:30:40 info: -------------------------------------------------
+2022-10-01 11:30:48 info: All unit tests passed.
+2022-10-01 11:30:58 info: All steps were completed successfully
+2022-10-01 11:33:38 info: ------------------------------------------
+2022-10-01 11:33:38 info: >>> Running Unit Test `ex4-observable` <<<
+2022-10-01 11:33:38 info: ------------------------------------------
+2022-10-01 11:33:48 info: All unit tests passed.
+2022-10-01 11:33:57 info: All steps were completed successfully
