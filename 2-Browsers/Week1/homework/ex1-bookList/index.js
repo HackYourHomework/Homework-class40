@@ -18,7 +18,28 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const ulBookList = document
+    .querySelector('#bookList')
+    .appendChild(document.createElement('ul'));
+  books.forEach((book) => {
+    const liForEachBook = ulBookList.appendChild(document.createElement('li'));
+    //For each book, create a `<p>` element with the book title and author.
+    const pForEachBook = liForEachBook.appendChild(document.createElement('p'));
+    pForEachBook.textContent = `${book.title} - ${book.author}`;
+    //Change the style of the book depending on whether you have read it(green) or not(red).
+    book.alreadyRead
+      ? (liForEachBook.style.backgroundColor = 'green')
+      : (liForEachBook.style.backgroundColor = 'red');
+    //Add an `<img>` to each book that links to a URL of the book cover.
+    const imgForEachBook = liForEachBook.appendChild(
+      document.createElement('img')
+    );
+    imgForEachBook.src = `./assets/${book.title
+      .replaceAll(' ', '_')
+      .toLowerCase()}.jpg`;
+    //<img src="./assets/the_design_of_everyday_things.jpg">
+    imgForEachBook.alt = book.title;
+  });
 }
 
 function main() {

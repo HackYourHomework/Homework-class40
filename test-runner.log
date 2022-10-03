@@ -478,3 +478,310 @@ ex7-mindPrivacy.js
 2022-09-20 11:40:45 info: -------------------------------------------
 2022-09-20 11:40:45 warn: A unit test file was not provided.
 2022-09-20 11:40:48 info: All steps were completed successfully
+2022-10-01 08:05:38 info: ------------------------------------------
+2022-10-01 08:05:38 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-01 08:05:38 info: ------------------------------------------
+2022-10-01 08:05:41 info: All unit tests passed.
+2022-10-01 08:05:42 error: *** ESLint Report ***
+
+ex6-gameOfLife/index.js
+  16:7  warning  'lifeTime' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-10-01 08:05:44 error: *** Spell Checker Report ***
+
+ex6-gameOfLife/index.js:128:11 - Unknown word (Ensar)
+ex6-gameOfLife/index.js:132:11 - Unknown word (Ensar)
+ex6-gameOfLife/index.js:136:11 - Unknown word (Ensar)
+
+2022-10-01 08:15:55 info: ------------------------------------------
+2022-10-01 08:15:55 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-01 08:15:55 info: ------------------------------------------
+2022-10-01 08:15:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    √ should exist and be executable (1 ms)
+    × a living cell with zero living neighbors should die and have its life time reset to zero (3 ms)
+    × a living cell with one living neighbor should die and have its life time reset to zero
+    × a living cell with two living neighbors should survive and have its life time incremented by one
+    × a living cell with three living neighbors should survive and have its life time incremented by one
+    × a living cell with four living neighbors should die and have its life time reset to zero
+    √ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    √ a dead cell with one living neighbor should remain dead and have a life time of zero (1 ms)
+    √ a dead cell with two living neighbors should remain dead and have a life time of zero
+    × a dead cell with three living neighbors should come alive and have its lifeTime reset to one (3 ms)
+    √ a dead cell with four living neighbors should remain dead and have a life time of zero
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      92 |
+      93 |     expect(midCell.alive).toBe(true);
+    > 94 |     expect(midCell.lifeTime).toBe(2);
+         |                              ^
+      95 |   });
+      96 |
+      97 |   test('a living cell with three living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:94:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 5 passed, 11 total
+Snapshots:   0 total
+Time:        0.579 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2022-10-01 08:15:59 error: *** ESLint Report ***
+
+ex6-gameOfLife/index.js
+  16:7  warning  'lifeTime' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-10-01 08:16:37 info: ------------------------------------------
+2022-10-01 08:16:37 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-01 08:16:37 info: ------------------------------------------
+2022-10-01 08:16:39 info: All unit tests passed.
+2022-10-01 08:16:41 error: *** ESLint Report ***
+
+ex6-gameOfLife/index.js
+  16:7  warning  'lifeTime' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-10-01 08:17:37 info: ------------------------------------------
+2022-10-01 08:17:37 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-01 08:17:37 info: ------------------------------------------
+2022-10-01 08:17:39 info: All unit tests passed.
+2022-10-01 08:17:42 info: All steps were completed successfully
+2022-10-03 11:30:16 info: ----------------------------------------
+2022-10-03 11:30:16 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 11:30:16 info: ----------------------------------------
+2022-10-03 11:30:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    × HTML should be syntactically valid (110 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    √ should contain a <ul> with 3 <li> elements (1 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    √ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:113  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:254  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:386  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        3.002 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-03 11:34:43 info: ----------------------------------------
+2022-10-03 11:34:43 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 11:34:43 info: ----------------------------------------
+2022-10-03 11:34:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    × HTML should be syntactically valid (103 ms)
+    √ should have all TODO comments removed
+    √ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    √ should contain a <ul> with 3 <li> elements (1 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    √ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:113  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:254  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:386  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        2.63 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-03 11:40:01 info: ----------------------------------------
+2022-10-03 11:40:01 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 11:40:01 info: ----------------------------------------
+2022-10-03 11:40:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    × HTML should be syntactically valid (104 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    √ should contain a <ul> with 3 <li> elements (1 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    √ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:113  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:254  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:386  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        2.602 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-03 11:41:06 info: ----------------------------------------
+2022-10-03 11:41:06 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 11:41:06 info: ----------------------------------------
+2022-10-03 11:41:11 info: All unit tests passed.
+2022-10-03 11:41:14 info: All steps were completed successfully
