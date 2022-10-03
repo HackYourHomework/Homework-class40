@@ -883,3 +883,18 @@ Ran all test suites matching /ex2-aboutMe.test.js/i.
 2022-10-03 03:37:43 info: ---------------------------------------
 2022-10-03 03:37:47 info: All unit tests passed.
 2022-10-03 03:37:50 info: All steps were completed successfully
+2022-10-03 04:30:13 info: ------------------------------------------
+2022-10-03 04:30:13 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 04:30:13 info: ------------------------------------------
+2022-10-03 04:30:15 info: All unit tests passed.
+2022-10-03 04:30:18 info: All steps were completed successfully
+2022-10-03 05:27:14 info: ------------------------------------------
+2022-10-03 05:27:14 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 05:27:14 info: ------------------------------------------
+2022-10-03 05:27:16 info: All unit tests passed.
+2022-10-03 05:27:20 info: All steps were completed successfully
+2022-10-03 05:29:47 info: ------------------------------------------
+2022-10-03 05:29:47 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 05:29:47 info: ------------------------------------------
+2022-10-03 05:29:49 info: All unit tests passed.
+2022-10-03 05:29:52 info: All steps were completed successfully
