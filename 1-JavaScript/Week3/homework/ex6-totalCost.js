@@ -36,7 +36,7 @@ function calculateTotalPrice(cartForParty) {
 const sum = values.reduce((a, b) => {
   return a + b;
 }, 0);
-return `Total: € ${sum}`;
+return `Total: € ${(sum).toFixed(2)}`;
 }
 
 // ! Test functions (plain vanilla JavaScript)

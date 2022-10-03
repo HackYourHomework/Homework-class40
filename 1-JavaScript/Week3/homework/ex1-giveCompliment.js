@@ -31,7 +31,7 @@ function giveCompliment(name) {
       'perfect',
       'doozy',];
       
-      const complimentIndex = Math.floor(Math.random() * 10);
+      const complimentIndex = Math.floor(Math.random() * compliments.length);
     return `You are ${compliments[complimentIndex]}, ${name}!`;
 }
 

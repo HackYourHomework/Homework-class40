@@ -35,13 +35,13 @@ body, this code is now written once only in a separated function.
 // a randomly selected element as its return value.
 function selectRandomly(array) {
   
-  return array [Math.floor(Math.random() * array.length)];
+  return array[Math.floor(Math.random() * array.length)];
 
 }
 
   function tellFortune(numKids, partnerNames, locations, jobTitles) {
 
-    return "You will be a " + selectRandomly(jobTitles) +" in " + selectRandomly(locations) + ", married to " + selectRandomly(partnerNames) +" with " + selectRandomly(numKids) +" kids.";
+    return `You will be a ${selectRandomly(jobTitles)} in ${selectRandomly(locations)}, married to ${selectRandomly(partnerNames)} with ${selectRandomly(numKids)} kids.`;
 }
 
 function main() {
