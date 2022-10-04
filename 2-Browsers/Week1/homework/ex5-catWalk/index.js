@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-5-the-cat-walk
 
@@ -21,8 +22,30 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+const catGif = document.querySelector('img');
+const catWalkUrl = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+const catPlayUrl ='https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+let catLeft = 0;
+let intervalWalk = setInterval(catWalk, 50);
+
 function catWalk() {
-  // TODO complete this function
+  catLeft += 10;
+  catGif.style.top = '30%';
+  catGif.style.left = catLeft.toString() + 'px';
+  const middleScreen = window.screen.width / 2;
+
+  if (catGif.style.left === middleScreen - 150 + 'px') {
+    catGif.src = catPlayUrl;
+    setTimeout(() => {
+      catGif.src = catWalkUrl;
+      intervalWalk = setInterval(catWalk, 50);
+    }, 5000);
+    clearInterval(intervalWalk);
+  } 
+  else if (parseInt(catGif.style.left) >= screen.width - catGif.width) {
+    catGif.style.left = 0 + 'px';
+    catLeft = 0;
+  }
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.addEventListener('load', catWalk);

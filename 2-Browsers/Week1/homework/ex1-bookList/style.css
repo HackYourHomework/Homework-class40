@@ -1,1 +1,20 @@
 /* Write your style here */
+ul {
+  display: flex;
+}
+li {
+  width: 400px;
+  margin: 10px;
+  padding: 5px;
+  list-style: none;
+}
+
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+img {
+  width: 200px;
+}

@@ -9,4 +9,18 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
 
-// TODO add your JavaScript code here.
+const liTags = document.querySelectorAll('ul li');
+liTags.forEach((liTag) => {
+  if (liTag.childNodes[1].id === 'nickname') {
+    liTag.classList.add('list-item');
+    liTag.childNodes[1].textContent = 'Mustafa';
+  } else if (liTag.childNodes[1].id === 'fav-food') {
+    liTag.classList.add('list-item');
+    liTag.childNodes[1].textContent = 'Tantuni';
+  } else {
+    liTag.classList.add('list-item');
+    liTag.childNodes[1].textContent = 'Kayseri';
+  }
+});
+
+document.body.style.fontFamily = 'Arial,sans-serif';

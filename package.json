@@ -45,7 +45,6 @@
     "chalk": "^4.0.0",
     "comment-json": "^4.2.3",
     "cryptr": "^6.0.3",
-    "cspell": "^6.10.1",
     "dotenv": "^16.0.2",
     "eslint": "^8.24.0",
     "eslint-plugin-hyf": "git://github.com/remarcmij/eslint-plugin-hyf.git",
@@ -66,5 +65,8 @@
     "strip-ansi": "^7.0.1",
     "systeminformation": "^5.12.6",
     "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "cspell": "^6.12.0"
   }
 }
