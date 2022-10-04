@@ -27,24 +27,69 @@ function main() {
       title: 'The Design of Everyday Things',
       author: 'Don Norman',
       isbn: '978-0465050659',
+      image:'https://static-01.daraz.com.bd/p/87eb91feea0ce70a5aac0d6393f2be70.png',
       alreadyRead: false,
     },
     {
       title: 'The Most Human Human',
       author: 'Brian Christian',
       isbn: '978-1617933431',
+      image: 'https://images.penguinrandomhouse.com/cover/9780307879158',
       alreadyRead: true,
     },
     {
       title: 'The Pragmatic Programmer',
       author: 'Andrew Hunt',
       isbn: '978-0201616224',
+      image:'https://miro.medium.com/max/669/1*-5dJrfabvA6K4oMIpy-rLg.png',
       alreadyRead: true,
     },
   ];
 
-  const ulElement = createBookList(myBooks);
-  document.querySelector('#bookList').appendChild(ulElement);
+
+  const bookList = document.querySelector('#bookList');
+
+
+  myBooks.map(book => {
+
+const {title,author,isbn,alreadyRead,image,} = book;
+
+// creation of P && span tags=========
+let p = document.createElement('p');
+p.textContent= `book :  ${title}`;
+let span = document.createElement('span');
+span.textContent= `author :   ${author} `;
+p.appendChild(span)
+
+// ============================
+
+// creation of ul ===========
+let ul = document.createElement('ul');
+bookList.appendChild(ul);
+alreadyRead ? ul.setAttribute('class', 'container ') : ul.setAttribute('class', 'container red');
+// ===============
+
+// creation of img / li / ===================
+let li = document.createElement('li');
+ul.appendChild(li);
+let img = document.createElement('img');
+img.setAttribute('src',image)
+li.appendChild(img);
+ul.appendChild(p);
+// ==============================
+
+const checkRead = () => {
+alert('YOU READ THE BOOK')
+}
+const NotRead = () => {
+alert('YOU DID NOT READ THE BOOK')
+}
+
+alreadyRead ? ul.addEventListener('click',checkRead ) : ul.addEventListener('click',NotRead)
+
+
+  })
+
 }
 
 window.addEventListener('load', main);
