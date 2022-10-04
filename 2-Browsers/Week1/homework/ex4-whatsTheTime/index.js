@@ -1,4 +1,7 @@
 'use strict';
+
+const { times } = require("lodash");
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-4-whats-the-time
 
@@ -9,6 +12,15 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
   // TODO complete this function
+  const hour = new Date().getHours();
+  const minute = new Date().getMinutes();
+  const second = new Date().getSeconds();
+
+  times.textConter = `${hour}:${minute}:${second}`;
+  document.body.appendChild(time);
 }
 
 // TODO execute `addCurrentTime` when the browser has completed loading the page
+
+window.addEventListener('load', addCurrentTime);
+window.setInterval(addCurrentTime, 1000);
