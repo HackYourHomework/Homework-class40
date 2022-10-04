@@ -1,1 +1,21 @@
 /* Write your style here */
+img {
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+li {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.ul-line {
+  list-style-type: none;
+  display: flex;
+}
+
+p {
+  padding: 10px;
+  flex-basis: 350px;
+}

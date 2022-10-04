@@ -21,8 +21,53 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-function catWalk() {
-  // TODO complete this function
-}
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.onload = function () {
+  const catImage = document.querySelector('img[alt = "Cat walking"]');
+  let counter = 0;
+  let timeWalk;
+  let notDance = false;
+  catImage.style.left = '0px';
+  const catDancing = document.createElement('img');
+  catDancing.src =
+    'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+  catDancing.alt = 'Cat dancing';
+  document.body.appendChild(catDancing);
+  catDancing.style.visibility = 'hidden';
+
+  function catWalk() {
+    counter += 1;
+
+    const screenWidth = window.screen.width;
+
+    const catWidth = catImage.width;
+
+    if (counter * 10 > (screenWidth - catWidth) / 2 && notDance === false) {
+      notDance = true;
+      clearInterval(timeWalk);
+      catDance();
+    }
+    if (counter * 10 > screenWidth) {
+      counter = 0;
+      notDance = false;
+    }
+    catImage.style.left = `${counter * 10}px`;
+  }
+
+  function catDance() {
+    catDancing.style.left = catImage.style.left;
+    catDancing.style.visibility = 'visible';
+    catImage.style.visibility = 'hidden';
+
+    setTimeout(walkNotDance, 5000);
+  }
+  function walkNotDance() {
+    catImage.style.visibility = 'visible';
+    catDancing.style.visibility = 'hidden';
+    resetTimer();
+  }
+  function resetTimer() {
+    timeWalk = setInterval(catWalk, 50);
+  }
+  resetTimer();
+};

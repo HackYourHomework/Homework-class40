@@ -1,0 +1,49 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Debugger listening on ws://127.0.0.1:57597/f1ae1167-d5b5-49fc-8b05-702b7c49ab68
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:57600/5e3445bb-2888-4cff-95fe-f53935ac52da
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (5.291 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (161 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (3 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:130  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:309  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:479  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.521 s, estimated 8 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...

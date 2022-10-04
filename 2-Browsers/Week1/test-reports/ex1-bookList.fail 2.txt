@@ -1,0 +1,66 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Debugger listening on ws://127.0.0.1:51896/037ba9f2-5bd2-4f61-ad5d-a852e77fd389
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:51899/2653bf97-93a6-47da-ad03-01e7e21713da
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (7.013 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (228 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✕ should contain a <ul> with 3 <li> elements (4 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:164  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:357  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:541  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 1
+
+      52 |     const nodeList = document.querySelectorAll('ul > li');
+      53 |     const result = nodeList ? nodeList.length : 0;
+    > 54 |     expect(result).toBe(3);
+         |                    ^
+      55 |   });
+      56 |
+      57 |   test('should contain an <li> with title and author for each book of the `myBooks` array', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:54:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        7.223 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...

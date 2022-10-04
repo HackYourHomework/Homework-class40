@@ -16,9 +16,48 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 -----------------------------------------------------------------------------*/
 //cspell: enable
-
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const bookList = document.getElementById('bookList');
+
+  const bookUl = document.createElement('ul');
+
+  bookUl.setAttribute('class', 'ul-line');
+
+  const bookImage1 = document.createElement('img');
+  const bookImage2 = document.createElement('img');
+  const bookImage3 = document.createElement('img');
+
+  bookImage1.src = '../ex1-bookList/assets/the_design_of_everyday_things.jpg';
+  bookImage1.setAttribute('alt', 'img1');
+  bookImage2.src = '../ex1-bookList/assets/the_most_human_human.jpg';
+  bookImage2.setAttribute('alt', 'img2');
+  bookImage3.src = '../ex1-bookList/assets/the_pragmatic_programmer.jpg';
+  bookImage3.setAttribute('alt', 'img3');
+
+  for (let i = 0; i < books.length; i++) {
+    const bookLi = document.createElement('li');
+    bookLi.setAttribute('class', 'li');
+    const bookP = document.createElement('p');
+    bookP.textContent = `${books[i].title} - ${books[i].author}`;
+
+    if (books[i].title === 'The Design of Everyday Things') {
+      bookP.appendChild(bookImage1);
+    } else if (books[i].title === 'The Most Human Human') {
+      bookP.appendChild(bookImage2);
+    } else {
+      bookP.appendChild(bookImage3);
+    }
+    bookLi.appendChild(bookP);
+
+    if (books[i].alreadyRead) {
+      bookP.style.background = 'green';
+    } else {
+      bookP.style.background = 'red';
+    }
+    bookUl.appendChild(bookLi);
+  }
+
+  bookList.appendChild(bookUl);
 }
 
 function main() {
