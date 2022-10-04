@@ -17,12 +17,40 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    and then replace the img with the original image and have it 
    continue the walk.
 
-   Dancing cat URL:
+   Dancing cat URL: 
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+const imgElement = document.querySelector('img');
+imgElement.style.left = '0px';
+let position = 0;
+let catInterval;
+
+const screenSize = document.body.offsetWidth;
+const halfScreenSize = screenSize / 2 - 150;
+
 function catWalk() {
-  // TODO complete this function
+  if (position > screenSize) position = 0;
+
+  position += 10;
+
+  if (position >= halfScreenSize && position <= halfScreenSize + 10) {
+    clearInterval(catInterval);
+    imgElement.src =
+      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+    setTimeout(() => {
+      imgElement.src =
+        'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+
+      catInterval = setInterval(catWalk, 50);
+    }, 5000);
+  }
+
+  imgElement.style.left = position + 'px';
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+catInterval = setInterval(catWalk, 50);
+
+window.onload = () => {
+  catWalk();
+};
