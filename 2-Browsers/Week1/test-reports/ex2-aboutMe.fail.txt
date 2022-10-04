@@ -1,5 +1,0 @@
-
-*** Spell Checker Report ***
-
-ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
-ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)

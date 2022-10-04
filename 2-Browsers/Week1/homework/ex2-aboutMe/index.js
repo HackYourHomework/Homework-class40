@@ -13,10 +13,10 @@ const liTags = document.querySelectorAll('ul li');
 liTags.forEach((liTag) => {
   if (liTag.childNodes[1].id === 'nickname') {
     liTag.classList.add('list-item');
-    liTag.childNodes[1].textContent = 'Mustafa';
+    liTag.childNodes[1].textContent = 'Jan';
   } else if (liTag.childNodes[1].id === 'fav-food') {
     liTag.classList.add('list-item');
-    liTag.childNodes[1].textContent = 'Tantuni';
+    liTag.childNodes[1].textContent = 'Pumpkin';
   } else {
     liTag.classList.add('list-item');
     liTag.childNodes[1].textContent = 'Kayseri';

@@ -2623,3 +2623,16 @@ Ran all test suites matching /ex6-gameOfLife.test.js/i.
 2022-10-04 09:04:56 info: ------------------------------------------
 2022-10-04 09:04:58 info: All unit tests passed.
 2022-10-04 09:05:02 info: All steps were completed successfully
+2022-10-04 09:48:58 info: ---------------------------------------
+2022-10-04 09:48:58 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-04 09:48:58 info: ---------------------------------------
+2022-10-04 09:49:04 info: All unit tests passed.
+2022-10-04 09:49:08 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mstafa)
+
+2022-10-04 09:49:26 info: ---------------------------------------
+2022-10-04 09:49:26 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-04 09:49:26 info: ---------------------------------------
+2022-10-04 09:49:31 info: All unit tests passed.
+2022-10-04 09:49:35 info: All steps were completed successfully
