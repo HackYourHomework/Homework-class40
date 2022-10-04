@@ -898,3 +898,49 @@ Ran all test suites matching /ex2-aboutMe.test.js/i.
 2022-10-03 05:29:47 info: ------------------------------------------
 2022-10-03 05:29:49 info: All unit tests passed.
 2022-10-03 05:29:52 info: All steps were completed successfully
+2022-10-04 11:43:34 info: --------------------------------------------
+2022-10-04 11:43:34 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-04 11:43:34 info: --------------------------------------------
+2022-10-04 11:43:41 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js
+  whatsTheTime
+    √ HTML should be syntactically valid (101 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()`
+    √ should not call `setInterval()` more than once (2007 ms)
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    × `window.onload` or `window.addEventListener` should not call its event handler function (2 ms)
+
+  ● whatsTheTime › `window.onload` or `window.addEventListener` should not call its event handler function
+
+    expect(received).not.toBeDefined()
+
+    Received: true
+
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+    > 69 |     expect(state.callError).not.toBeDefined();
+         |                                 ^
+      70 |   });
+      71 | });
+      72 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:69:33)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        4.894 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-10-04 11:49:26 info: --------------------------------------------
+2022-10-04 11:49:26 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-04 11:49:26 info: --------------------------------------------
+2022-10-04 11:49:32 info: All unit tests passed.
+2022-10-04 11:49:36 info: All steps were completed successfully
+2022-10-04 11:53:27 info: --------------------------------------------
+2022-10-04 11:53:27 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-04 11:53:27 info: --------------------------------------------
+2022-10-04 11:53:34 info: All unit tests passed.
+2022-10-04 11:53:37 info: All steps were completed successfully
