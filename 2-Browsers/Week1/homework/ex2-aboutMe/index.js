@@ -14,9 +14,9 @@ document.getElementById('fav-food').textContent = 'Pizza';
 document.getElementById('hometown').textContent = 'Rotterdam';
 
 function giveClassIdForEachLi(name) {
-  const listOfLi = document.getElementsByTagName('li');
-  for (let i = 0; i < listOfLi.length; i++) {
-    listOfLi[i].className = name;
+  const liElements = document.getElementsByTagName('li');
+  for (let i = 0; i < liElements.length; i++) {
+    liElements[i].className = name;
   }
 }
 

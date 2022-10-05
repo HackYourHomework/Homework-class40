@@ -22,12 +22,11 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 let counter = 0;
+const oneHundredThirty = 130;
 const imageCatWalk = document.getElementsByTagName('img');
 imageCatWalk[0].style.left = '0px';
 const middleScreen =
   (document.body.clientWidth - (document.body.clientWidth % 10)) / 2;
-console.log(middleScreen);
-console.log(imageCatWalk[0].width);
 function catWalk() {
   counter += 10;
   imageCatWalk[0].style.left = `${counter}px`;
@@ -35,7 +34,7 @@ function catWalk() {
     imageCatWalk[0].style.left = '0px';
     counter = 0;
   }
-  if (counter === middleScreen - 130) {
+  if (counter === middleScreen - oneHundredThirty) {
     newGifImage();
     clearInterval(myInterval);
     setTimeout(() => {

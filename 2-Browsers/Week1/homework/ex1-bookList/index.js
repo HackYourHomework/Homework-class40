@@ -22,24 +22,29 @@ function createBookList(books) {
     .querySelector('#bookList')
     .appendChild(document.createElement('ul'));
   books.forEach((book) => {
-    const liForEachBook = ulBookList.appendChild(document.createElement('li'));
+    const liElement = ulBookList.appendChild(document.createElement('li'));
     //For each book, create a `<p>` element with the book title and author.
-    const pForEachBook = liForEachBook.appendChild(document.createElement('p'));
-    pForEachBook.textContent = `${book.title} - ${book.author}`;
+    const pElement = liElement.appendChild(document.createElement('p'));
+    pElement.textContent = `${book.title} - ${book.author}`;
     //Change the style of the book depending on whether you have read it(green) or not(red).
     book.alreadyRead
-      ? (liForEachBook.style.backgroundColor = 'green')
-      : (liForEachBook.style.backgroundColor = 'red');
+      ? (liElement.style.backgroundColor = 'green')
+      : (liElement.style.backgroundColor = 'red');
     //Add an `<img>` to each book that links to a URL of the book cover.
-    const imgForEachBook = liForEachBook.appendChild(
-      document.createElement('img')
-    );
+    const imgForEachBook = liElement.appendChild(document.createElement('img'));
     imgForEachBook.src = `./assets/${book.title
       .replaceAll(' ', '_')
       .toLowerCase()}.jpg`;
-    //<img src="./assets/the_design_of_everyday_things.jpg">
+    function noImage() {
+      imgForEachBook.src =
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/300px-No_image_available.svg.png';
+    }
+    imgForEachBook.onerror = function () {
+      noImage();
+    };
     imgForEachBook.alt = book.title;
   });
+  return ulBookList;
 }
 
 function main() {
