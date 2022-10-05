@@ -3,10 +3,10 @@
 Command failed: npx jest ex1-bookList.test.js --colors
  FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
   Generated HTML
-    ✕ HTML should be syntactically valid (113 ms)
+    ✕ HTML should be syntactically valid (116 ms)
     ✓ should have all TODO comments removed (1 ms)
     ✓ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
-    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
     ✓ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
     ✓ should contain an <img> element for each book
 
@@ -18,8 +18,8 @@ Command failed: npx jest ex1-bookList.test.js --colors
     Received: "
     inline
       11:115  error  <img> is missing required \"alt\" attribute  wcag/h37
-      11:245  error  <img> is missing required \"alt\" attribute  wcag/h37
-      11:366  error  <img> is missing required \"alt\" attribute  wcag/h37·
+      11:254  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:384  error  <img> is missing required \"alt\" attribute  wcag/h37·
     ✖ 3 problems (3 errors, 0 warnings)
     "
 
@@ -37,5 +37,5 @@ Command failed: npx jest ex1-bookList.test.js --colors
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 5 passed, 6 total
 Snapshots:   0 total
-Time:        2.678 s
+Time:        3.058 s
 Ran all test suites matching /ex1-bookList.test.js/i.
