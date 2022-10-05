@@ -30,9 +30,39 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+
+function filterPrivateData(privateData) {
+
+  const returenArray=[0];
+
+
+  for (let key in privateData){
+
+     const objToArr = Object.entries(privateData[key]);
+  
+  
+     const filteredArr = objToArr.filter(function([key,value]){
+  
+        return key !== 'gender' && key !== 'salary' ;
+        
+     
+     });
+  
+     const newObj = Object.fromEntries(filteredArr);
+  
+     
+  
+      returenArray.push(newObj);
+
+     
+   }
+
+  
+   returenArray.shift();
+   return returenArray;
+
 }
+
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
