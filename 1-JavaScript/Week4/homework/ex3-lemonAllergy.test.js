@@ -28,14 +28,14 @@ const fruitBasket = [
 // ! Function under test
 function sanitizeFruitBasket(fruitBasket, allergicFruit) {
   // TODO complete this function
-  return fruitBasket.filter((fruit)=>fruit!==allergicFruit);
+  return fruitBasket.filter((fruit) => fruit !== allergicFruit);
 }
 
 // ! Unit tests (using Jest)
 describe('sanitizeFruitBasket', () => {
   test('should take two parameters', () => {
     // TODO replace next line with your code
-    expect(sanitizeFruitBasket.length===2).toBe(true);
+    expect(sanitizeFruitBasket.length === 2).toBe(true);
   });
 
   test('should not modify the original `fruitBasket` array', () => {
