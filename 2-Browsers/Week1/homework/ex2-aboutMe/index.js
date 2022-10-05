@@ -11,15 +11,17 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
 const liTags = document.querySelectorAll('ul li');
 liTags.forEach((liTag) => {
-  if (liTag.childNodes[1].id === 'nickname') {
-    liTag.classList.add('list-item');
-    liTag.childNodes[1].textContent = 'Jan';
-  } else if (liTag.childNodes[1].id === 'fav-food') {
-    liTag.classList.add('list-item');
-    liTag.childNodes[1].textContent = 'Pumpkin';
+  const tagMatch = liTag.childNodes[1];
+  const addRedColor = liTag.classList.add('list-item');
+  if (tagMatch.id === 'nickname') {
+    addRedColor;
+    tagMatch.textContent = 'Jan';
+  } else if (tagMatch.id === 'fav-food') {
+    addRedColor;
+    tagMatch.textContent = 'Pumpkin';
   } else {
-    liTag.classList.add('list-item');
-    liTag.childNodes[1].textContent = 'Kayseri';
+    addRedColor;
+    tagMatch.textContent = 'Kayseri';
   }
 });
 

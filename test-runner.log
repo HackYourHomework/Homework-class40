@@ -2636,3 +2636,8 @@ ex2-aboutMe/index.js:16:40 - Unknown word (Mstafa)
 2022-10-04 09:49:26 info: ---------------------------------------
 2022-10-04 09:49:31 info: All unit tests passed.
 2022-10-04 09:49:35 info: All steps were completed successfully
+2022-10-05 12:28:46 info: ---------------------------------------
+2022-10-05 12:28:46 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-05 12:28:46 info: ---------------------------------------
+2022-10-05 12:28:52 info: All unit tests passed.
+2022-10-05 12:28:56 info: All steps were completed successfully

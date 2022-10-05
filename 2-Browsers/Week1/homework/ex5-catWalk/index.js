@@ -33,6 +33,7 @@ function catWalk() {
   catGif.style.top = '30%';
   catGif.style.left = catLeft.toString() + 'px';
   const middleScreen = window.screen.width / 2;
+  const catLocation=parseInt(catGif.style.left);
 
   if (catGif.style.left === middleScreen - 150 + 'px') {
     catGif.src = catPlayUrl;
@@ -42,7 +43,7 @@ function catWalk() {
     }, 5000);
     clearInterval(intervalWalk);
   } 
-  else if (parseInt(catGif.style.left) >= screen.width - catGif.width) {
+  else if (catLocation >= screen.width - catGif.width) {
     catGif.style.left = 0 + 'px';
     catLeft = 0;
   }

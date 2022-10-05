@@ -25,10 +25,7 @@ function createBookList(books) {
     const pTag = document.createElement('p');
     const imgTag = document.createElement('img');
     pTag.textContent = book.title + ' - ' + book.author;
-    imgTag.setAttribute(
-      'src',
-      './assets/' + book.title.toLowerCase().replaceAll(' ', '_') + '.jpg'
-    );
+    imgTag.setAttribute('src', './assets/' + book.title.toLowerCase().replaceAll(' ', '_') + '.jpg');
     imgTag.setAttribute('alt', book.title);
     liTag.appendChild(pTag);
     liTag.appendChild(imgTag);
