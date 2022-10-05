@@ -1,1 +1,14 @@
 /* Write your style here */
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding: 10px;
+  margin: 20px;
+}
+
+img {
+  width: 50%;
+}
