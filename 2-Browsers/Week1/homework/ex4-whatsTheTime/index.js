@@ -20,7 +20,6 @@ function addCurrentTime() {
   main.appendChild(clockPart);
   document.body.appendChild(main);
   clockPart.textContent = `${hour}: ${minute}: ${second}`;
-  console.log(`${hour}: ${minute}: ${second}`);
 }
 
 setInterval(() => {

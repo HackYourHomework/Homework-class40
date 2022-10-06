@@ -1,9 +1,9 @@
 /* Write your style here */
 ul {
   display: flex;
+  width: calc(100% - 41px);
 }
 li {
-  width: 400px;
   margin: 10px;
   padding: 5px;
   list-style: none;

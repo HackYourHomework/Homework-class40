@@ -13,15 +13,19 @@ const liTags = document.querySelectorAll('ul li');
 liTags.forEach((liTag) => {
   const tagMatch = liTag.childNodes[1];
   const addRedColor = liTag.classList.add('list-item');
-  if (tagMatch.id === 'nickname') {
-    addRedColor;
-    tagMatch.textContent = 'Jan';
-  } else if (tagMatch.id === 'fav-food') {
-    addRedColor;
-    tagMatch.textContent = 'Pumpkin';
-  } else {
-    addRedColor;
-    tagMatch.textContent = 'Kayseri';
+  switch (tagMatch.id) {
+    case 'nickname':
+      addRedColor;
+      tagMatch.textContent = 'Jan';
+      break;
+    case 'fav-food':
+      addRedColor;
+      tagMatch.textContent = 'Jan';
+      break;
+    default:
+      addRedColor;
+      tagMatch.textContent = 'Kayseri';
+      break;
   }
 });
 
