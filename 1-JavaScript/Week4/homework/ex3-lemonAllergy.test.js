@@ -45,6 +45,15 @@ describe('sanitizeFruitBasket', () => {
   });
 
   test('should return a new array that does not include the unwanted `lemon`', () => {
+    const fruitBasket = [
+      'apple',
+      'lemon',
+      'grapefruit',
+      'lemon',
+      'banana',
+      'watermelon',
+      'lemon',
+    ];
     const sanitizedFruit = ['apple', 'grapefruit', 'banana', 'watermelon'];
     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toEqual(sanitizedFruit);
     // OR we can use .not.arrayContaining

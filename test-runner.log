@@ -1528,3 +1528,13 @@ ex3-lemonAllergy.test.js
 2022-09-27 05:29:45 info: --------------------------------------
 2022-09-27 05:29:50 info: All unit tests passed.
 2022-09-27 05:29:57 info: All steps were completed successfully
+2022-10-07 09:05:41 info: -------------------------------------------------
+2022-10-07 09:05:41 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-10-07 09:05:41 info: -------------------------------------------------
+2022-10-07 09:05:45 info: All unit tests passed.
+2022-10-07 09:05:51 info: All steps were completed successfully
+2022-10-07 09:11:18 info: -------------------------------------------------
+2022-10-07 09:11:18 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-10-07 09:11:18 info: -------------------------------------------------
+2022-10-07 09:11:21 info: All unit tests passed.
+2022-10-07 09:11:27 info: All steps were completed successfully
