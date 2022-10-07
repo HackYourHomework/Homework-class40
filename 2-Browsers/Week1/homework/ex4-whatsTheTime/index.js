@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-4-whats-the-time
 
@@ -7,8 +8,22 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
   second). Use `setInterval()` to make sure the time stays current.
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
+const main = document.createElement('div');
+const clockPart = document.createElement('p');
+
 function addCurrentTime() {
-  // TODO complete this function
+  const currentDate = new Date();
+  const hour = currentDate.getHours();
+  const minute = currentDate.getMinutes();
+  const second = currentDate.getSeconds();
+
+  main.appendChild(clockPart);
+  document.body.appendChild(main);
+  clockPart.textContent = `${hour}: ${minute}: ${second}`;
 }
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+setInterval(() => {
+  addCurrentTime();
+}, 1000);
+
+window.addEventListener('load', addCurrentTime);

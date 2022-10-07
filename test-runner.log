@@ -1,0 +1,2891 @@
+2022-10-01 06:43:01 info: ------------------------------------------
+2022-10-01 06:43:01 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-01 06:43:01 info: ------------------------------------------
+2022-10-01 06:43:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (2 ms)
+    ✓ a living cell with zero living neighbors should die and have its life time reset to zero (2 ms)
+    ✓ a living cell with one living neighbor should die and have its life time reset to zero (1 ms)
+    ✓ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one (3 ms)
+    ✓ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 10 passed, 11 total
+Snapshots:   0 total
+Time:        1.005 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2022-10-01 06:44:55 info: ------------------------------------------
+2022-10-01 06:44:55 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-01 06:44:55 info: ------------------------------------------
+2022-10-01 06:44:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (2 ms)
+    ✓ a living cell with zero living neighbors should die and have its life time reset to zero (2 ms)
+    ✓ a living cell with one living neighbor should die and have its life time reset to zero (1 ms)
+    ✓ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✓ a living cell with three living neighbors should survive and have its life time incremented by one
+    ✓ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (4 ms)
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 10 passed, 11 total
+Snapshots:   0 total
+Time:        0.876 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2022-10-03 03:39:54 info: ----------------------------------------
+2022-10-03 03:39:54 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 03:39:54 info: ----------------------------------------
+2022-10-03 03:39:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid
+    ✕ should have all TODO comments removed
+    ✕ should contain a <ul> that is a child of <div id="bookList">
+    ✕ should contain a <ul> with 3 <li> elements
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array
+    ✕ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 6 total
+Snapshots:   0 total
+Time:        2.539 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-03 03:42:51 info: ----------------------------------------
+2022-10-03 03:42:51 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 03:42:51 info: ----------------------------------------
+2022-10-03 03:42:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid
+    ✕ should have all TODO comments removed
+    ✕ should contain a <ul> that is a child of <div id="bookList">
+    ✕ should contain a <ul> with 3 <li> elements
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array
+    ✕ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 6 total
+Snapshots:   0 total
+Time:        2.379 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-03 03:45:23 info: ----------------------------------------
+2022-10-03 03:45:23 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 03:45:23 info: ----------------------------------------
+2022-10-03 03:45:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid
+    ✕ should have all TODO comments removed
+    ✕ should contain a <ul> that is a child of <div id="bookList">
+    ✕ should contain a <ul> with 3 <li> elements
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array
+    ✕ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 6 total
+Snapshots:   0 total
+Time:        2.324 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-03 03:51:06 info: ----------------------------------------
+2022-10-03 03:51:06 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 03:51:06 info: ----------------------------------------
+2022-10-03 03:51:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid
+    ✕ should have all TODO comments removed
+    ✕ should contain a <ul> that is a child of <div id="bookList">
+    ✕ should contain a <ul> with 3 <li> elements
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    ✕ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 6 total
+Snapshots:   0 total
+Time:        2.586 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-03 03:53:21 info: ----------------------------------------
+2022-10-03 03:53:21 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 03:53:21 info: ----------------------------------------
+2022-10-03 03:53:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid
+    ✕ should have all TODO comments removed (1 ms)
+    ✕ should contain a <ul> that is a child of <div id="bookList">
+    ✕ should contain a <ul> with 3 <li> elements
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array
+    ✕ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 6 total
+Snapshots:   0 total
+Time:        2.338 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-03 04:00:43 info: ----------------------------------------
+2022-10-03 04:00:43 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 04:00:43 info: ----------------------------------------
+2022-10-03 04:00:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid
+    ✕ should have all TODO comments removed
+    ✕ should contain a <ul> that is a child of <div id="bookList">
+    ✕ should contain a <ul> with 3 <li> elements
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array
+    ✕ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 6 total
+Snapshots:   0 total
+Time:        2.321 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-03 04:14:37 info: ----------------------------------------
+2022-10-03 04:14:37 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 04:14:37 info: ----------------------------------------
+2022-10-03 04:14:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid (147 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    ✓ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:94   error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:216  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:329  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        3.612 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-03 04:16:54 info: ----------------------------------------
+2022-10-03 04:16:54 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-03 04:16:54 info: ----------------------------------------
+2022-10-03 04:16:59 info: All unit tests passed.
+2022-10-03 04:17:03 info: All steps were completed successfully
+2022-10-03 05:24:58 info: ---------------------------------------
+2022-10-03 05:24:58 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:24:58 info: ---------------------------------------
+2022-10-03 05:25:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (147 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (2 ms)
+    ✕ each <li> should have the CSS class `list-item` (2 ms)
+    ✕ each <li> should rendered red (35 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      32 |     const nodeList = document.querySelectorAll('li');
+      33 |     const classNames = [...nodeList].map((node) => node.className);
+    > 34 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      35 |   });
+      36 |
+      37 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:34:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 1 passed, 5 total
+Snapshots:   0 total
+Time:        3.678 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:25:08 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:17:28 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:20:28 - Unknown word (Tantuni)
+
+2022-10-03 05:39:35 info: ---------------------------------------
+2022-10-03 05:39:35 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:39:35 info: ---------------------------------------
+2022-10-03 05:39:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (140 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (2 ms)
+    ✕ each <li> should have the CSS class `list-item` (2 ms)
+    ✓ each <li> should rendered red (34 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      32 |     const nodeList = document.querySelectorAll('li');
+      33 |     const classNames = [...nodeList].map((node) => node.className);
+    > 34 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      35 |   });
+      36 |
+      37 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:34:62)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        3.543 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:39:44 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:17:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:20:40 - Unknown word (Tantuni)
+
+2022-10-03 05:41:46 info: ---------------------------------------
+2022-10-03 05:41:46 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:41:46 info: ---------------------------------------
+2022-10-03 05:41:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (142 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (4 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (37 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.474 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:41:55 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 05:43:33 info: ---------------------------------------
+2022-10-03 05:43:33 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:43:33 info: ---------------------------------------
+2022-10-03 05:43:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (148 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (35 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.456 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:43:42 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 05:44:39 info: ---------------------------------------
+2022-10-03 05:44:39 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:44:39 info: ---------------------------------------
+2022-10-03 05:44:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (145 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (34 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.105 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:44:47 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 05:45:01 info: ---------------------------------------
+2022-10-03 05:45:01 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:45:01 info: ---------------------------------------
+2022-10-03 05:45:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (144 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (35 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.086 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:45:09 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 05:45:53 info: ---------------------------------------
+2022-10-03 05:45:53 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:45:53 info: ---------------------------------------
+2022-10-03 05:45:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (144 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (5 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (35 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.483 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:46:02 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 05:47:03 info: ---------------------------------------
+2022-10-03 05:47:03 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:47:03 info: ---------------------------------------
+2022-10-03 05:47:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (145 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (34 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.325 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:47:12 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 05:48:00 info: ---------------------------------------
+2022-10-03 05:48:00 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:48:00 info: ---------------------------------------
+2022-10-03 05:48:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (148 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (34 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.559 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:48:09 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 05:52:39 info: ---------------------------------------
+2022-10-03 05:52:39 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:52:39 info: ---------------------------------------
+2022-10-03 05:52:44 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (141 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (2 ms)
+    ✓ each <li> should rendered red (35 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.505 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:52:48 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 05:53:06 info: ---------------------------------------
+2022-10-03 05:53:06 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:53:06 info: ---------------------------------------
+2022-10-03 05:53:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (157 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (38 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.456 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-03 05:53:14 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 05:57:17 info: ---------------------------------------
+2022-10-03 05:57:17 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 05:57:17 info: ---------------------------------------
+2022-10-03 05:57:23 info: All unit tests passed.
+2022-10-03 05:57:26 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 09:31:58 info: ---------------------------------------
+2022-10-03 09:31:58 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 09:31:58 info: ---------------------------------------
+2022-10-03 09:32:04 info: All unit tests passed.
+2022-10-03 09:32:08 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-03 09:32:36 info: ---------------------------------------
+2022-10-03 09:32:36 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-03 09:32:36 info: ---------------------------------------
+2022-10-03 09:32:41 info: All unit tests passed.
+2022-10-03 09:32:45 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:42 - Unknown word (Yasar)
+ex2-aboutMe/index.js:19:40 - Unknown word (kabak)
+
+2022-10-03 10:31:03 info: ------------------------------------------
+2022-10-03 10:31:03 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 10:31:03 info: ------------------------------------------
+2022-10-03 10:31:06 info: All unit tests passed.
+2022-10-03 10:31:10 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:42 - Unknown word (Xdpd)
+
+2022-10-03 10:32:02 info: ------------------------------------------
+2022-10-03 10:32:02 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 10:32:02 info: ------------------------------------------
+2022-10-03 10:32:04 info: All unit tests passed.
+2022-10-03 10:32:08 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:42 - Unknown word (Xdpd)
+
+2022-10-03 10:36:32 info: ------------------------------------------
+2022-10-03 10:36:32 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 10:36:32 info: ------------------------------------------
+2022-10-03 10:36:34 info: All unit tests passed.
+2022-10-03 10:36:38 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:42 - Unknown word (Xdpd)
+
+2022-10-03 10:37:42 info: ------------------------------------------
+2022-10-03 10:37:42 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 10:37:42 info: ------------------------------------------
+2022-10-03 10:37:44 info: All unit tests passed.
+2022-10-03 10:37:48 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:42 - Unknown word (Xdpd)
+
+2022-10-03 10:40:31 info: ------------------------------------------
+2022-10-03 10:40:31 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 10:40:31 info: ------------------------------------------
+2022-10-03 10:40:33 info: All unit tests passed.
+2022-10-03 10:40:37 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:42 - Unknown word (Xdpd)
+
+2022-10-03 10:41:31 info: ------------------------------------------
+2022-10-03 10:41:31 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 10:41:31 info: ------------------------------------------
+2022-10-03 10:41:35 info: All unit tests passed.
+2022-10-03 10:41:38 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:42 - Unknown word (Xdpd)
+
+2022-10-03 10:42:31 info: ------------------------------------------
+2022-10-03 10:42:31 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 10:42:31 info: ------------------------------------------
+2022-10-03 10:42:33 info: All unit tests passed.
+2022-10-03 10:42:38 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:42 - Unknown word (Xdpd)
+
+2022-10-03 10:44:37 info: ------------------------------------------
+2022-10-03 10:44:37 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 10:44:37 info: ------------------------------------------
+2022-10-03 10:44:39 info: All unit tests passed.
+2022-10-03 10:44:43 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:42 - Unknown word (Xdpd)
+
+2022-10-03 10:46:17 info: ------------------------------------------
+2022-10-03 10:46:17 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 10:46:17 info: ------------------------------------------
+2022-10-03 10:46:20 info: All unit tests passed.
+2022-10-03 10:46:24 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:42 - Unknown word (Xdpd)
+
+2022-10-03 10:54:41 info: ------------------------------------------
+2022-10-03 10:54:41 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-03 10:54:41 info: ------------------------------------------
+2022-10-03 10:54:43 info: All unit tests passed.
+2022-10-03 10:54:47 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:42 - Unknown word (Xdpd)
+
+2022-10-03 11:23:23 info: --------------------------------------------
+2022-10-03 11:23:23 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-03 11:23:23 info: --------------------------------------------
+2022-10-03 11:23:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.609 s)
+  whatsTheTime
+    ✓ HTML should be syntactically valid (141 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `setInterval()` (1 ms)
+    ✓ should not call `setInterval()` more than once (2007 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (4 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.706 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-10-03 11:31:51 info: --------------------------------------------
+2022-10-03 11:31:51 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-03 11:31:51 info: --------------------------------------------
+2022-10-03 11:31:59 info: All unit tests passed.
+2022-10-03 11:32:02 info: All steps were completed successfully
+2022-10-04 09:06:04 info: ---------------------------------------
+2022-10-04 09:06:04 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-04 09:06:04 info: ---------------------------------------
+2022-10-04 09:06:09 info: All unit tests passed.
+2022-10-04 09:06:13 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-04 09:06:38 info: ---------------------------------------
+2022-10-04 09:06:38 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-04 09:06:38 info: ---------------------------------------
+2022-10-04 09:06:43 info: All unit tests passed.
+2022-10-04 09:06:47 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-04 09:09:38 info: ---------------------------------------
+2022-10-04 09:09:38 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-04 09:09:38 info: ---------------------------------------
+2022-10-04 09:09:43 info: All unit tests passed.
+2022-10-04 09:09:46 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-04 09:28:22 info: ---------------------------------------
+2022-10-04 09:28:22 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-04 09:28:22 info: ---------------------------------------
+2022-10-04 09:28:28 info: All unit tests passed.
+2022-10-04 09:28:32 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mustafa)
+ex2-aboutMe/index.js:19:40 - Unknown word (Tantuni)
+
+2022-10-04 08:47:52 info: ---------------------------------------
+2022-10-04 08:47:52 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-04 08:47:52 info: ---------------------------------------
+2022-10-04 08:47:57 info: All unit tests passed.
+2022-10-04 08:48:01 info: All steps were completed successfully
+2022-10-04 09:00:15 info: ------------------------------------------
+2022-10-04 09:00:15 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-04 09:00:15 info: ------------------------------------------
+2022-10-04 09:00:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (1 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (4 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero (1 ms)
+    ✓ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one (1 ms)
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 7 passed, 11 total
+Snapshots:   0 total
+Time:        0.918 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2022-10-04 09:00:51 info: ------------------------------------------
+2022-10-04 09:00:51 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-04 09:00:51 info: ------------------------------------------
+2022-10-04 09:00:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (2 ms)
+    ✓ a living cell with zero living neighbors should die and have its life time reset to zero (2 ms)
+    ✓ a living cell with one living neighbor should die and have its life time reset to zero
+    ✓ a living cell with two living neighbors should survive and have its life time incremented by one (1 ms)
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one (3 ms)
+    ✓ a living cell with four living neighbors should die and have its life time reset to zero (6 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 10 passed, 11 total
+Snapshots:   0 total
+Time:        0.727 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2022-10-04 09:04:56 info: ------------------------------------------
+2022-10-04 09:04:56 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-04 09:04:56 info: ------------------------------------------
+2022-10-04 09:04:58 info: All unit tests passed.
+2022-10-04 09:05:02 info: All steps were completed successfully
+2022-10-04 09:48:58 info: ---------------------------------------
+2022-10-04 09:48:58 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-04 09:48:58 info: ---------------------------------------
+2022-10-04 09:49:04 info: All unit tests passed.
+2022-10-04 09:49:08 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:40 - Unknown word (Mstafa)
+
+2022-10-04 09:49:26 info: ---------------------------------------
+2022-10-04 09:49:26 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-04 09:49:26 info: ---------------------------------------
+2022-10-04 09:49:31 info: All unit tests passed.
+2022-10-04 09:49:35 info: All steps were completed successfully
+2022-10-05 12:28:46 info: ---------------------------------------
+2022-10-05 12:28:46 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-05 12:28:46 info: ---------------------------------------
+2022-10-05 12:28:52 info: All unit tests passed.
+2022-10-05 12:28:56 info: All steps were completed successfully
+2022-10-07 03:15:03 info: ---------------------------------------
+2022-10-07 03:15:03 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-07 03:15:03 info: ---------------------------------------
+2022-10-07 03:20:13 info: ---------------------------------------
+2022-10-07 03:20:13 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-07 03:20:13 info: ---------------------------------------
+2022-10-07 03:21:18 info: ---------------------------------------
+2022-10-07 03:21:18 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-07 03:21:18 info: ---------------------------------------
+2022-10-07 03:21:40 info: ---------------------------------------
+2022-10-07 03:21:40 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-07 03:21:40 info: ---------------------------------------
+2022-10-07 03:21:44 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✕ should be syntactically valid (1 ms)
+    ✕ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif`
+    ✕ each <li> should have the CSS class `list-item`
+    ✕ each <li> should rendered red
+
+  ● Generated HTML › should be syntactically valid
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:12:14)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:12:14)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:12:14)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:12:14)
+
+  ● Generated HTML › each <li> should rendered red
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Users/mac/Desktop/Homework-class40/node_modules/node-fetch/src/index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:12:14)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 5 total
+Snapshots:   0 total
+Time:        2.448 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-07 03:22:45 info: ---------------------------------------
+2022-10-07 03:22:45 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-07 03:22:45 info: ---------------------------------------
+2022-10-07 03:22:51 info: All unit tests passed.
+2022-10-07 03:22:55 info: All steps were completed successfully
+2022-10-07 03:23:05 info: ---------------------------------------
+2022-10-07 03:23:05 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-07 03:23:05 info: ---------------------------------------
+2022-10-07 03:23:10 info: All unit tests passed.
+2022-10-07 03:23:14 info: All steps were completed successfully
