@@ -33,17 +33,17 @@ function catWalk() {
   catLeft += 10;
   catGif.style.top = '30%';
   catGif.style.left = catLeft.toString() + 'px';
-  const middleScreen = window.screen.width / 2;
+  const middleScreen = window.innerWidth / 2;
   const catLocation = parseInt(catGif.style.left);
 
-  if (catGif.style.left === middleScreen - 150 + 'px') {
+  if (catGif.style.left === middleScreen-(middleScreen%10) - 150 + 'px') { // In order to ensure condition, there must be numbers that are divided by 10
     catGif.src = catPlayUrl;
     setTimeout(() => {
       catGif.src = catWalkUrl;
       intervalWalk = setInterval(catWalk, 50);
     }, 5000);
     clearInterval(intervalWalk);
-  } else if (catLocation >= screen.width - catGif.width) {
+  } else if (catLocation >= window.innerWidth - catGif.width) {
     catGif.style.left = 0 + 'px';
     catLeft = 0;
   }
