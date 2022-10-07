@@ -3,9 +3,9 @@
 Command failed: npx jest ex2-aboutMe.test.js --colors
  FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
   Generated HTML
-    ✓ should be syntactically valid (112 ms)
-    ✓ should have all TODO comments removed
-    ✕ the body font-family should be `Arial, sans-serif` (2 ms)
+    ✓ should be syntactically valid (108 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
     ✕ each <li> should have the CSS class `list-item` (2 ms)
     ✕ each <li> should rendered red (30 ms)
 
@@ -61,5 +61,5 @@ Command failed: npx jest ex2-aboutMe.test.js --colors
 Test Suites: 1 failed, 1 total
 Tests:       3 failed, 2 passed, 5 total
 Snapshots:   0 total
-Time:        2.516 s, estimated 3 s
+Time:        2.488 s, estimated 3 s
 Ran all test suites matching /ex2-aboutMe.test.js/i.
