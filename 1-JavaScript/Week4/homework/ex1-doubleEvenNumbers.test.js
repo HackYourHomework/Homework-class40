@@ -11,8 +11,9 @@ Let's rewrite it (or _refactor_ it, as experienced developers would call it):
 ------------------------------------------------------------------------------*/
 // ! Function to be tested
 function doubleEvenNumbers(numbers) {
-  let newNumbers = [];
-  newNumbers=numbers.filter(number=>number%2===0).map(number=>number*2);
+  const newNumbers = numbers
+    .filter((number) => number % 2 === 0)
+    .map((number) => number * 2);
   return newNumbers;
 }
 

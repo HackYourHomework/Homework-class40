@@ -32,10 +32,11 @@ const mondayTasks = [
 const hourlyRate = 25;
 
 function computeEarnings(tasks, hourlyRate) {
-  let result = tasks.map(task => ((task.duration/60)*hourlyRate)).reduce((prev,curr)=>(prev+curr));
+  let result = tasks
+    .map((task) => (task.duration / 60) * hourlyRate)
+    .reduce((prev, curr) => prev + curr);
   result = result.toFixed(2);
-  const res = `€${result}`;
-  return res;
+  return `€${result}`;
 }
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
@@ -51,4 +52,3 @@ describe('computeEarnings', () => {
     expect(result).toBe(expected);
   });
 });
-

@@ -77,3 +77,23 @@ Ran all test suites matching /ex3-lemonAllergy.test.js/i.
 2022-09-26 05:29:26 info: --------------------------------------
 2022-09-26 05:29:29 info: All unit tests passed.
 2022-09-26 05:29:32 info: All steps were completed successfully
+2022-10-07 01:14:20 info: -------------------------------------------------
+2022-10-07 01:14:20 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-10-07 01:14:20 info: -------------------------------------------------
+2022-10-07 01:14:23 info: All unit tests passed.
+2022-10-07 01:14:26 info: All steps were completed successfully
+2022-10-07 02:16:38 info: ------------------------------------------------------
+2022-10-07 02:16:38 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-10-07 02:16:38 info: ------------------------------------------------------
+2022-10-07 02:16:41 info: All unit tests passed.
+2022-10-07 02:16:44 info: All steps were completed successfully
+2022-10-07 02:27:21 info: -------------------------------------------------
+2022-10-07 02:27:21 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-10-07 02:27:21 info: -------------------------------------------------
+2022-10-07 02:27:24 info: All unit tests passed.
+2022-10-07 02:27:27 info: All steps were completed successfully
+2022-10-07 02:30:53 info: -------------------------------------------------
+2022-10-07 02:30:53 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-10-07 02:30:53 info: -------------------------------------------------
+2022-10-07 02:30:56 info: All unit tests passed.
+2022-10-07 02:31:00 info: All steps were completed successfully
