@@ -1,0 +1,216 @@
+2022-10-07 08:46:03 info: ----------------------------------------
+2022-10-07 08:46:03 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-07 08:46:03 info: ----------------------------------------
+2022-10-07 08:46:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    × HTML should be syntactically valid (243 ms)
+    √ should have all TODO comments removed (3 ms)
+    √ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    √ should contain a <ul> with 3 <li> elements (2 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (4 ms)
+    √ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    TypeError: stylish is not a function
+
+      43 |   const htmlText = `<!DOCTYPE html>\n${outerHTML}`;
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+    > 45 |   const validationReport = stylish(results);
+         |                            ^
+      46 |   expect(validationReport).toBe('');
+      47 | }
+      48 |
+
+      at stylish (test-runner/jsdom-helpers.js:45:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        3.913 s, estimated 4 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-07 08:49:54 info: ---------------------------------------
+2022-10-07 08:49:54 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-07 08:49:54 info: ---------------------------------------
+2022-10-07 08:50:01 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    × should be syntactically valid (166 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ the body font-family should be `Arial, sans-serif` (1 ms)
+    √ each <li> should have the CSS class `list-item` (1 ms)
+    √ each <li> should rendered red (36 ms)
+
+  ● Generated HTML › should be syntactically valid
+
+    TypeError: stylish is not a function
+
+      43 |   const htmlText = `<!DOCTYPE html>\n${outerHTML}`;
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+    > 45 |   const validationReport = stylish(results);
+         |                            ^
+      46 |   expect(validationReport).toBe('');
+      47 | }
+      48 |
+
+      at stylish (test-runner/jsdom-helpers.js:45:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:21:47)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.642 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-07 08:51:24 info: Disclaimer turned off
+2022-10-07 08:51:46 info: ------------------------------------------
+2022-10-07 08:51:46 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-07 08:51:46 info: ------------------------------------------
+2022-10-07 08:51:50 info: All unit tests passed.
+2022-10-07 08:51:56 info: All steps were completed successfully
+2022-10-07 08:52:22 info: --------------------------------------------
+2022-10-07 08:52:22 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-07 08:52:22 info: --------------------------------------------
+2022-10-07 08:52:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.613 s)
+  whatsTheTime
+    × HTML should be syntactically valid (165 ms)
+    √ should have all TODO comments removed (3 ms)
+    √ should use `setInterval()` (1 ms)
+    √ should not call `setInterval()` more than once (2017 ms)
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › HTML should be syntactically valid
+
+    TypeError: stylish is not a function
+
+      43 |   const htmlText = `<!DOCTYPE html>\n${outerHTML}`;
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+    > 45 |   const validationReport = stylish(results);
+         |                            ^
+      46 |   expect(validationReport).toBe('');
+      47 | }
+      48 |
+
+      at stylish (test-runner/jsdom-helpers.js:45:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:47:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.706 s, estimated 6 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-10-07 08:53:15 info: ---------------------------------------
+2022-10-07 08:53:15 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-07 08:53:15 info: ---------------------------------------
+2022-10-07 08:53:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    × HTML should be syntactically valid (151 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()` and/or `setTimeout()`
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › HTML should be syntactically valid
+
+    TypeError: stylish is not a function
+
+      43 |   const htmlText = `<!DOCTYPE html>\n${outerHTML}`;
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+    > 45 |   const validationReport = stylish(results);
+         |                            ^
+      46 |   expect(validationReport).toBe('');
+      47 | }
+      48 |
+
+      at stylish (test-runner/jsdom-helpers.js:45:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:43:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.664 s, estimated 5 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
