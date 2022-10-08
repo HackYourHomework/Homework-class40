@@ -9,7 +9,6 @@ const CELL_SIZE = 10;
 const NUM_COLUMNS = 75;
 const NUM_ROWS = 40;
 
-
 // Create a cell with the given coordinates and randomly assign its begin state:
 // life or death
 function createCell(x, y) {
@@ -25,7 +24,6 @@ function createCell(x, y) {
 // Create the game "engine" with a closure
 function createGame(context, numRows, numColumns) {
   const grid = [];
- 
 
   // Create the grid as a two-dimensional array (i.e. an array of arrays)
   function createGrid() {
@@ -59,26 +57,19 @@ function createGame(context, numRows, numColumns) {
 
     if (cell.alive) {
       // Draw living cell inside background
-      let cellOpacity=1;
-      let cellLifeTime = cell.lifeTime;
-     
-      // console.log(cell.lifeTime)
-      if(cellLifeTime === 1 ){
-cellOpacity = 0.25
+      let cellOpacity = 1;
+      const cellLifeTime = cell.lifeTime;
+
+      if (cellLifeTime === 1) {
+        cellOpacity = 0.25;
+      } else if (cellLifeTime === 2) {
+        cellOpacity = 0.5;
+      } else if (cellLifeTime === 3) {
+        cellOpacity = 0.75;
+      } else if (cellLifeTime >= 4) {
+        cellOpacity = 1;
       }
 
-      else if(cellLifeTime === 2 ){
-cellOpacity = 0.5
-      }
-
-      else if(cellLifeTime === 3 ){
-cellOpacity = 0.75
-      }
-
-      else if(cellLifeTime >=4 ){
-cellOpacity =1
-      }
-     
       context.fillStyle = `rgba(24, 215, 236,${cellOpacity})`;
       context.fillRect(
         cell.x * CELL_SIZE + 1,
@@ -98,10 +89,9 @@ cellOpacity =1
 
     return grid[y][x].alive ? 1 : 0;
   }
-  
+
   // Count the number of living neighboring cells for a given cell
   function countLivingNeighbors(cell) {
-
     const { x, y } = cell;
     return (
       isAlive(x - 1, y - 1) +
@@ -122,50 +112,34 @@ cellOpacity =1
     forEachCell((cell) => {
       // Count number of living neighboring cells
       const numAlive = countLivingNeighbors(cell);
-      let cellLifeTime = cell.lifeTime;
-      // console.log(cellLifeTime)
-      
-      
+
       if (numAlive === 2) {
         // Living cell remains living, dead cell remains dead
-        
-        cell.nextAlive = cell.alive;
-       
-       if(cell.nextAlive){
-          cell.lifeTime += 1;
 
-       }
-       else{
-        cell.lifeTime = 0;
-       }
-      
-          
-        
+        cell.nextAlive = cell.alive;
+
+        if (cell.nextAlive) {
+          cell.lifeTime += 1;
+        } else {
+          cell.lifeTime = 0;
+        }
       } else if (numAlive === 3) {
         // Dead cell becomes living, living cell remains living
         cell.nextAlive = true;
-        
-         
-        
-            cell.lifeTime +=1;
-          //  console.log(cellLifeTime)
 
-        
-       
+        cell.lifeTime += 1;
       } else {
         // Living cell dies, dead cell remains dead
         cell.nextAlive = false;
         cell.lifeTime = 0;
-        
       }
     });
-    
+
     // Apply the newly computed state to the cells
     forEachCell((cell) => {
       cell.alive = cell.nextAlive;
     });
   }
-
 
   // Render a visual representation of the grid
   function renderGrid() {
@@ -219,7 +193,6 @@ function main() {
   start();
 }
 
-// ! Do not change or remove any code below
 try {
   window.addEventListener('load', main);
 } catch {
