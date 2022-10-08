@@ -22,71 +22,55 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 
-
-
 const catImg = document.querySelector('img');
 catImg.style.left = '0px';
 
+let position = 0;
+catImg.style.width = '200px';
+const catWidth = catImg.width;
+const winSize = window.innerWidth - catWidth;
+const midSize = (window.innerWidth - catWidth) / 2;
 
-    let position = 0;
-    catImg.style.width= '200px';
-    let catWidth = catImg.width;
-    let winSize = (window.innerWidth -catWidth);
-    let midSize = (window.innerWidth-catWidth) / 2;
-   
+function catWalk() {
+  position += 10;
+  catImg.style.left = position + 'px';
 
+  // CAT REACHES MIDDLE OF SCREEN============================
+  if (position === midSize) {
+    catImg.src =
+      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+    position = undefined;
 
-    function catWalk() {
+    setTimeout(() => {
+      catImg.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+      position = midSize;
+    }, 5000);
+  }
+  // ============================
 
-         position +=10;
-         catImg.style.left= position +'px';
-   
-         // CAT REACHES MIDDLE OF SCREEN============================
-         if(position == midSize ){
-            catImg.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif'
-            position = undefined;
-            
-            setTimeout(() => {
-               catImg.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif'
-               position= midSize;
-             
+  // SMALL SCREEN ============================
+  if (winSize < 800) {
+    if (position === 250) {
+      catImg.src =
+        'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+      position = undefined;
 
-            },5000)
-                        }
-         // ============================
+      setTimeout(() => {
+        catImg.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+        position = midSize;
+      }, 5000);
+    }
+  }
 
-   
-   // SMALL SCREEN ============================
-   if(winSize < 800){
+  // SMALL SCREEN ============================
 
-
- if(position == 250 ){
-            catImg.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif'
-            position = undefined
-            
-            setTimeout(() => {
-               catImg.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif'
-               position= midSize;
-               console.log(position)
-
-            },5000)
-                        }
-
-                        }
-
-// SMALL SCREEN ============================
-
-// IF CAT REACH END OF SCREEN ============
-     if(position >= winSize){
-            position = 0;
-         }
- // ==========================
-             
-          }
-
-        setInterval(() => {
-catWalk()
-         },50)
-      
-   // TODO execute `catWalk` when the browser has completed loading the page
-   //   TODO complete 
+  // IF CAT REACH END OF SCREEN ============
+  if (position >= winSize) {
+    position = 0;
+  }
+  // ==========================
+}
+setInterval(() => {
+  catWalk();
+}, 50);
+window.addEventListener('load', null);
