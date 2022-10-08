@@ -20,10 +20,7 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 function createBookList(books) {
   const bookList = document.createElement('ul');
   document.getElementById('bookList').appendChild(bookList);
-  bookList.setAttribute(
-    'style',
-    'width: 90%; margin: auto; text-align: center; list-style: none;'
-  );
+  bookList.classList.add('book-list');
   books.forEach((book) => {
     //create and style the list element for each book
     const bookElement = document.createElement('li');

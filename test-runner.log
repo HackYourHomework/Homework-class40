@@ -944,3 +944,21 @@ ex6-gameOfLife/index.js
 2022-10-08 01:44:04 info: ----------------------------------------
 2022-10-08 01:44:13 info: All unit tests passed.
 2022-10-08 01:44:21 info: All steps were completed successfully
+2022-10-08 01:50:36 info: ----------------------------------------------
+2022-10-08 01:50:36 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-10-08 01:50:36 info: ----------------------------------------------
+2022-10-08 01:50:42 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should take a single parameter
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\lenovo\Desktop\MyHYF\Homework-class40\test-runner\CustomReporter.js"
+2022-10-08 01:51:18 info: ----------------------------------------
+2022-10-08 01:51:18 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-08 01:51:18 info: ----------------------------------------
+2022-10-08 01:51:27 info: All unit tests passed.
+2022-10-08 01:51:36 info: All steps were completed successfully

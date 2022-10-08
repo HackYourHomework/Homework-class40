@@ -12,3 +12,9 @@ h1 {
   margin: 50px 0;
   font-size: 40px;
 }
+.book-list {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  list-style: none;
+}
