@@ -13,3 +13,8 @@ li {
   padding: 10px;
   min-width: 350px;
 }
+
+.imgBook {
+  width: 180px;
+  height: 280px;
+}
