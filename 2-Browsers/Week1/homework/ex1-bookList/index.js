@@ -18,7 +18,43 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const bookList = document.querySelector('#bookList');
+
+  const defaultBook = 'Read this book';
+  books.forEach((book) => {
+    const { title, author, alreadyRead, image } = book;
+
+    // creation of ul ===========
+    const ul = document.createElement('ul');
+    bookList.appendChild(ul);
+    alreadyRead
+      ? ul.setAttribute('class', 'container ')
+      : ul.setAttribute('class', 'container red');
+    // ===============
+
+    // creation of img / li / ===================
+    const li = document.createElement('li');
+    ul.appendChild(li);
+    const img = document.createElement('img');
+    img.setAttribute('src', image);
+    img.setAttribute('alt', title);
+
+    li.textContent = title ? `${title} by :   ${author} ` : defaultBook;
+    li.appendChild(img);
+
+    // ==============================
+
+    const checkRead = () => {
+      alert('YOU READ THE BOOK');
+    };
+    const notRead = () => {
+      alert('YOU DID NOT READ THE BOOK');
+    };
+
+    alreadyRead
+      ? ul.addEventListener('click', checkRead)
+      : ul.addEventListener('click', notRead);
+  });
 }
 
 function main() {
@@ -27,24 +63,26 @@ function main() {
       title: 'The Design of Everyday Things',
       author: 'Don Norman',
       isbn: '978-0465050659',
+      image: './assets/the_design_of_everyday_things.jpg',
       alreadyRead: false,
     },
     {
       title: 'The Most Human Human',
       author: 'Brian Christian',
       isbn: '978-1617933431',
+      image: './assets/the_most_human_human.jpg',
       alreadyRead: true,
     },
     {
       title: 'The Pragmatic Programmer',
       author: 'Andrew Hunt',
       isbn: '978-0201616224',
+      image: './assets/the_pragmatic_programmer.jpg',
       alreadyRead: true,
     },
   ];
-
-  const ulElement = createBookList(myBooks);
-  document.querySelector('#bookList').appendChild(ulElement);
+  return myBooks;
 }
+createBookList(main());
 
 window.addEventListener('load', main);

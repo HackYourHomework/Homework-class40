@@ -17,6 +17,7 @@ function createCell(x, y) {
     x,
     y,
     alive,
+    lifeTime: alive ? 1 : 0,
   };
 }
 
@@ -56,7 +57,20 @@ function createGame(context, numRows, numColumns) {
 
     if (cell.alive) {
       // Draw living cell inside background
-      context.fillStyle = `rgb(24, 215, 236)`;
+      let cellOpacity = 1;
+      const cellLifeTime = cell.lifeTime;
+
+      if (cellLifeTime === 1) {
+        cellOpacity = 0.25;
+      } else if (cellLifeTime === 2) {
+        cellOpacity = 0.5;
+      } else if (cellLifeTime === 3) {
+        cellOpacity = 0.75;
+      } else if (cellLifeTime >= 4) {
+        cellOpacity = 1;
+      }
+
+      context.fillStyle = `rgba(24, 215, 236,${cellOpacity})`;
       context.fillRect(
         cell.x * CELL_SIZE + 1,
         cell.y * CELL_SIZE + 1,
@@ -101,13 +115,23 @@ function createGame(context, numRows, numColumns) {
 
       if (numAlive === 2) {
         // Living cell remains living, dead cell remains dead
+
         cell.nextAlive = cell.alive;
+
+        if (cell.nextAlive) {
+          cell.lifeTime += 1;
+        } else {
+          cell.lifeTime = 0;
+        }
       } else if (numAlive === 3) {
         // Dead cell becomes living, living cell remains living
         cell.nextAlive = true;
+
+        cell.lifeTime += 1;
       } else {
         // Living cell dies, dead cell remains dead
         cell.nextAlive = false;
+        cell.lifeTime = 0;
       }
     });
 
@@ -169,7 +193,6 @@ function main() {
   start();
 }
 
-// ! Do not change or remove any code below
 try {
   window.addEventListener('load', main);
 } catch {
