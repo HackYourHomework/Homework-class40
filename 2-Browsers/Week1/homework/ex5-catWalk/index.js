@@ -21,7 +21,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-const image = document.querySelector('img');
+const image = document.getElementById('img');
 image.style.left = 0;
 let step = 0;
 let interval;

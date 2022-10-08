@@ -25,18 +25,21 @@ function createBookList(books) {
     'width: 90%; margin: auto; text-align: center; list-style: none;'
   );
   books.forEach((book) => {
+    //create and style the list element for each book
     const bookElement = document.createElement('li');
     bookList.appendChild(bookElement);
     bookElement.style.cssText =
       'border: 3px solid; display: inline-block; padding: 30px; margin: 0 1%; width: 30%';
     bookElement.style.background = book.alreadyRead ? 'green' : 'red';
 
+    //create and style the book title
     const paragraph = document.createElement('p');
     bookElement.appendChild(paragraph);
     paragraph.textContent = `${book.title} - ${book.author}`;
     paragraph.style.cssText =
       'font-size: 18px; font-weight: bold; margin-bottom:30px';
 
+    // create and style the book image
     const image = document.createElement('img');
     bookElement.appendChild(image);
     image.alt = `${book.title} image`;
