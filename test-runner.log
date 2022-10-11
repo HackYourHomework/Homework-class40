@@ -1,0 +1,1153 @@
+2022-09-20 10:05:04 info: ----------------------------------------------
+2022-09-20 10:05:04 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 10:05:04 info: ----------------------------------------------
+2022-09-20 10:05:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 10:05:08 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:18:02 info: ----------------------------------------------
+2022-09-20 11:18:02 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:18:02 info: ----------------------------------------------
+2022-09-20 11:18:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:18:05 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:18:09 info: Disclaimer turned off
+2022-09-20 11:23:37 info: ----------------------------------------------
+2022-09-20 11:23:37 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:23:37 info: ----------------------------------------------
+2022-09-20 11:23:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:23:40 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:27:52 info: ----------------------------------------------
+2022-09-20 11:27:52 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:27:52 info: ----------------------------------------------
+2022-09-20 11:27:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:27:56 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:33:51 info: ----------------------------------------------
+2022-09-20 11:33:51 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:33:51 info: ----------------------------------------------
+2022-09-20 11:33:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:33:55 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:37:26 info: ----------------------------------------------
+2022-09-20 11:37:26 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:37:26 info: ----------------------------------------------
+2022-09-20 11:37:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:37:29 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:39:55 info: ----------------------------------------------
+2022-09-20 11:39:55 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:39:55 info: ----------------------------------------------
+2022-09-20 11:39:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:39:59 error: *** Spell Checker Report ***
+
+
+2022-09-20 11:45:20 info: ----------------------------------------------
+2022-09-20 11:45:20 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 11:45:20 info: ----------------------------------------------
+2022-09-20 11:45:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 11:45:24 error: *** Spell Checker Report ***
+
+
+2022-09-20 12:20:34 info: ----------------------------------------------
+2022-09-20 12:20:34 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 12:20:34 info: ----------------------------------------------
+2022-09-20 12:20:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Ensar Bektaş\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Error: Could not resolve a module for a custom reporter.
+  Module name: C:\Users\Ensar Bekta┼ş\github\Homework-class40\test-runner\CustomReporter.js
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:523:15
+    at Array.map (<anonymous>)
+    at normalizeReporters (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:505:20)
+    at C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:883:17
+    at Array.reduce (<anonymous>)
+    at normalize (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\normalize.js:732:14)
+    at readConfig (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\@jest\core\build\cli\index.js:140:59)
+    at async Object.run (C:\Users\Ensar Bektaş\Github\Homework-class40\node_modules\jest-cli\build\cli\index.js:155:37)
+2022-09-20 12:20:38 error: *** Spell Checker Report ***
+
+
+2022-09-20 05:37:46 info: ----------------------------------------------
+2022-09-20 05:37:46 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 05:37:46 info: ----------------------------------------------
+2022-09-20 05:37:48 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Github-ex\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-20 05:37:51 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:43:19 - Unknown word (Ensar)
+
+2022-09-20 05:40:41 info: ----------------------------------------------
+2022-09-20 05:40:41 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 05:40:41 info: ----------------------------------------------
+2022-09-20 05:40:43 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Github-ex\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-20 05:40:45 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  23:9   error  'compliments' is assigned a value but never used  no-unused-vars
+  36:5   error  'tenCompliments' is not defined                   no-undef
+  36:47  error  'tenCompliments' is not defined                   no-undef
+
+✖ 3 problems (3 errors, 0 warnings)
+
+
+2022-09-20 05:40:46 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:43:19 - Unknown word (Ensar)
+
+2022-09-20 05:41:53 info: Disclaimer turned off
+2022-09-20 05:42:03 info: ----------------------------------------------
+2022-09-20 05:42:03 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 05:42:03 info: ----------------------------------------------
+2022-09-20 05:42:05 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Github-ex\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-20 05:42:07 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  22:9   error  'compliments' is assigned a value but never used  no-unused-vars
+  35:5   error  'tenCompliments' is not defined                   no-undef
+  35:47  error  'tenCompliments' is not defined                   no-undef
+
+✖ 3 problems (3 errors, 0 warnings)
+
+
+2022-09-20 05:42:08 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:41:19 - Unknown word (Ensar)
+
+2022-09-20 05:42:40 info: ----------------------------------------------
+2022-09-20 05:42:40 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-20 05:42:40 info: ----------------------------------------------
+2022-09-20 05:42:42 info: All unit tests passed.
+2022-09-20 05:42:45 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:41:19 - Unknown word (Ensar)
+
+2022-09-20 05:46:56 info: ----------------------------------------
+2022-09-20 05:46:56 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-20 05:46:56 info: ----------------------------------------
+2022-09-20 05:46:58 info: All unit tests passed.
+2022-09-20 05:47:01 info: All steps were completed successfully
+2022-09-20 05:47:47 info: -------------------------------------------
+2022-09-20 05:47:47 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-20 05:47:47 info: -------------------------------------------
+2022-09-20 05:47:49 info: All unit tests passed.
+2022-09-20 05:47:52 info: All steps were completed successfully
+2022-09-20 09:04:13 info: --------------------------------------------
+2022-09-20 09:04:13 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-09-20 09:04:13 info: --------------------------------------------
+2022-09-20 09:04:13 warn: A unit test file was not provided.
+2022-09-20 09:04:15 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  27:26  error  Expected '===' and instead saw '=='  eqeqeq
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-09-20 09:04:36 info: --------------------------------------------
+2022-09-20 09:04:36 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-09-20 09:04:36 info: --------------------------------------------
+2022-09-20 09:04:36 warn: A unit test file was not provided.
+2022-09-20 09:04:39 info: All steps were completed successfully
+2022-09-20 10:11:33 info: ------------------------------------------------
+2022-09-20 10:11:33 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-09-20 10:11:33 info: ------------------------------------------------
+2022-09-20 10:11:33 warn: A unit test file was not provided.
+2022-09-20 10:11:36 info: All steps were completed successfully
+2022-09-20 10:53:06 info: -----------------------------------------
+2022-09-20 10:53:06 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-20 10:53:06 info: -----------------------------------------
+2022-09-20 10:53:06 warn: A unit test file was not provided.
+2022-09-20 10:53:07 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  36:3   warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+  36:12  warning  'value' is never reassigned. Use 'const' instead      no-autofix/prefer-const
+  50:9   error    'expected' is assigned a value but never used         no-unused-vars
+  51:9   error    'actual' is assigned a value but never used           no-unused-vars
+
+✖ 4 problems (2 errors, 2 warnings)
+
+
+2022-09-20 10:57:24 info: -----------------------------------------
+2022-09-20 10:57:24 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-20 10:57:24 info: -----------------------------------------
+2022-09-20 10:57:24 warn: A unit test file was not provided.
+2022-09-20 10:57:25 error: *** ESLint Report ***
+
+ex6-totalCost.js
+   3:9   error    'sum' is assigned a value but never used          no-unused-vars
+  35:7   warning  'total' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  35:15  error    '_' is not defined                                no-undef
+
+✖ 3 problems (2 errors, 1 warning)
+
+
+2022-09-20 11:00:05 info: -----------------------------------------
+2022-09-20 11:00:05 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-20 11:00:05 info: -----------------------------------------
+2022-09-20 11:00:05 warn: A unit test file was not provided.
+2022-09-20 11:00:08 info: All steps were completed successfully
+2022-09-20 11:11:02 info: -----------------------------------------
+2022-09-20 11:11:02 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-20 11:11:02 info: -----------------------------------------
+2022-09-20 11:11:02 warn: A unit test file was not provided.
+2022-09-20 11:11:05 info: All steps were completed successfully
+2022-09-20 11:38:38 info: -------------------------------------------
+2022-09-20 11:38:38 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-20 11:38:38 info: -------------------------------------------
+2022-09-20 11:38:38 warn: A unit test file was not provided.
+2022-09-20 11:38:39 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  34:44   error  'three' is assigned a value but never used  no-unused-vars
+  34:70   error  'five' is assigned a value but never used   no-unused-vars
+  34:106  error  'c' is assigned a value but never used      no-unused-vars
+  34:125  error  'e' is assigned a value but never used      no-unused-vars
+
+✖ 4 problems (4 errors, 0 warnings)
+
+
+2022-09-20 11:40:45 info: -------------------------------------------
+2022-09-20 11:40:45 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-20 11:40:45 info: -------------------------------------------
+2022-09-20 11:40:45 warn: A unit test file was not provided.
+2022-09-20 11:40:48 info: All steps were completed successfully
+2022-09-25 09:49:36 info: -----------------------------------------
+2022-09-25 09:49:36 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-25 09:49:36 info: -----------------------------------------
+2022-09-25 09:49:36 warn: A unit test file was not provided.
+2022-09-25 09:49:40 info: All steps were completed successfully
+2022-09-25 10:11:56 info: -------------------------------------------
+2022-09-25 10:11:56 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-25 10:11:56 info: -------------------------------------------
+2022-09-25 10:11:56 warn: A unit test file was not provided.
+2022-09-25 10:11:58 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  35:14  warning  Identifier 'DataObject' is not in camelCase  hyf/camelcase
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-25 10:12:34 info: Disclaimer turned off
+2022-09-25 10:12:48 info: -------------------------------------------
+2022-09-25 10:12:48 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-25 10:12:48 info: -------------------------------------------
+2022-09-25 10:12:48 warn: A unit test file was not provided.
+2022-09-25 10:12:51 info: All steps were completed successfully
+2022-09-25 10:53:57 info: ------------------------------------------------
+2022-09-25 10:53:57 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-09-25 10:53:57 info: ------------------------------------------------
+2022-09-25 10:53:57 warn: A unit test file was not provided.
+2022-09-25 10:54:00 info: All steps were completed successfully
+2022-09-25 11:12:48 info: --------------------------------------------
+2022-09-25 11:12:48 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-09-25 11:12:48 info: --------------------------------------------
+2022-09-25 11:12:48 warn: A unit test file was not provided.
+2022-09-25 11:12:51 info: All steps were completed successfully
+2022-09-25 11:16:56 info: ----------------------------------------------
+2022-09-25 11:16:56 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-25 11:16:56 info: ----------------------------------------------
+2022-09-25 11:16:59 info: All unit tests passed.
+2022-09-25 11:17:02 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:41:19 - Unknown word (Ensar)
+
+2022-09-26 12:07:17 info: ------------------------------------------------------
+2022-09-26 12:07:17 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-26 12:07:17 info: ------------------------------------------------------
+2022-09-26 12:07:19 info: All unit tests passed.
+2022-09-26 12:07:22 info: All steps were completed successfully
+2022-09-26 06:52:01 info: ------------------------------------------------------
+2022-09-26 06:52:01 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-26 06:52:01 info: ------------------------------------------------------
+2022-09-26 06:52:04 info: All unit tests passed.
+2022-09-26 06:52:07 info: All steps were completed successfully
+2022-09-26 07:15:18 info: -------------------------------------------------
+2022-09-26 07:15:18 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 07:15:18 info: -------------------------------------------------
+2022-09-26 07:15:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    √ should take two parameters (2 ms)
+    × should compute the earnings as a formatted Euro amount (3 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      54 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      55 |     const expected = '€187.50';
+    > 56 |     expect(result).toBe(expected);
+         |                    ^
+      57 |   });
+      58 | });
+      59 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:56:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.529 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-09-26 07:16:43 info: -------------------------------------------------
+2022-09-26 07:16:43 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 07:16:43 info: -------------------------------------------------
+2022-09-26 07:16:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    √ should take two parameters (2 ms)
+    × should compute the earnings as a formatted Euro amount (4 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€012.5050.00100.0025.00"
+
+      54 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      55 |     const expected = '€187.50';
+    > 56 |     expect(result).toBe(expected);
+         |                    ^
+      57 |   });
+      58 | });
+      59 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:56:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.516 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-09-26 07:19:46 info: -------------------------------------------------
+2022-09-26 07:19:46 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-26 07:19:46 info: -------------------------------------------------
+2022-09-26 07:19:48 info: All unit tests passed.
+2022-09-26 07:19:51 info: All steps were completed successfully
+2022-09-26 07:50:26 info: -------------------------------------------------
+2022-09-26 07:50:26 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 07:50:26 info: -------------------------------------------------
+2022-09-26 07:50:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (1 ms)
+    × should not modify the original `fruitBasket` array (4 ms)
+    × should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      43 |     // Save the original contents of the fruit basket
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+    > 45 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:45:25)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      49 |     const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      50 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 51 |     expect(result).toBe(expected);
+         |                    ^
+      52 |   });
+      53 | });
+      54 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:51:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.526 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-09-26 08:16:02 info: -------------------------------------------------
+2022-09-26 08:16:02 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 08:16:02 info: -------------------------------------------------
+2022-09-26 08:16:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    × should not modify the original `fruitBasket` array (4 ms)
+    × should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      43 |     // Save the original contents of the fruit basket
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+    > 45 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:45:25)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      49 |     const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      50 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 51 |     expect(result).toBe(expected);
+         |                    ^
+      52 |   });
+      53 | });
+      54 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:51:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.468 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-09-26 08:24:18 info: -------------------------------------------------
+2022-09-26 08:24:18 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 08:24:18 info: -------------------------------------------------
+2022-09-26 08:24:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (1 ms)
+    × should not modify the original `fruitBasket` array (3 ms)
+    × should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      43 |     // Save the original contents of the fruit basket
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+    > 45 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:45:25)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    - Expected  - 3
+    + Received  + 0
+
+      Array [
+        "apple",
+    -   "lemon",
+        "grapefruit",
+    -   "lemon",
+        "banana",
+        "watermelon",
+    -   "lemon",
+      ]
+
+      57 |       'lemon',
+      58 |     ];
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.524 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-09-26 09:02:34 info: -------------------------------------------------
+2022-09-26 09:02:34 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 09:02:34 info: -------------------------------------------------
+2022-09-26 09:02:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    × should not modify the original `fruitBasket` array (4 ms)
+    √ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      43 |     // Save the original contents of the fruit basket
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+    > 45 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:45:25)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.528 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-09-26 09:05:26 info: -------------------------------------------------
+2022-09-26 09:05:26 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-26 09:05:26 info: -------------------------------------------------
+2022-09-26 09:05:28 info: All unit tests passed.
+2022-09-26 09:05:32 info: All steps were completed successfully
+2022-09-26 09:53:41 info: ------------------------------------------
+2022-09-26 09:53:41 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-26 09:53:41 info: ------------------------------------------
+2022-09-26 09:53:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (1 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: Hi! is not a function
+        at Array.forEach (<anonymous>)
+
+      21 |     },
+      22 |     notify: function (message) {
+    > 23 |       subscribers.forEach(message);
+         |                   ^
+      24 |     },
+      25 |   };
+      26 | }
+
+      at Object.forEach [as notify] (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.614 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-09-26 10:11:34 info: ------------------------------------------
+2022-09-26 10:11:34 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-26 10:11:34 info: ------------------------------------------
+2022-09-26 10:11:36 info: All unit tests passed.
+2022-09-26 10:11:40 info: All steps were completed successfully
+2022-09-27 12:10:15 info: --------------------------------------
+2022-09-27 12:10:15 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 12:10:15 info: --------------------------------------
+2022-09-27 12:10:18 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\ebektas\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-27 12:10:20 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2022-09-27 12:32:42 info: --------------------------------------
+2022-09-27 12:32:42 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 12:32:42 info: --------------------------------------
+2022-09-27 12:32:45 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\ebektas\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-27 12:32:46 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2022-09-27 12:36:03 info: --------------------------------------
+2022-09-27 12:36:03 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 12:36:03 info: --------------------------------------
+2022-09-27 12:36:05 error: *** Unit Test Error Report ***
+
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\ebektas\github\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-27 02:26:21 info: --------------------------------------
+2022-09-27 02:26:21 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 02:26:21 info: --------------------------------------
+2022-09-27 02:26:24 info: All unit tests passed.
+2022-09-27 02:26:27 info: All steps were completed successfully
+2022-09-27 02:27:29 info: ------------------------------------------------------
+2022-09-27 02:27:29 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-09-27 02:27:29 info: ------------------------------------------------------
+2022-09-27 02:27:31 info: All unit tests passed.
+2022-09-27 02:27:34 info: All steps were completed successfully
+2022-09-27 02:31:49 info: -------------------------------------------------
+2022-09-27 02:31:49 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-09-27 02:31:49 info: -------------------------------------------------
+2022-09-27 02:31:51 info: All unit tests passed.
+2022-09-27 02:31:54 info: All steps were completed successfully
+2022-09-27 02:32:02 info: -------------------------------------------------
+2022-09-27 02:32:02 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-09-27 02:32:02 info: -------------------------------------------------
+2022-09-27 02:32:04 info: All unit tests passed.
+2022-09-27 02:32:07 info: All steps were completed successfully
+2022-09-27 02:32:19 info: ------------------------------------------
+2022-09-27 02:32:19 info: >>> Running Unit Test `ex4-observable` <<<
+2022-09-27 02:32:19 info: ------------------------------------------
+2022-09-27 02:32:21 info: All unit tests passed.
+2022-09-27 02:32:24 info: All steps were completed successfully
+2022-09-27 02:32:31 info: --------------------------------------
+2022-09-27 02:32:31 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-09-27 02:32:31 info: --------------------------------------
+2022-09-27 02:32:33 info: All unit tests passed.
+2022-09-27 02:32:36 info: All steps were completed successfully
