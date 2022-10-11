@@ -35,10 +35,10 @@ const mondayTasks = [
 const hourlyRate = 25;
 
 function computeEarnings(mondayTasks, hourlyRate) {
-  const durationFee = mondayTasks.map(
+  const durationFees = mondayTasks.map(
     (item) => (item.duration / 60) * hourlyRate
   );
-  const total = durationFee.reduce((sum, val) => sum + val, 0);
+  const total = durationFees.reduce((sum, val) => sum + val, 0);
   return `€${total.toFixed(2)}`;
 }
 
