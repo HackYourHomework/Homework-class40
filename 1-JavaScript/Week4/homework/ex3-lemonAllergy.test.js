@@ -27,10 +27,10 @@ const fruitBasket = [
 
 // ! Function under test
 function sanitizeFruitBasket(currentBasket, unwantedFruit) {
-  const healthyBasket = currentBasket.filter(
+  const sanitizedBasket = currentBasket.filter(
     (fruit) => fruit !== unwantedFruit
   );
-  return healthyBasket;
+  return sanitizedBasket;
 }
 
 // ! Unit tests (using Jest)
