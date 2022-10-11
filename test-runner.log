@@ -524,3 +524,8 @@ ex1-giveCompliment.js:41:19 - Unknown word (Ensar)
 2022-10-11 11:40:15 info: -------------------------------------------
 2022-10-11 11:40:17 info: All unit tests passed.
 2022-10-11 11:40:21 info: All steps were completed successfully
+2022-10-11 11:47:51 info: --------------------------------------------
+2022-10-11 11:47:51 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-10-11 11:47:51 info: --------------------------------------------
+2022-10-11 11:47:51 warn: A unit test file was not provided.
+2022-10-11 11:47:54 info: All steps were completed successfully
