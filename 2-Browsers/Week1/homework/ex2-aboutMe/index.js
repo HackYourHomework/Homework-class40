@@ -12,8 +12,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 document.getElementsById("nickname").textContent="Anna"
 document.getElementsById("fav-food").textContent="see-food"
 document.getElementsById("hometown").textContent="Amsterdam"
-const allLi = document.querySelectorAll('li')
-for (let i = 0; i < allLi.length; i++) {
-   allLi[i].setAttribute('class', 'list-item');
- }
- document.body.style.fontFamily = 'Arial, sans-serif';
+const allLi = document.getElementsByTagName('li')
+allLi.forEach((li)=>
+li.classList.add('list-item'))
+document.body.style.fontFamily = 'Arial, sans-serif';
