@@ -25,6 +25,7 @@ function createBookList(books) {
     const img = document.createElement('img');
     title.textContent = `${book.title} - ${book.author}`;
     img.src = book.img;
+    img.setAttribute('alt', title.textContent);
     item.style.backgroundColor = (book.alreadyRead ? 'red' : 'green');
     item.appendChild(title);
     item.appendChild(img);
