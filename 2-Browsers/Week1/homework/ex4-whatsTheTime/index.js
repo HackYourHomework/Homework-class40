@@ -16,7 +16,6 @@ window.onload = function () {
     const currentDate = new Date();
     const dateString = `${currentDate.getHours()} : ${currentDate.getMinutes()} : ${currentDate.getSeconds()} `;
     document.getElementById('date').textContent = dateString;
-    console.log(dateString);
   }
   setInterval(addCurrentTime, 1000);
 };

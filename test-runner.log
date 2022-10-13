@@ -1747,3 +1747,57 @@ Waiting for the debugger to disconnect...
 2022-10-04 07:42:11 info: --------------------------------------------
 2022-10-04 07:42:23 info: All unit tests passed.
 2022-10-04 07:42:32 info: All steps were completed successfully
+2022-10-13 09:16:52 info: --------------------------------------------
+2022-10-13 09:16:52 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-13 09:16:52 info: --------------------------------------------
+2022-10-13 09:17:04 info: All unit tests passed.
+2022-10-13 09:17:09 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-13 09:23:31 info: ---------------------------------------
+2022-10-13 09:23:31 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-13 09:23:31 info: ---------------------------------------
+2022-10-13 09:23:41 info: All unit tests passed.
+2022-10-13 09:23:47 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-13 10:57:40 info: ----------------------------------------
+2022-10-13 10:57:40 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-13 10:57:40 info: ----------------------------------------
+2022-10-13 10:57:50 info: All unit tests passed.
+2022-10-13 10:57:57 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+

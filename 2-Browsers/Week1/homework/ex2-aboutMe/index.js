@@ -19,5 +19,5 @@ hometown.textContent = 'Kyiv';
 
 const li = document.getElementsByTagName('li');
 for (let i = 0; i < li.length; i++) {
-  li[i].setAttribute('class', 'list-item');
+  li[i].classList.add('list-item');
 }

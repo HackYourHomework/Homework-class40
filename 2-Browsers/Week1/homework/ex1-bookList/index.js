@@ -21,41 +21,24 @@ function createBookList(books) {
 
   const bookUl = document.createElement('ul');
 
-  bookUl.setAttribute('class', 'ul-line');
-
-  const bookImage1 = document.createElement('img');
-  const bookImage2 = document.createElement('img');
-  const bookImage3 = document.createElement('img');
-
-  bookImage1.src = '../ex1-bookList/assets/the_design_of_everyday_things.jpg';
-  bookImage1.setAttribute('alt', 'img1');
-  bookImage2.src = '../ex1-bookList/assets/the_most_human_human.jpg';
-  bookImage2.setAttribute('alt', 'img2');
-  bookImage3.src = '../ex1-bookList/assets/the_pragmatic_programmer.jpg';
-  bookImage3.setAttribute('alt', 'img3');
-
-  for (let i = 0; i < books.length; i++) {
+  books.forEach((book) => {
     const bookLi = document.createElement('li');
-    bookLi.setAttribute('class', 'li');
     const bookP = document.createElement('p');
-    bookP.textContent = `${books[i].title} - ${books[i].author}`;
+    bookP.textContent = `${book.title} - ${book.author}`;
+    const bookImage = document.createElement('img');
+    bookImage.src = book.src;
+    bookImage.alt = book.isbn;
+    bookP.appendChild(bookImage);
 
-    if (books[i].title === 'The Design of Everyday Things') {
-      bookP.appendChild(bookImage1);
-    } else if (books[i].title === 'The Most Human Human') {
-      bookP.appendChild(bookImage2);
-    } else {
-      bookP.appendChild(bookImage3);
-    }
     bookLi.appendChild(bookP);
-
-    if (books[i].alreadyRead) {
-      bookP.style.background = 'green';
-    } else {
-      bookP.style.background = 'red';
-    }
     bookUl.appendChild(bookLi);
-  }
+
+    if (book.alreadyRead) {
+      bookP.classList.add('background-green');
+    } else {
+      bookP.classList.add('background-red');
+    }
+  });
 
   bookList.appendChild(bookUl);
 }
@@ -67,18 +50,21 @@ function main() {
       author: 'Don Norman',
       isbn: '978-0465050659',
       alreadyRead: false,
+      src: '../ex1-bookList/assets/the_design_of_everyday_things.jpg',
     },
     {
       title: 'The Most Human Human',
       author: 'Brian Christian',
       isbn: '978-1617933431',
       alreadyRead: true,
+      src: '../ex1-bookList/assets/the_most_human_human.jpg',
     },
     {
       title: 'The Pragmatic Programmer',
       author: 'Andrew Hunt',
       isbn: '978-0201616224',
       alreadyRead: true,
+      src: '../ex1-bookList/assets/the_pragmatic_programmer.jpg',
     },
   ];
 
