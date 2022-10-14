@@ -15,8 +15,8 @@ function addCurrentTime() {
  const minutes = date.getMinutes();
  const seconds = date.getSeconds();
  const time = `${hours}:${minutes}:${seconds}`
- console.log(time)
  document.getElementById('time').textContent = time;
 }
-document.addEventListener("DOMContentLoaded", addCurrentTime);
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+addCurrentTime();
+setInterval(addCurrentTime, 1000);
+window.addEventListener('load', addCurrentTime);
