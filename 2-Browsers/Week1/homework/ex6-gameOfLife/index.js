@@ -177,3 +177,30 @@ try {
 }
 
 module.exports = createGame;
+
+
+
+
+
+
+let catWalking = document.getElementsByTagName('img')[0];
+catWalking.style.left = '0px';
+let walkInterval = window.setInterval(catWalk, 50);
+const catDancing = document.createElement('img');
+catDancing.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+document.body.appendChild(catDancing);
+catDancing.style.visibility = 'hidden';
+let counter = 0;
+const screenWidth = window.screen.width;
+const catWidth = catWalking.width;
+function catWalk() {
+ const catPosition = parseFloat(catWalking.style.left);
+  catWalking.style.left = catPosition + 10 + 'px';
+  setTimeout(()=>{
+   cat.setAttribute('src',cat.getAttribute('oldsrc'));
+   danced=true;
+   interval=setInterval(catWalk,50)
+},5000);
+  
+
+}

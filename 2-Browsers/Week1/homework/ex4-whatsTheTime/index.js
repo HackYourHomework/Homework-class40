@@ -17,6 +17,5 @@ function addCurrentTime() {
  const time = `${hours}:${minutes}:${seconds}`
  document.getElementById('time').textContent = time;
 }
-addCurrentTime();
-setInterval(addCurrentTime, 1000);
-window.addEventListener('load', addCurrentTime);
+setInterval(loadWindow, 1000);
+const loadWindow = ()=> {window.addEventListener('load', addCurrentTime);}
