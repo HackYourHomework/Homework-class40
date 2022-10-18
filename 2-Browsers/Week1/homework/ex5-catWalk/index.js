@@ -21,8 +21,38 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+const catWalking = document.getElementsByTagName('img')[0];
+catWalking.style.left = '0px';
+const walkInterval = window.setInterval(catWalk, 50);
+const catDancing = document.createElement('img');
+catDancing.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+document.body.appendChild(catDancing);
+catDancing.style.visibility = 'hidden';
+const screenWidth = window.screen.width;
+const catWidth = catWalking.width;
+catDancing.alt = 'Cat dancing';
+const catWalkingUrl = 'http://www.anniemation.com/clip_art/images/cat-walk.gif'
+
 function catWalk() {
-  // TODO complete this function
+ const catPosition = parseFloat(catWalking.style.left);
+  catWalking.style.left = catPosition + 10 + 'px';
+  if (
+   catPosition ===
+   Math.floor((screenWidth / 2 - catWidth / 2) / 10) * 10
+ ) {
+   catWalking.src = catDancing;
+   
+   catDancing.style.left = catWalking.style.left;
+   catDancing.style.visibility = 'visible';
+   catWalking.style.visibility = 'hidden';
+   setTimeout(() => {
+      walkInterval = setInterval(catWalk, 50);
+      catWalking.src = catWalkingUrl;
+    }, 5000);
+    clearInterval(walkInterval);
+ } else if (catPosition > screenWidth - catWidth) {
+   catWalking.style.left = 0 + 'px';
+ }
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.addEventListener('load', catWalk);
