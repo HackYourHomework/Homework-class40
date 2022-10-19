@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-5-the-cat-walk
 
@@ -21,8 +22,26 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+const catGif = document.querySelector('img');
+const catWalkUrl = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+const catPlayUrl =
+  'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+let catLeft = 0;
+let intervalWalk = setInterval(catWalk, 50);
+
 function catWalk() {
-  // TODO complete this function
+  catLeft += 10;
+  catGif.style.top = '30%';
+  catGif.style.left = catLeft.toString() + 'px';
+  const middleScreen = window.innerWidth / 2;
+  const catLocation = parseInt(catGif.style.left);
+
+  //Check if the catGif.style.left equal to middleScreen - (middleScreen % 10) - 150 + 'px' if it's true
+  // then set catGif.src = catPlayUrl;
+  // then set timeout 50 miliseconds to show the cat gif dancing this how you can do it https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
+  // then you have to clear to show the img again by using clearInterval: https://developer.mozilla.org/en-US/docs/Web/API/clearInterval
+  // we have need to have else if (catLocation >= window.innerWidth - catGif.width)
+  // there we set catGif.style.left = 0 + 'px'; and catLeft = 0;
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.addEventListener('load', catWalk);
