@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/3-UsingAPIs/Week1#exercise-3-roll-a-die
 
@@ -11,52 +12,43 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/3-Usin
   explanation? Add your answer as a comment to be bottom of the file.
 ------------------------------------------------------------------------------*/
 
-// TODO Remove callback and return a promise
-function rollDie(callback) {
+function rollDie() {
   // Compute a random number of rolls (3-10) that the die MUST complete
   const randomRollsToDo = Math.floor(Math.random() * 8) + 3;
   console.log(`Die scheduled for ${randomRollsToDo} rolls...`);
+  return new Promise((resolve, reject) => {
+    for (let i = 1; i <= randomRollsToDo; i++) {
+      const value = Math.floor(Math.random() * 6) + 1;
+      console.log(`Die value is now: ${value}`);
 
-  const rollOnce = (roll) => {
-    // Compute a random die value for the current roll
-    const value = Math.floor(Math.random() * 6) + 1;
-    console.log(`Die value is now: ${value}`);
-
-    // Use callback to notify that the die rolled off the table after 6 rolls
-    if (roll > 6) {
-      // TODO replace "error" callback
-      callback(new Error('Oops... Die rolled off the table.'));
-    }
-
-    // Use callback to communicate the final die value once finished rolling
-    if (roll === randomRollsToDo) {
-      // TODO replace "success" callback
-      callback(null, value);
-    }
-
-    // Schedule the next roll todo until no more rolls to do
-    if (roll < randomRollsToDo) {
-      setTimeout(() => rollOnce(roll + 1), 500);
-    }
-  };
-
-  // Start the initial roll
-  rollOnce(1);
-}
-
-function main() {
-  // TODO Refactor to use promise
-  rollDie((error, value) => {
-    if (error !== null) {
-      console.log(error.message);
-    } else {
-      console.log(`Success! Die settled on ${value}.`);
+      if (randomRollsToDo <= 6) {
+        if (i === randomRollsToDo) {
+          resolve(value);
+        }
+      }
+      if (i > 5) {
+        reject(new Error('Oops... Die rolled off the table.'));
+        return;
+      }
     }
   });
 }
 
+function main() {
+  rollDie()
+    .then((val) => {
+      console.log(`Success! Die settled on ${val}.`);
+    })
+    .catch((error) => {
+      return console.error(error);
+    });
+}
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+//the reason why we do not have the issue now is because I handled it this way -- if random number <= 6; i create a resolve that sends the val
+//then handle it with then()....
+//  if the random number is over 6 i created an if condition that rejects and returns.
