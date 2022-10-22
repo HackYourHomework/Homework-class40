@@ -16,6 +16,5 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.highlightActiveIndentation": true,
-  "editor.guides.bracketPairsHorizontal": "active",
-  "cSpell.words": ["Xdpd"]
+  "editor.guides.bracketPairsHorizontal": "active"
 }

@@ -53,3 +53,18 @@ ex3-hijackLogo.js:11:57 - Unknown word (Xdpd)
 2022-10-16 08:23:48 info: ------------------------------------------
 2022-10-16 08:23:50 info: All unit tests passed.
 2022-10-16 08:23:53 info: All steps were completed successfully
+2022-10-22 10:17:19 info: ------------------------------------------
+2022-10-22 10:17:19 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-22 10:17:19 info: ------------------------------------------
+2022-10-22 10:17:21 info: All unit tests passed.
+2022-10-22 10:17:24 info: All steps were completed successfully
+2022-10-22 10:27:27 info: ------------------------------------------
+2022-10-22 10:27:27 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-22 10:27:27 info: ------------------------------------------
+2022-10-22 10:27:29 info: All unit tests passed.
+2022-10-22 10:27:32 info: All steps were completed successfully
+2022-10-22 10:34:52 info: ------------------------------------------
+2022-10-22 10:34:52 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-22 10:34:52 info: ------------------------------------------
+2022-10-22 10:34:54 info: All unit tests passed.
+2022-10-22 10:34:56 info: All steps were completed successfully
