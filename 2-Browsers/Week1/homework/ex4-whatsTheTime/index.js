@@ -15,7 +15,5 @@ function addCurrentTime() {
   hour < 10 ? (hour = `0${hour}`) : hour;
   minute < 10 ? (minute = `0${minute}`) : minute;
   second < 10 ? (second = `0${second}`) : second;
-  const currentTime = `${hour}:${minute}:${second}`;
-  console.log(currentTime);
 }
 window.onload = () => setInterval(addCurrentTime, 1000);
