@@ -9,4 +9,12 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
 
-// TODO add your JavaScript code here.
+document.body.style = 'font-family: Arial, sans-serif';
+document.getElementById('nickname').textContent = 'Tom';
+document.getElementById('fav-food').textContent = 'Mandy';
+document.getElementById('hometown').textContent = 'Yemen';
+
+const allLiElement = document.querySelectorAll('li');
+allLiElement.forEach((liElement) => {
+  liElement.classList = 'list-item';
+});

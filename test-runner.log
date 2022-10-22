@@ -1,0 +1,736 @@
+2022-10-07 09:58:15 info: ----------------------------------------
+2022-10-07 09:58:15 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-07 09:58:15 info: ----------------------------------------
+2022-10-07 09:58:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (8.565 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (231 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (3 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:195  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:416  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:628  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        8.929 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-07 10:05:11 info: Disclaimer turned off
+2022-10-07 10:05:38 info: ---------------------------------------
+2022-10-07 10:05:38 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-07 10:05:38 info: ---------------------------------------
+2022-10-07 10:05:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (6.555 s)
+  Generated HTML
+    ✓ should be syntactically valid (170 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (2 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (40 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        6.834 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-07 10:05:56 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:52 - Unknown word (Murshed)
+
+2022-10-07 10:07:02 info: ------------------------------------------
+2022-10-07 10:07:02 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-07 10:07:02 info: ------------------------------------------
+2022-10-07 10:07:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✕ should have all TODO comments removed (3 ms)
+    ✓ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.6 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2022-10-07 10:07:05 error: *** ESLint Report ***
+
+ex3-hijackLogo.js
+  17:7  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-10-07 10:07:57 info: ------------------------------------------
+2022-10-07 10:07:57 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-07 10:07:57 info: ------------------------------------------
+2022-10-07 10:07:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✕ should have all TODO comments removed (3 ms)
+    ✓ should set the `src` property
+    ✓ should set the `srcset` property
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.482 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2022-10-07 10:08:42 info: ------------------------------------------
+2022-10-07 10:08:42 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-07 10:08:42 info: ------------------------------------------
+2022-10-07 10:08:43 info: All unit tests passed.
+2022-10-07 10:08:47 info: All steps were completed successfully
+2022-10-07 10:08:59 info: --------------------------------------------
+2022-10-07 10:08:59 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-07 10:08:59 info: --------------------------------------------
+2022-10-07 10:09:06 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.015 s)
+  whatsTheTime
+    ✓ HTML should be syntactically valid (156 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2002 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.068 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-10-07 10:10:02 info: --------------------------------------------
+2022-10-07 10:10:02 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-07 10:10:02 info: --------------------------------------------
+2022-10-07 10:10:09 info: All unit tests passed.
+2022-10-07 10:10:12 info: All steps were completed successfully
+2022-10-07 10:10:30 info: ---------------------------------------
+2022-10-07 10:10:30 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-07 10:10:30 info: ---------------------------------------
+2022-10-07 10:10:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    ✓ HTML should be syntactically valid (206 ms)
+    ✕ should have all TODO comments removed (3 ms)
+    ✓ should use `setInterval()` and/or `setTimeout()` (1 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.133 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2022-10-07 10:10:36 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  32:4  warning  Remove commented-out code  hyf/no-commented-out-code
+  38:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-10-07 10:10:38 error: *** Spell Checker Report ***
+
+ex5-catWalk/index.js:27:13 - Unknown word (Ofsecreen)
+ex5-catWalk/index.js:43:29 - Unknown word (Ofsecreen)
+ex5-catWalk/index.js:45:36 - Unknown word (Ofsecreen)
+ex5-catWalk/index.js:50:35 - Unknown word (Ofsecreen)
+
+2022-10-07 10:12:58 info: ---------------------------------------
+2022-10-07 10:12:58 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-07 10:12:58 info: ---------------------------------------
+2022-10-07 10:13:02 info: All unit tests passed.
+2022-10-07 10:13:04 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  32:4  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-10-07 10:13:05 error: *** Spell Checker Report ***
+
+ex5-catWalk/index.js:27:13 - Unknown word (Ofsecreen)
+ex5-catWalk/index.js:37:29 - Unknown word (Ofsecreen)
+ex5-catWalk/index.js:40:36 - Unknown word (Ofsecreen)
+ex5-catWalk/index.js:46:35 - Unknown word (Ofsecreen)
+
+2022-10-07 10:15:00 info: ---------------------------------------
+2022-10-07 10:15:00 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-07 10:15:00 info: ---------------------------------------
+2022-10-07 10:15:04 info: All unit tests passed.
+2022-10-07 10:15:07 error: *** Spell Checker Report ***
+
+ex5-catWalk/index.js:27:13 - Unknown word (Ofscreen)
+ex5-catWalk/index.js:36:29 - Unknown word (Ofscreen)
+ex5-catWalk/index.js:39:36 - Unknown word (Ofscreen)
+ex5-catWalk/index.js:45:35 - Unknown word (Ofscreen)
+
+2022-10-07 10:16:09 info: ---------------------------------------
+2022-10-07 10:16:09 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-07 10:16:09 info: ---------------------------------------
+2022-10-07 10:16:14 info: All unit tests passed.
+2022-10-07 10:16:17 info: All steps were completed successfully
+2022-10-07 11:39:48 info: ---------------------------------------
+2022-10-07 11:39:48 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-07 11:39:48 info: ---------------------------------------
+2022-10-07 11:39:59 info: All unit tests passed.
+2022-10-07 11:40:06 info: All steps were completed successfully
+2022-10-08 12:53:28 info: ------------------------------------------
+2022-10-08 12:53:28 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-08 12:53:28 info: ------------------------------------------
+2022-10-08 12:53:35 info: All unit tests passed.
+2022-10-08 12:53:45 error: *** Spell Checker Report ***
+
+ex6-gameOfLife/index.js:48:10 - Unknown word (calculat)
+ex6-gameOfLife/index.js:49:7 - Unknown word (retuen)
+ex6-gameOfLife/index.js:51:5 - Unknown word (retuen)
+ex6-gameOfLife/index.js:55:5 - Unknown word (retuen)
+ex6-gameOfLife/index.js:57:5 - Unknown word (retuen)
+ex6-gameOfLife/index.js:60:11 - Unknown word (retuen)
+ex6-gameOfLife/index.js:66:21 - Unknown word (calculat)
+
+2022-10-08 12:56:07 info: ------------------------------------------
+2022-10-08 12:56:07 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-10-08 12:56:07 info: ------------------------------------------
+2022-10-08 12:56:15 info: All unit tests passed.
+2022-10-08 12:56:24 info: All steps were completed successfully
+2022-10-09 10:20:00 info: ---------------------------------------
+2022-10-09 10:20:00 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-09 10:20:00 info: ---------------------------------------
+2022-10-09 10:20:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (7.792 s)
+  Generated HTML
+    ✓ should be syntactically valid (183 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (6 ms)
+    ✓ each <li> should have the CSS class `list-item` (2 ms)
+    ✓ each <li> should rendered red (44 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        8.144 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-09 10:20:25 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:54 - Unknown word (Murshed)
+
+2022-10-09 10:22:14 info: ---------------------------------------
+2022-10-09 10:22:14 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-09 10:22:14 info: ---------------------------------------
+2022-10-09 10:22:24 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (6.116 s)
+  Generated HTML
+    ✓ should be syntactically valid (180 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (4 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (40 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.36 s, estimated 8 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-10-09 10:22:31 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:54 - Unknown word (Murshed)
+
+2022-10-09 10:23:50 info: ---------------------------------------
+2022-10-09 10:23:50 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-09 10:23:50 info: ---------------------------------------
+2022-10-09 10:23:59 info: All unit tests passed.
+2022-10-09 10:24:06 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:54 - Unknown word (Murshed)
+
+2022-10-09 10:24:42 info: ------------------------------------------
+2022-10-09 10:24:42 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-09 10:24:42 info: ------------------------------------------
+2022-10-09 10:24:45 info: All unit tests passed.
+2022-10-09 10:24:49 info: All steps were completed successfully
+2022-10-09 08:01:21 info: -------------------------------------------------
+2022-10-09 08:01:21 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-10-09 08:01:21 info: -------------------------------------------------
+2022-10-09 08:01:29 info: All unit tests passed.
+2022-10-09 08:01:38 info: All steps were completed successfully
+2022-10-09 08:01:53 info: ------------------------------------------------------
+2022-10-09 08:01:53 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-10-09 08:01:53 info: ------------------------------------------------------
+2022-10-09 08:01:56 info: All unit tests passed.
+2022-10-09 08:02:04 info: All steps were completed successfully
+2022-10-09 08:02:18 info: -------------------------------------------------
+2022-10-09 08:02:18 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-10-09 08:02:18 info: -------------------------------------------------
+2022-10-09 08:02:22 info: All unit tests passed.
+2022-10-09 08:02:26 info: All steps were completed successfully
+2022-10-09 08:40:06 info: ------------------------------------------
+2022-10-09 08:40:06 info: >>> Running Unit Test `ex4-observable` <<<
+2022-10-09 08:40:06 info: ------------------------------------------
+2022-10-09 08:40:13 info: All unit tests passed.
+2022-10-09 08:40:22 info: All steps were completed successfully
+2022-10-09 08:48:25 info: --------------------------------------
+2022-10-09 08:48:25 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-10-09 08:48:25 info: --------------------------------------
+2022-10-09 08:48:30 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/hyf-html-exercises/Homework-class40/test-runner/CustomReporter.js"
+2022-10-09 09:17:15 info: --------------------------------------
+2022-10-09 09:17:15 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-10-09 09:17:15 info: --------------------------------------
+2022-10-09 09:17:20 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/hyf-html-exercises/Homework-class40/test-runner/CustomReporter.js"
+2022-10-09 09:22:05 info: --------------------------------------
+2022-10-09 09:22:05 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-10-09 09:22:05 info: --------------------------------------
+2022-10-09 09:22:10 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/hyf-html-exercises/Homework-class40/test-runner/CustomReporter.js"
+2022-10-09 09:37:15 info: --------------------------------------
+2022-10-09 09:37:15 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-10-09 09:37:15 info: --------------------------------------
+2022-10-09 09:37:21 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/hyf-html-exercises/Homework-class40/test-runner/CustomReporter.js"
+2022-10-09 09:37:51 info: --------------------------------------
+2022-10-09 09:37:51 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-10-09 09:37:51 info: --------------------------------------
+2022-10-09 09:37:55 error: *** Unit Test Error Report ***
+
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/hyf-html-exercises/Homework-class40/test-runner/CustomReporter.js"
+2022-10-09 09:38:30 info: --------------------------------------
+2022-10-09 09:38:30 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-10-09 09:38:30 info: --------------------------------------
+2022-10-09 09:38:34 error: *** Unit Test Error Report ***
+
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/hyf-html-exercises/Homework-class40/test-runner/CustomReporter.js"
+2022-10-09 09:41:17 info: --------------------------------------
+2022-10-09 09:41:17 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-10-09 09:41:17 info: --------------------------------------
+2022-10-09 09:41:20 error: *** Unit Test Error Report ***
+
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/hyf-html-exercises/Homework-class40/test-runner/CustomReporter.js"
+2022-10-09 09:41:59 info: --------------------------------------
+2022-10-09 09:41:59 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-10-09 09:41:59 info: --------------------------------------
+2022-10-09 09:42:03 info: All unit tests passed.
+2022-10-09 09:42:10 info: All steps were completed successfully
+2022-10-22 07:33:57 info: ----------------------------------------
+2022-10-22 07:33:57 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-22 07:33:57 info: ----------------------------------------
+2022-10-22 07:34:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (6.047 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (183 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:109  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:246  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:378  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        6.301 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-22 07:39:41 info: ----------------------------------------
+2022-10-22 07:39:41 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-22 07:39:41 info: ----------------------------------------
+2022-10-22 07:39:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid (181 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:109  error  <img> is missing required \"src\" attribute  element-required-attributes
+      11:109  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:197  error  <img> is missing required \"src\" attribute  element-required-attributes
+      11:197  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:285  error  <img> is missing required \"src\" attribute  element-required-attributes
+      11:285  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 6 problems (6 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        4.036 s, estimated 7 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-22 07:39:49 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  35:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-10-22 07:42:41 info: ----------------------------------------
+2022-10-22 07:42:41 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-22 07:42:41 info: ----------------------------------------
+2022-10-22 07:42:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid (177 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:109  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:246  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:378  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        3.155 s, estimated 4 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-10-22 07:44:53 info: ----------------------------------------
+2022-10-22 07:44:53 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-22 07:44:53 info: ----------------------------------------
+2022-10-22 07:45:00 info: All unit tests passed.
+2022-10-22 07:45:04 info: All steps were completed successfully
+2022-10-22 07:47:22 info: ----------------------------------------
+2022-10-22 07:47:22 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-10-22 07:47:22 info: ----------------------------------------
+2022-10-22 07:47:26 info: All unit tests passed.
+2022-10-22 07:47:30 info: All steps were completed successfully
+2022-10-22 07:55:06 info: ---------------------------------------
+2022-10-22 07:55:06 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-22 07:55:06 info: ---------------------------------------
+2022-10-22 07:55:18 info: All unit tests passed.
+2022-10-22 07:55:27 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:52 - Unknown word (Murshed)
+
+2022-10-22 07:58:30 info: ---------------------------------------
+2022-10-22 07:58:30 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-22 07:58:30 info: ---------------------------------------
+2022-10-22 07:58:36 info: All unit tests passed.
+2022-10-22 07:58:43 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:52 - Unknown word (Yasser)
+
+2022-10-22 07:59:27 info: ---------------------------------------
+2022-10-22 07:59:27 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-22 07:59:27 info: ---------------------------------------
+2022-10-22 07:59:32 info: All unit tests passed.
+2022-10-22 07:59:36 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:52 - Unknown word (Ammar)
+
+2022-10-22 07:59:49 info: ---------------------------------------
+2022-10-22 07:59:49 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-10-22 07:59:49 info: ---------------------------------------
+2022-10-22 07:59:54 info: All unit tests passed.
+2022-10-22 07:59:58 info: All steps were completed successfully
+2022-10-22 08:08:59 info: --------------------------------------------
+2022-10-22 08:08:59 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-22 08:08:59 info: --------------------------------------------
+2022-10-22 08:09:11 info: All unit tests passed.
+2022-10-22 08:09:15 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  20:9  error  'time' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-22 08:11:07 info: --------------------------------------------
+2022-10-22 08:11:07 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-10-22 08:11:07 info: --------------------------------------------
+2022-10-22 08:11:20 info: All unit tests passed.
+2022-10-22 08:11:28 info: All steps were completed successfully
+2022-10-22 08:12:04 info: ------------------------------------------
+2022-10-22 08:12:04 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-10-22 08:12:04 info: ------------------------------------------
+2022-10-22 08:12:08 info: All unit tests passed.
+2022-10-22 08:12:11 info: All steps were completed successfully
+2022-10-22 10:13:32 info: ---------------------------------------
+2022-10-22 10:13:32 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-10-22 10:13:32 info: ---------------------------------------
+2022-10-22 10:13:45 info: All unit tests passed.
+2022-10-22 10:13:55 info: All steps were completed successfully
