@@ -1,0 +1,22 @@
+
+*** ESLint Report ***
+
+ex1-johnWho.js
+  3:9  error  'reject' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+*** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)

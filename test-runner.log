@@ -1801,3 +1801,1309 @@ TypeError: lint_1.LintRequest is not a constructor
     at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
     at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
 
+2022-10-21 10:21:11 info: ---------------------------------------
+2022-10-21 10:21:11 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-10-21 10:21:11 info: ---------------------------------------
+2022-10-21 10:21:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Debugger listening on ws://127.0.0.1:57600/bb10d555-c85b-4b56-9f59-629dc8b200f3
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:57604/c810cfec-57e5-4245-8aba-6f34f40fad50
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (2 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    ✓ should call `new Promise()`
+    ✓ should take a single argument (1 ms)
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when called with a string argument (2 ms)
+    ✓ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        1.497 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-10-21 10:21:20 error: *** ESLint Report ***
+
+ex1-johnWho.js
+   3:9  error    'reject' is assigned a value but never used  no-unused-vars
+  26:1  warning  Remove commented-out code                    hyf/no-commented-out-code
+  33:1  warning  Remove commented-out code                    hyf/no-commented-out-code
+  35:1  warning  Remove commented-out code                    hyf/no-commented-out-code
+
+✖ 4 problems (1 error, 3 warnings)
+
+
+2022-10-21 10:21:23 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-21 10:22:54 info: ---------------------------------------
+2022-10-21 10:22:54 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-10-21 10:22:54 info: ---------------------------------------
+2022-10-21 10:22:59 info: All unit tests passed.
+2022-10-21 10:23:03 error: *** ESLint Report ***
+
+ex1-johnWho.js
+   3:9  error    'reject' is assigned a value but never used  no-unused-vars
+  25:1  warning  Remove commented-out code                    hyf/no-commented-out-code
+  32:1  warning  Remove commented-out code                    hyf/no-commented-out-code
+  34:1  warning  Remove commented-out code                    hyf/no-commented-out-code
+
+✖ 4 problems (1 error, 3 warnings)
+
+
+2022-10-21 10:23:07 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-21 10:24:58 info: ---------------------------------------
+2022-10-21 10:24:58 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-10-21 10:24:58 info: ---------------------------------------
+2022-10-21 10:25:04 info: All unit tests passed.
+2022-10-21 10:25:08 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  3:9  error  'reject' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-21 10:25:13 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-21 10:40:54 info: -------------------------------------------------
+2022-10-21 10:40:54 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-10-21 10:40:54 info: -------------------------------------------------
+2022-10-21 10:41:00 info: All unit tests passed.
+2022-10-21 10:41:06 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-22 03:03:44 info: ---------------------------------------
+2022-10-22 03:03:44 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-10-22 03:03:44 info: ---------------------------------------
+2022-10-22 03:03:50 info: All unit tests passed.
+2022-10-22 03:03:57 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-22 10:59:18 info: --------------------------------------------
+2022-10-22 10:59:18 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-10-22 10:59:18 info: --------------------------------------------
+2022-10-22 10:59:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Debugger listening on ws://127.0.0.1:59894/f8ea6617-0bf9-477c-bfa3-8f0ea95305bc
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:59898/b38fac2e-ece1-450f-876f-56540860fe82
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✓ should use `dice.map()`
+    ✓ should use `Promise.all()` (1 ms)
+    ✓ should resolve when all dice settle successfully (2 ms)
+    ✕ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.43 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+Waiting for the debugger to disconnect...
+/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+Waiting for the debugger to disconnect...
+2022-10-22 10:59:29 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-23 07:33:01 info: --------------------------------------------
+2022-10-23 07:33:01 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-10-23 07:33:01 info: --------------------------------------------
+2022-10-23 07:33:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Debugger attached.
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    ✓ should exist and be executable (1 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ `rollDice` should not contain unneeded console.log calls (3 ms)
+    ✓ should use `dice.map()`
+    ✓ should use `Promise.all()`
+    ✓ should resolve when all dice settle successfully (3 ms)
+    ✕ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.626 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+Waiting for the debugger to disconnect...
+/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+Waiting for the debugger to disconnect...
+2022-10-23 07:33:16 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-23 07:37:15 info: --------------------------------------------
+2022-10-23 07:37:15 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-10-23 07:37:15 info: --------------------------------------------
+2022-10-23 07:37:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Debugger attached.
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    ✓ should exist and be executable (1 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ `rollDice` should not contain unneeded console.log calls (3 ms)
+    ✓ should use `dice.map()`
+    ✓ should use `Promise.all()`
+    ✓ should resolve when all dice settle successfully (3 ms)
+    ✕ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.349 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+Waiting for the debugger to disconnect...
+/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+Waiting for the debugger to disconnect...
+2022-10-23 07:37:27 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-23 07:41:54 info: --------------------------------------------
+2022-10-23 07:41:54 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-10-23 07:41:54 info: --------------------------------------------
+2022-10-23 07:42:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Debugger attached.
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    ✓ should exist and be executable (1 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✓ should use `dice.map()` (1 ms)
+    ✓ should use `Promise.all()`
+    ✓ should resolve when all dice settle successfully (2 ms)
+    ✕ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.274 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+Waiting for the debugger to disconnect...
+/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+Waiting for the debugger to disconnect...
+2022-10-23 07:42:07 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-23 08:00:01 info: --------------------------------------------
+2022-10-23 08:00:01 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-10-23 08:00:01 info: --------------------------------------------
+2022-10-23 08:00:07 info: All unit tests passed.
+2022-10-23 08:00:15 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-23 08:09:05 info: --------------------------------------------
+2022-10-23 08:09:05 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-10-23 08:09:05 info: --------------------------------------------
+2022-10-23 08:09:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Debugger attached.
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✓ should use `dice.map()`
+    ✓ should use `Promise.all()`
+    ✕ should resolve when all dice settle successfully (3 ms)
+    ✕ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    TypeError: Callback must be a function. Received Promise { <pending> }
+
+      30 |   const dice = [1, 2, 3, 4, 5];
+      31 |   const promiseArr = dice.map((die) => {
+    > 32 |     return setTimeout(rollDie(die), 0);
+         |            ^
+      33 |   });
+      34 |
+      35 |   return Promise.all(promiseArr);
+
+      at setTimeout (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:32:12)
+          at Array.map (<anonymous>)
+      at map (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:31:27)
+      at Object.rollDice (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:53:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Error
+    Received constructor: TypeError
+
+      73 |       await promise;
+      74 |     } catch (err) {
+    > 75 |       expect(err).toBeInstanceOf(Error);
+         |                   ^
+      76 |     } finally {
+      77 |       randomSpy.mockRestore();
+      78 |     }
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:75:19)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.424 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+Waiting for the debugger to disconnect...
+/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+Waiting for the debugger to disconnect...
+2022-10-23 08:09:16 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-23 08:10:01 info: --------------------------------------------
+2022-10-23 08:10:01 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-10-23 08:10:01 info: --------------------------------------------
+2022-10-23 08:10:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Debugger attached.
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✓ should use `dice.map()` (1 ms)
+    ✓ should use `Promise.all()`
+    ✕ should resolve when all dice settle successfully (3 ms)
+    ✕ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    TypeError: Callback must be a function. Received Promise { <pending> }
+
+      30 |   const dice = [1, 2, 3, 4, 5];
+      31 |   const promiseArr = dice.map((die) => {
+    > 32 |     setTimeout(rollDie(die), 0);
+         |     ^
+      33 |   });
+      34 |
+      35 |   return Promise.all(promiseArr);
+
+      at setTimeout (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:32:5)
+          at Array.map (<anonymous>)
+      at map (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:31:27)
+      at Object.rollDice (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:53:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Error
+    Received constructor: TypeError
+
+      73 |       await promise;
+      74 |     } catch (err) {
+    > 75 |       expect(err).toBeInstanceOf(Error);
+         |                   ^
+      76 |     } finally {
+      77 |       randomSpy.mockRestore();
+      78 |     }
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:75:19)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.398 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+Waiting for the debugger to disconnect...
+/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+Waiting for the debugger to disconnect...
+2022-10-23 08:10:13 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-23 08:16:39 info: --------------------------------------------
+2022-10-23 08:16:39 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-10-23 08:16:39 info: --------------------------------------------
+2022-10-23 08:16:45 info: All unit tests passed.
+2022-10-23 08:16:51 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-23 08:26:30 info: --------------------------------------------
+2022-10-23 08:26:30 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-10-23 08:26:30 info: --------------------------------------------
+2022-10-23 08:26:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Debugger attached.
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js (11.148 s)
+  ex4-pokerDiceAll
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✕ should use `dice.map()` (2 ms)
+    ✕ should use `Promise.all()` (1 ms)
+    ✕ should resolve when all dice settle successfully (5002 ms)
+    ✕ should reject with an Error when a die rolls off the table (5002 ms)
+
+  ● ex4-pokerDiceAll › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      38 |
+      39 |   test('should use `dice.map()`', () => {
+    > 40 |     expect(state.diceMap).toBeDefined();
+         |                           ^
+      41 |   });
+      42 |
+      43 |   test('should use `Promise.all()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:40:27)
+
+  ● ex4-pokerDiceAll › should use `Promise.all()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.all()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:44:30)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      45 |   });
+      46 |
+    > 47 |   test('should resolve when all dice settle successfully', async () => {
+         |   ^
+      48 |     expect.assertions(4);
+      49 |     expect(exported).toBeDefined();
+      50 |
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:47:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:9:1)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      62 |   });
+      63 |
+    > 64 |   test('should reject with an Error when a die rolls off the table', async () => {
+         |   ^
+      65 |     expect.assertions(3);
+      66 |     expect(exported).toBeDefined();
+      67 |
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:64:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:9:1)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        11.246 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-10-23 08:26:50 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  27:7   error    'rollDie' is assigned a value but never used  no-unused-vars
+  30:9   error    'dice' is assigned a value but never used     no-unused-vars
+  31:3   warning  Remove commented-out code                     hyf/no-commented-out-code
+  35:3   warning  Remove commented-out code                     hyf/no-commented-out-code
+  36:23  error    'resolve' is defined but never used           no-unused-vars
+  36:32  error    'reject' is defined but never used            no-unused-vars
+
+✖ 6 problems (4 errors, 2 warnings)
+
+
+2022-10-23 08:26:52 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-24 09:15:22 info: --------------------------------------------
+2022-10-24 09:15:22 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-10-24 09:15:22 info: --------------------------------------------
+2022-10-24 09:15:27 info: All unit tests passed.
+2022-10-24 09:15:35 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-24 10:09:50 info: ----------------------------------------------
+2022-10-24 10:09:50 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-10-24 10:09:50 info: ----------------------------------------------
+2022-10-24 10:09:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Debugger listening on ws://127.0.0.1:62162/c5fd0402-5e45-4878-8292-f32aa4af33b2
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:62166/f5bad4fd-381f-4a0a-8bc2-6fbcc5fe61bf
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed
+    ✕ `rollDice` should not contain unneeded console.log calls (3 ms)
+    ✓ should resolve when all dice settle successfully (18 ms)
+    ✕ should reject with an Error when a die rolls off the table (29 ms)
+
+  ● ex5-pokerDiceChain › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        1.472 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-10-24 10:10:02 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-24 10:12:29 info: ----------------------------------------------
+2022-10-24 10:12:29 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-10-24 10:12:29 info: ----------------------------------------------
+2022-10-24 10:12:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Debugger listening on ws://127.0.0.1:62214/7491038f-74a0-4b0a-a5f8-b9e9130336f7
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:62218/589d49fb-0197-44dd-879b-34991a61ea43
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed
+    ✓ `rollDice` should not contain unneeded console.log calls (2 ms)
+    ✓ should resolve when all dice settle successfully (18 ms)
+    ✕ should reject with an Error when a die rolls off the table (28 ms)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.37 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-10-24 10:12:42 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-24 10:18:11 info: ----------------------------------------------
+2022-10-24 10:18:11 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-10-24 10:18:11 info: ----------------------------------------------
+2022-10-24 10:18:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Debugger listening on ws://127.0.0.1:62281/af8588e8-6a20-4ed4-8fa1-55145b573301
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:62285/abaaca5f-c281-408c-805c-466610804900
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls (2 ms)
+    ✓ should resolve when all dice settle successfully (18 ms)
+    ✕ should reject with an Error when a die rolls off the table (116 ms)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.904 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-10-24 10:18:24 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-24 10:24:49 info: ----------------------------------------------
+2022-10-24 10:24:49 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-10-24 10:24:49 info: ----------------------------------------------
+2022-10-24 10:24:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Debugger listening on ws://127.0.0.1:62340/3aeb1daa-9b20-4974-ba71-ab0006d783ee
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:62343/83a4e884-e777-4710-8321-ca110892843c
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✓ should resolve when all dice settle successfully (18 ms)
+    ✕ should reject with an Error when a die rolls off the table (29 ms)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.386 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-10-24 10:25:01 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-24 10:37:36 info: ----------------------------------------------
+2022-10-24 10:37:36 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-10-24 10:37:36 info: ----------------------------------------------
+2022-10-24 10:37:41 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Debugger listening on ws://127.0.0.1:62426/f6a25171-a882-4c14-9e66-4ded49a7e833
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:62429/d7d95dfd-dfbc-4104-b6c3-9e5611fb2d92
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (1 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✕ should resolve when all dice settle successfully (18 ms)
+    ✕ should reject with an Error when a die rolls off the table (29 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      32 |     expect(promise).toBeInstanceOf(Promise);
+      33 |     const result = await promise;
+    > 34 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      35 |     expect(result).toHaveLength(5);
+      36 |
+      37 |     promise.finally(() => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:34:35)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      24 |
+      25 |   test('should resolve when all dice settle successfully', async () => {
+    > 26 |     expect.assertions(4);
+         |            ^
+      27 |     expect(exported).toBeDefined();
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:26:12)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        1.505 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-10-24 10:37:45 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  42:36  error  'reject' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-24 10:37:47 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-24 11:07:04 info: ----------------------------------------------
+2022-10-24 11:07:04 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-10-24 11:07:04 info: ----------------------------------------------
+2022-10-24 11:07:09 info: All unit tests passed.
+2022-10-24 11:07:16 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-24 01:29:29 info: ---------------------------------------
+2022-10-24 01:29:29 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-10-24 01:29:29 info: ---------------------------------------
+2022-10-24 01:29:36 info: All unit tests passed.
+2022-10-24 01:29:40 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  3:9  error  'reject' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-24 01:29:44 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-10-24 01:31:27 info: ---------------------------------------
+2022-10-24 01:31:27 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-10-24 01:31:27 info: ---------------------------------------
+2022-10-24 01:31:32 info: All unit tests passed.
+2022-10-24 01:31:35 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  3:9  error  'reject' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-24 01:31:37 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
