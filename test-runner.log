@@ -1,0 +1,66 @@
+2022-10-24 02:35:21 info: ----------------------------------------------
+2022-10-24 02:35:21 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-10-24 02:35:21 info: ----------------------------------------------
+2022-10-24 02:35:49 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\alraz\desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-10-24 02:38:01 info: Disclaimer turned off
+2022-10-24 02:38:19 info: ----------------------------------------------
+2022-10-24 02:38:19 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-10-24 02:38:19 info: ----------------------------------------------
+2022-10-24 02:38:27 info: All unit tests passed.
+2022-10-24 02:38:37 info: All steps were completed successfully
+2022-10-24 02:41:00 info: ----------------------------------------
+2022-10-24 02:41:00 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-10-24 02:41:00 info: ----------------------------------------
+2022-10-24 02:41:08 info: All unit tests passed.
+2022-10-24 02:41:18 info: All steps were completed successfully
+2022-10-24 02:45:58 info: -------------------------------------------
+2022-10-24 02:45:58 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-10-24 02:45:58 info: -------------------------------------------
+2022-10-24 02:46:09 info: All unit tests passed.
+2022-10-24 02:46:21 info: All steps were completed successfully
+2022-10-24 02:48:38 info: --------------------------------------------
+2022-10-24 02:48:38 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-10-24 02:48:38 info: --------------------------------------------
+2022-10-24 02:48:38 warn: A unit test file was not provided.
+2022-10-24 02:48:48 info: All steps were completed successfully
+2022-10-24 02:50:59 info: ------------------------------------------------
+2022-10-24 02:50:59 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-10-24 02:50:59 info: ------------------------------------------------
+2022-10-24 02:50:59 warn: A unit test file was not provided.
+2022-10-24 02:51:16 info: All steps were completed successfully
+2022-10-24 02:54:44 info: -----------------------------------------
+2022-10-24 02:54:44 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-10-24 02:54:44 info: -----------------------------------------
+2022-10-24 02:54:44 warn: A unit test file was not provided.
+2022-10-24 02:54:53 info: All steps were completed successfully
+2022-10-24 02:56:58 info: -------------------------------------------
+2022-10-24 02:56:58 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-10-24 02:56:58 info: -------------------------------------------
+2022-10-24 02:56:58 warn: A unit test file was not provided.
+2022-10-24 02:57:10 info: All steps were completed successfully
