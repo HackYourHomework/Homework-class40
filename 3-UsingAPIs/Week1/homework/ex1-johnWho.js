@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/3-UsingAPIs/Week1#exercise-1-john-who
 
@@ -8,22 +9,20 @@ Rewrite this function, but replace the callback syntax with the Promise syntax:
 - If the Promise `rejects`, pass an error as the argument to reject with: "You 
   didn't pass in a first name!"
 ------------------------------------------------------------------------------*/
-// TODO see above
-const getAnonName = (firstName, callback) => {
-  setTimeout(() => {
-    if (!firstName) {
-      callback(new Error("You didn't pass in a first name!"));
-      return;
+const getAnonName = (firstName) => {
+  return new Promise((resolve, reject) => {
+    if (typeof firstName === 'string' && arguments.length > 0) {
+      resolve(`${firstName} Doe`);
+    } else {
+      reject(new Error("You didn't pass in a first name!"));
     }
-
-    const fullName = `${firstName} Doe`;
-
-    callback(fullName);
-  }, 1000);
+  });
 };
 
 function main() {
-  getAnonName('John', console.log);
+  getAnonName()
+    .then((message) => console.log(message))
+    .catch(() => new Error());
 }
 
 // ! Do not change or remove the code below
