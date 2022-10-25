@@ -1,0 +1,103 @@
+2022-10-25 12:28:06 info: ---------------------------------------
+2022-10-25 12:28:06 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-10-25 12:28:06 info: ---------------------------------------
+2022-10-25 12:28:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (2 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    ✓ should call `new Promise()`
+    ✓ should take a single argument (1 ms)
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when called with a string argument (1 ms)
+    ✓ should reject with an Error object when called without an argument
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        0.63 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-10-25 12:28:10 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  23:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  30:5  warning  Remove commented-out code  hyf/no-commented-out-code
+  32:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2022-10-25 12:29:35 info: ---------------------------------------
+2022-10-25 12:29:35 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-10-25 12:29:35 info: ---------------------------------------
+2022-10-25 12:29:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (2 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ `getAnonName` should not contain unneeded console.log calls (7 ms)
+    ✓ should call `new Promise()`
+    ✓ should take a single argument (1 ms)
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument
+    ✓ should resolve when called with a string argument (1 ms)
+    ✓ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        0.369 s, estimated 1 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-10-25 12:29:37 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  23:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  30:5  warning  Remove commented-out code  hyf/no-commented-out-code
+  32:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2022-10-25 12:30:01 info: ---------------------------------------
+2022-10-25 12:30:01 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-10-25 12:30:01 info: ---------------------------------------
+2022-10-25 12:30:02 info: All unit tests passed.
+2022-10-25 12:30:05 info: All steps were completed successfully
