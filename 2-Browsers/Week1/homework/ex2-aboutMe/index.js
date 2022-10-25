@@ -8,5 +8,10 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    `list-item`.
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
+document.body.style.fontFamily = 'Arial, sans-serif';
 
-// TODO add your JavaScript code here.
+document.getElementById('nickname').textContent = 'Mama';
+document.getElementById('fav-food').textContent = 'lasagna';
+document.getElementById('hometown').textContent = 'Libya';
+
+document.querySelectorAll('li').forEach((li) => (li.classList = 'list-item'));
