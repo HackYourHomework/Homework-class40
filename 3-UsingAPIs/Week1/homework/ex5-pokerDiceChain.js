@@ -25,7 +25,15 @@ function rollDice() {
     })
     .then((value) => {
       results.push(value);
-      return results;
+      return rollDie(3);
+    })
+    .then((value) => {
+      results.push(value);
+      return rollDie(4);
+    })
+    .then((value) => {
+      results.push(value);
+      return rollDie(5);
     });
 }
 
