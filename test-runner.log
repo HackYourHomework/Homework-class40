@@ -304,3 +304,82 @@ Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
 2022-10-25 01:06:03 info: -------------------------------------------------
 2022-10-25 01:06:05 info: All unit tests passed.
 2022-10-25 01:06:07 info: All steps were completed successfully
+2022-10-25 01:28:18 info: ---------------------------------------
+2022-10-25 01:28:18 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-10-25 01:28:18 info: ---------------------------------------
+2022-10-25 01:28:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    ✓ should exist and be executable (2 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should call `new Promise()`
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when the die settles successfully (1 ms)
+    ✓ should reject with an Error when the die rolls off the table (1 ms)
+
+  ● rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.485 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2022-10-25 01:29:25 info: ---------------------------------------
+2022-10-25 01:29:25 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-10-25 01:29:25 info: ---------------------------------------
+2022-10-25 01:29:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    ✓ should exist and be executable (3 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ should call `new Promise()`
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when the die settles successfully (1 ms)
+    ✓ should reject with an Error when the die rolls off the table (1 ms)
+
+  ● rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.572 s, estimated 1 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2022-10-25 01:32:12 info: ---------------------------------------
+2022-10-25 01:32:12 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-10-25 01:32:12 info: ---------------------------------------
+2022-10-25 01:32:14 info: All unit tests passed.
+2022-10-25 01:32:17 info: All steps were completed successfully
