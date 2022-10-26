@@ -27,9 +27,8 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  return Promise.all(dice.map((die) => rollDie(die)));
 }
 
 function main() {
@@ -43,3 +42,13 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/*You may also notice that, in the case of a rejected promise, dice that have not
+yet finished their roll continue to do so. 
+Can you explain why? Please add your answer as a comment to the end of the 
+exercise file.
+>>> My explanation <<<
+>>> We are using Promise.all method. This method takes an iterable of promises as an input.
+>>> It returns a single "Promise" that resolves to an array of the results of the input promises. 
+>>> Since each input in the array must result, the dice continues to roll even if the relevant promise is rejected.
+*/
