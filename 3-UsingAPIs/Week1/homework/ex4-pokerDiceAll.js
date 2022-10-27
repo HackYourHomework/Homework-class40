@@ -27,9 +27,12 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promiseArr = dice.map((die) => {
+    return rollDie(die);
+  });
+
+  return Promise.all(promiseArr);
 }
 
 function main() {
@@ -43,3 +46,6 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// I think, in the case of a rejected promise, dice continue to roll
+// because reject doesn't act like return. I mean, reject doesn't stop the execution of the function rollDice().
