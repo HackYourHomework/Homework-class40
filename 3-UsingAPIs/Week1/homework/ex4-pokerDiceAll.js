@@ -22,14 +22,14 @@ Can you explain why? Please add your answer as a comment to the end of the
 exercise file.
 ------------------------------------------------------------------------------*/
 
-// The line below makes the rollDie() function available to this file.
-// Do not change or remove it.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+
+  const result = Promise.all(dice.map((die) => rollDie(die)));
+
+  return result;
 }
 
 function main() {
@@ -43,3 +43,9 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// the array's element are converted into a number of promises . We use promise.all to convert a numbers of promise one promise.
+// So we have now [1, 2, 3, 4, 5]= result. (1= result[0] , 2= result[1], ..)
+// In our example we are adoping "Concurrency" term which means that we should not wait the retuen of promise after sending the frist element of array
+// to start sending the second element of array. In other words, we send all the array's elements and then wiat for the returns which
+// should necessary be ordered based on their index in the array.
