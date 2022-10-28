@@ -1,0 +1,290 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (5.993 s)
+  Generated HTML
+    × HTML should be syntactically valid (1 ms)
+    × should have all TODO comments removed
+    × should contain a <ul> that is a child of <div id="bookList">
+    × should contain a <ul> with 3 <li> elements
+    × should contain an <li> with title and author for each book of the `myBooks` array
+    × should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    C:\Users\alraz\Desktop\Homework-class40\node_modules\node-fetch\src\index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    C:\Users\alraz\Desktop\Homework-class40\node_modules\node-fetch\src\index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    C:\Users\alraz\Desktop\Homework-class40\node_modules\node-fetch\src\index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    C:\Users\alraz\Desktop\Homework-class40\node_modules\node-fetch\src\index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    C:\Users\alraz\Desktop\Homework-class40\node_modules\node-fetch\src\index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    C:\Users\alraz\Desktop\Homework-class40\node_modules\node-fetch\src\index.js:9
+    import http from 'node:http';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      33 |   );
+      34 |
+    > 35 |   window.fetch = require('node-fetch');
+         |                  ^
+      36 |   await sleep(1000);
+      37 |   return window;
+      38 | }
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1796:14)
+      at require (test-runner/jsdom-helpers.js:35:18)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:14:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 6 total
+Snapshots:   0 total
+Time:        6.36 s
+Ran all test suites matching /ex1-bookList.test.js/i.
