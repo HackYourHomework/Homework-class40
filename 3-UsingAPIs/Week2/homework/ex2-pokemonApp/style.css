@@ -1,1 +1,28 @@
 /* add your styling here */
+body {
+  font-size: 25px;
+}
+
+.btn {
+  padding: 11px;
+  border: 1px solid green;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #bfbebe;
+}
+
+.pokemonSelectBar {
+  height: auto;
+  width: auto;
+  padding: 11px;
+  color: #3e433e;
+  border: 1px solid green;
+  border-radius: 10px;
+  display: none;
+}
+
+div {
+  padding-top: 20px;
+}
