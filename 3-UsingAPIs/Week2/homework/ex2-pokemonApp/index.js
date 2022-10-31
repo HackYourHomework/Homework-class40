@@ -22,18 +22,59 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
-
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
-
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
 
 function main() {
-  // TODO complete this function
+  const selectElement = document.getElementById('pokemonSelect');
+  const imgPokemon = document.getElementById('imgPokemonId');
+
+  function fetchData(url) {
+    return fetch(url).then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('Failed to fetch');
+      }
+    });
+  }
+
+  async function fetchAndPopulatePokemons(url) {
+    try {
+      const pokemons = await fetchData(url).then((res) => res.results);
+
+      //Create and append select list
+      const pokemonDiv = document.getElementById('pokemonDiv');
+      pokemonDiv.textContent = '';
+      pokemonDiv.appendChild(selectElement);
+
+      pokemons.forEach((pokemon) => {
+        const option = document.createElement('option');
+        option.value = pokemon.url;
+        option.text = pokemon.name;
+        selectElement.appendChild(option);
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  async function fetchImage(url) {
+    try {
+      const pokemon = await fetchData(url);
+      imgPokemon.src = pokemon.sprites.back_default;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  const btnPokemon = document.getElementById('btnPokemon');
+  btnPokemon.addEventListener('click', () => {
+    selectElement.style = 'display:block';
+    fetchAndPopulatePokemons('https://pokeapi.co/api/v2/pokemon?limit=151');
+  });
+
+  selectElement.addEventListener('change', (event) => {
+    fetchImage(event.target.value);
+  });
 }
+
+window.addEventListener('load', main);
