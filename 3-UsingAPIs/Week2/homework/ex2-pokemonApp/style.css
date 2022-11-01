@@ -1,1 +1,10 @@
-/* add your styling here */
+img {
+  height: 250px;
+  width: 100%;
+}
+div {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

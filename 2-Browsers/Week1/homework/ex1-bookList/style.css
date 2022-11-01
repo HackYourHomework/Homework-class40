@@ -1,1 +1,18 @@
 /* Write your style here */
+ul {
+  display: flex;
+}
+li {
+  margin: 15px;
+  padding: 15px;
+  list-style: none;
+}
+img {
+  width: 50%;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}

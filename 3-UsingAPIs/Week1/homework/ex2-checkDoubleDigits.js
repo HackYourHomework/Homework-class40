@@ -1,9 +1,7 @@
 'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/3-UsingAPIs/Week1#exercise-2-is-it-a-double-digit-number
-
 Complete the function called `checkDoubleDigits` such that:
-
 - It takes one argument: a number
 - It returns a `new Promise`.
 - If the number between 10 and 99 it should resolve to the string
@@ -12,8 +10,14 @@ Complete the function called `checkDoubleDigits` such that:
   "Expected a double digit number but got `number`", where `number` is the 
   number that was passed as an argument.
 ------------------------------------------------------------------------------*/
-function checkDoubleDigits(/* TODO add parameter(s) here */) {
-  // TODO complete this function
+function checkDoubleDigits(number) {
+  return new Promise((resolve, reject) => {
+    if (number >= 10 && number <= 99) {
+      resolve('This is a double digit number!');
+    } else {
+      reject(new Error(`'Expected a double digit number but got ${number}'`));
+    }
+  });
 }
 
 function main() {
