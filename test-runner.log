@@ -1,0 +1,467 @@
+2022-11-01 08:14:35 info: -----------------------------------------
+2022-11-01 08:14:35 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 08:14:35 info: -----------------------------------------
+2022-11-01 08:14:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Debugger listening on ws://127.0.0.1:60250/a1406013-1392-43ba-ae2a-7c61eecc525d
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:60254/71ee8cef-5fc6-4721-b80c-ad20307c2a2c
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ `rollDieUntil` should not contain unneeded console.log calls (3 ms)
+    ✓ should not include a recursive call
+    ✓ should use async/wait
+    ✓ should use try/catch (1 ms)
+    ✕ should resolve as soon as a die settles on an ACE (12 ms)
+    ✕ should reject with an Error when a die rolls off the table (3 ms)
+
+  ● ex3-rollAnAce › `rollDieUntil` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: "QUEEN"
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 4 passed, 7 total
+Snapshots:   0 total
+Time:        1.842 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-11-01 08:14:49 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-11-01 08:16:43 info: -----------------------------------------
+2022-11-01 08:16:43 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 08:16:43 info: -----------------------------------------
+2022-11-01 08:16:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Debugger listening on ws://127.0.0.1:60312/be699548-a033-4797-8c8f-bc9e07f835cf
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:60317/e1451668-3aa6-43d2-826e-67609bcb556a
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (2 ms)
+    ✕ `rollDieUntil` should not contain unneeded console.log calls (3 ms)
+    ✓ should not include a recursive call
+    ✓ should use async/wait (1 ms)
+    ✓ should use try/catch (1 ms)
+    ✕ should resolve as soon as a die settles on an ACE (13 ms)
+    ✕ should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex3-rollAnAce › `rollDieUntil` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: "QUEEN"
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 4 passed, 7 total
+Snapshots:   0 total
+Time:        1.507 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-11-01 08:16:57 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-11-01 08:21:58 info: -----------------------------------------
+2022-11-01 08:21:58 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 08:21:58 info: -----------------------------------------
+2022-11-01 08:22:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Debugger listening on ws://127.0.0.1:60394/474ece8c-feb9-4f74-8394-af97f2954842
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:60398/bca60cb7-4ecd-4809-84da-53e4185b510f
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (2 ms)
+    ✕ `rollDieUntil` should not contain unneeded console.log calls (5 ms)
+    ✓ should not include a recursive call (1 ms)
+    ✓ should use async/wait (1 ms)
+    ✓ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (21 ms)
+    ✓ should reject with an Error when a die rolls off the table (10 ms)
+
+  ● ex3-rollAnAce › `rollDieUntil` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.616 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-11-01 08:22:11 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-11-01 08:28:34 info: -----------------------------------------
+2022-11-01 08:28:34 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 08:28:34 info: -----------------------------------------
+2022-11-01 08:28:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Debugger listening on ws://127.0.0.1:60582/924e9f53-4d3e-43b2-bca6-5eafc3dd1eaf
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:60586/0f370d95-7e48-48a2-b41c-22649c31d5fa
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (2 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    ✓ should not include a recursive call
+    ✓ should use async/wait (1 ms)
+    ✓ should use try/catch (1 ms)
+    ✓ should resolve as soon as a die settles on an ACE (20 ms)
+    ✕ should reject with an Error when a die rolls off the table (73 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.654 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-11-01 08:28:48 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-11-01 08:32:10 info: -----------------------------------------
+2022-11-01 08:32:10 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 08:32:10 info: -----------------------------------------
+2022-11-01 08:32:16 info: All unit tests passed.
+2022-11-01 08:32:24 error: *** Spell Checker Report ***
+
+TypeError: lint_1.LintRequest is not a constructor
+    at Object.lint (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/application.js:41:17)
+    at Command.<anonymous> (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/cspell/dist/commandLint.js:104:20)
+    at Command.listener [as _actionHandler] (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:482:17)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:65
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1265:27)
+    at /Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1063:27
+    at Command._chainOrCall (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1159:12)
+    at Command._dispatchSubcommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1059:23)
+    at Command._parseCommand (/Users/yuliannikolaiev/Desktop/Homework-class40-1/node_modules/commander/lib/command.js:1240:19)
+
+2022-11-01 08:35:15 info: -----------------------------------------
+2022-11-01 08:35:15 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 08:35:15 info: -----------------------------------------
+2022-11-01 08:35:23 info: All unit tests passed.
+2022-11-01 08:35:35 info: All steps were completed successfully
+2022-11-01 12:16:53 info: ----------------------------------------
+2022-11-01 12:16:53 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-01 12:16:53 info: ----------------------------------------
+2022-11-01 12:16:59 info: All unit tests passed.
+2022-11-01 12:17:06 info: All steps were completed successfully
+2022-11-01 02:25:29 info: ----------------------------------------
+2022-11-01 02:25:29 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-11-01 02:25:29 info: ----------------------------------------
+2022-11-01 02:25:29 warn: A unit test file was not provided.
+2022-11-01 02:25:41 info: All steps were completed successfully
+2022-11-01 05:39:28 info: ---------------------------------------------
+2022-11-01 05:39:28 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-11-01 05:39:28 info: ---------------------------------------------
+2022-11-01 05:39:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Debugger listening on ws://127.0.0.1:63108/a3b5f391-78f2-4afe-94c4-8831163557b0
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:63116/b8a8feda-ed8a-4cec-97ce-9f691861768b
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js (6.273 s)
+  programmerFun
+    ✕ HTML should be syntactically valid (241 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()`
+    ✓ should use async/wait (2 ms)
+    ✓ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.409 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-11-01 05:45:59 info: ---------------------------------------------
+2022-11-01 05:45:59 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-11-01 05:45:59 info: ---------------------------------------------
+2022-11-01 05:46:09 info: All unit tests passed.
+2022-11-01 05:46:17 info: All steps were completed successfully
+2022-11-01 06:09:47 info: ------------------------------------------
+2022-11-01 06:09:47 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-01 06:09:47 info: ------------------------------------------
+2022-11-01 06:09:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Debugger listening on ws://127.0.0.1:54243/49bfa960-ddc6-4b7e-aeb1-02a10dd24532
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:54251/46e7cec2-e1e6-48fd-8c65-f144bc58e660
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (6.138 s)
+  pokemonApp
+    ✕ HTML should be syntactically valid (214 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()` (1 ms)
+    ✓ should use `await fetch()`
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+  ● pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        6.231 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-11-01 06:13:17 info: ------------------------------------------
+2022-11-01 06:13:17 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-01 06:13:17 info: ------------------------------------------
+2022-11-01 06:13:29 info: All unit tests passed.
+2022-11-01 06:13:39 info: All steps were completed successfully
+2022-11-01 06:14:45 info: --------------------------------------------
+2022-11-01 06:14:45 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2022-11-01 06:14:45 info: --------------------------------------------
+2022-11-01 06:14:45 warn: A unit test file was not provided.
+2022-11-01 06:14:55 info: All steps were completed successfully
