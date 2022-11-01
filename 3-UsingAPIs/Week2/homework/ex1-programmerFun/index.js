@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-1-programmer-fun
 
@@ -18,28 +19,37 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    should result in a network (DNS) error.
 ------------------------------------------------------------------------------*/
 function requestData(url) {
-  // TODO return a promise using `fetch()`
+  return fetch(url).then((response) => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error();
+    }
+  });
 }
 
 function renderImage(data) {
-  // TODO render the image to the DOM
-  console.log(data);
+  const imgEl = document.createElement('img');
+  imgEl.src = data.img;
+  imgEl.alt = `picture`;
+  document.querySelector('body').appendChild(imgEl);
+  console.log(data.img);
 }
 
 function renderError(error) {
-  // TODO render the error to the DOM
+  const errMsg = document.createElement('h1');
+  errMsg.textContent = error.message;
+  document.querySelector('body').appendChild(errMsg);
   console.log(error);
 }
 
-// TODO refactor with async/await and try/catch
-function main() {
-  requestData('https://xkcd.now.sh/?comic=latest')
-    .then((data) => {
-      renderImage(data);
-    })
-    .catch((error) => {
-      renderError(error);
-    });
+async function main() {
+  try {
+    const imgData = await requestData('https://xkcd.now.shx/?comic=latest');
+    renderImage(imgData);
+  } catch (error) {
+    renderError(error);
+  }
 }
 
 window.addEventListener('load', main);
