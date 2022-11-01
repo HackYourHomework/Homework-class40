@@ -16,9 +16,41 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 -----------------------------------------------------------------------------*/
 //cspell: enable
-
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const ul = document.createElement('ul');
+  document.getElementById('bookList').appendChild(ul);
+  ul.setAttribute('style', 'display: flex; list-style: none;');
+  books.forEach((book) => {
+    const li = document.createElement('li');
+    ul.appendChild(li);
+    li.setAttribute('style', 'width: 15%; margin: 2%; padding: 2%');
+    li.style.background = book.alreadyRead ? 'green' : 'red';
+    const p = document.createElement('p');
+    li.appendChild(p);
+    p.textContent = `${book.title} - ${book.author}`;
+    const img = document.createElement('img');
+    li.appendChild(img);
+    img.alt = `${book.title} image`;
+    img.src = `${setUrl()}`;
+    function setUrl() {
+      let url;
+      switch (book.isbn) {
+        case '978-0465050659':
+          url = './assets/the_design_of_everyday_things.jpg';
+          break;
+        case '978-1617933431':
+          url = './assets/the_most_human_human.jpg';
+          break;
+        case '978-0201616224':
+          url = './assets/the_pragmatic_programmer.jpg';
+          break;
+      }
+      return url;
+    }
+    img.style.width = '80%';
+  });
+
+  return ul;
 }
 
 function main() {
@@ -44,7 +76,7 @@ function main() {
   ];
 
   const ulElement = createBookList(myBooks);
-  document.querySelector('#bookList').appendChild(ulElement);
+  document.querySelector('ul').appendChild(ulElement);
 }
 
 window.addEventListener('load', main);
