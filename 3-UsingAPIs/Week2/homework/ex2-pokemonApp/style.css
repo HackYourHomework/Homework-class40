@@ -1,1 +1,18 @@
 /* add your styling here */
+
+button {
+  position: fixed;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.selected-pokemons {
+  position: fixed;
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+.pokemon {
+  position: fixed;
+  margin-top: 10rem;
+  margin-left: 3rem;
+}
