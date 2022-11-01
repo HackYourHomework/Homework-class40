@@ -1,1 +1,24 @@
 /* add your styling here */
+#main-div {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+img {
+  width: 250px;
+  margin: auto;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%);
+}
+
+button {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
