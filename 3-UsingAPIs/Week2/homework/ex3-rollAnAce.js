@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-3-roll-an-ace
 
@@ -12,21 +13,23 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
 // ! Do not change or remove the next two lines
 const rollDie = require('../../helpers/pokerDiceRoller');
 
-function rollDieUntil(wantedValue) {
-  // TODO: rewrite this function using async/await
-  return rollDie().then((value) => {
-    if (value !== wantedValue) {
-      return rollDieUntil(wantedValue);
-    }
-    return value;
-  });
+async function rollDieUntil(wantedValue) {
+  let value = '';
+
+  while (value !== wantedValue) {
+    value = await rollDie();
+  }
+  return value;
 }
 
-// TODO refactor this function to use try/catch
-function main() {
-  rollDieUntil('ACE')
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    const randomValue = await rollDieUntil('ACE');
+
+    console.log('Resolved!', randomValue);
+  } catch (error) {
+    console.log('Rejected!', error);
+  }
 }
 
 // ! Do not change or remove the code below

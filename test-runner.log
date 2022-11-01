@@ -1,0 +1,4168 @@
+2022-10-27 11:56:12 info: ---------------------------------------------
+2022-10-27 11:56:12 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-10-27 11:56:12 info: ---------------------------------------------
+2022-10-27 11:56:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js (5.702 s)
+  programmerFun
+    × HTML should be syntactically valid (138 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()` (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.888 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-10-28 12:00:32 info: ---------------------------------------------
+2022-10-28 12:00:32 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-10-28 12:00:32 info: ---------------------------------------------
+2022-10-28 12:00:38 info: All unit tests passed.
+2022-10-28 12:00:42 info: All steps were completed successfully
+2022-10-28 12:02:52 info: ---------------------------------------------
+2022-10-28 12:02:52 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-10-28 12:02:52 info: ---------------------------------------------
+2022-10-28 12:02:57 info: All unit tests passed.
+2022-10-28 12:03:01 info: All steps were completed successfully
+2022-10-28 10:40:00 info: ------------------------------------------
+2022-10-28 10:40:00 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-10-28 10:40:00 info: ------------------------------------------
+2022-10-28 10:40:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (7.255 s)
+  pokemonApp
+    × HTML should be syntactically valid (193 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()`
+    × should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        7.446 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-10-28 10:40:16 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  53:9   warning  Remove commented-out code               hyf/no-commented-out-code
+  60:28  error    'index' is defined but never used       no-unused-vars
+  68:10  error    'fetchImage' is defined but never used  no-unused-vars
+
+✖ 3 problems (2 errors, 1 warning)
+
+
+2022-10-29 11:51:14 info: ------------------------------------------
+2022-10-29 11:51:14 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-10-29 11:51:14 info: ------------------------------------------
+2022-10-29 11:51:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (7.064 s)
+  pokemonApp
+    × HTML should be syntactically valid (185 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()`
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:25  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        7.238 s, estimated 8 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-10-29 11:51:29 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  67:9  warning  'selected' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-10-29 11:52:02 info: ------------------------------------------
+2022-10-29 11:52:02 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-10-29 11:52:02 info: ------------------------------------------
+2022-10-29 11:52:09 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (156 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:25  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.57 s, estimated 8 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-10-29 11:54:33 info: ------------------------------------------
+2022-10-29 11:54:33 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-10-29 11:54:33 info: ------------------------------------------
+2022-10-29 11:54:40 info: All unit tests passed.
+2022-10-29 11:54:45 info: All steps were completed successfully
+2022-10-29 11:56:15 info: ------------------------------------------
+2022-10-29 11:56:15 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-10-29 11:56:15 info: ------------------------------------------
+2022-10-29 11:56:21 info: All unit tests passed.
+2022-10-29 11:56:27 info: All steps were completed successfully
+2022-10-29 01:16:47 info: -----------------------------------------
+2022-10-29 01:16:47 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 01:16:47 info: -----------------------------------------
+2022-10-29 01:17:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[7216:0000021360A07FB0]    24751 ms: Scavenge (reduce) 2045.9 (2076.3) -> 2045.3 (2076.6) MB, 11.4 / 0.0 ms  (average mu = 0.310, current mu = 0.286) allocation failure; 
+[7216:0000021360A07FB0]    24796 ms: Scavenge (reduce) 2046.0 (2076.6) -> 2045.6 (2076.8) MB, 32.2 / 0.0 ms  (average mu = 0.310, current mu = 0.286) allocation failure; 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+ 1: 00007FF6AEC11C0F node_api_throw_syntax_error+182911
+ 2: 00007FF6AEB9F2F6 v8::internal::MicrotaskQueue::GetMicrotasksScopeDepth+67078
+ 3: 00007FF6AEBA043D node::OnFatalError+301
+ 4: 00007FF6AF6321CE v8::Isolate::ReportExternalAllocationLimitReached+94
+ 5: 00007FF6AF61D552 v8::Isolate::Exit+674
+ 6: 00007FF6AF49F5AC v8::internal::EmbedderStackStateScope::ExplicitScopeForTesting+124
+ 7: 00007FF6AF4AC88D v8::internal::Heap::PublishPendingAllocations+1117
+ 8: 00007FF6AF4A9917 v8::internal::Heap::PageFlagsAreConsistent+3367
+ 9: 00007FF6AF49C047 v8::internal::Heap::CollectGarbage+2039
+10: 00007FF6AF4B2A03 v8::internal::HeapAllocator::AllocateRawWithLightRetrySlowPath+2099
+11: 00007FF6AF4B32AD v8::internal::HeapAllocator::AllocateRawWithRetryOrFailSlowPath+93
+12: 00007FF6AF4C2AE3 v8::internal::Factory::NewFillerObject+851
+13: 00007FF6AF1B4245 v8::internal::DateCache::Weekday+1349
+14: 00007FF6AF6CF871 v8::internal::SetupIsolateDelegate::SetupHeap+558193
+15: 00007FF6AF6D093D v8::internal::SetupIsolateDelegate::SetupHeap+562493
+16: 00007FF62FA1B599
+2022-10-29 01:17:18 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  23:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-10-29 01:22:05 info: -----------------------------------------
+2022-10-29 01:22:05 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 01:22:05 info: -----------------------------------------
+2022-10-29 01:22:09 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    × should have all TODO comments removed (4 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    × should not include a recursive call
+    × should use async/wait
+    × should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (123 ms)
+    √ should reject with an Error when a die rolls off the table (96 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      101 | }
+      102 |
+    > 103 | function testTodosRemoved(getSource) {
+          |                                          ^
+      104 |   test('should have all TODO comments removed', () => {
+      105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+      106 |   });
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:103:42)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+  ● ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use async/wait', () => {
+    > 59 |     expect(state.async).toBeDefined();
+         |                         ^
+      60 |     expect(state.await).toBeDefined();
+      61 |   });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:59:25)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        1.422 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 05:35:17 info: -----------------------------------------
+2022-10-29 05:35:17 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 05:35:17 info: -----------------------------------------
+2022-10-29 05:35:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE (95 ms)
+    √ should reject with an Error when a die rolls off the table (111 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: "NINE"
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.418 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 05:41:29 info: -----------------------------------------
+2022-10-29 05:41:29 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 05:41:29 info: -----------------------------------------
+2022-10-29 05:41:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (3 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE (106 ms)
+    √ should reject with an Error when a die rolls off the table (93 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: "NINE"
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.458 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:04:26 info: -----------------------------------------
+2022-10-29 06:04:26 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:04:26 info: -----------------------------------------
+2022-10-29 06:04:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (112 ms)
+    × should reject with an Error when a die rolls off the table (177 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.579 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:04:33 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  27:9  error  'num' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-29 06:05:43 info: -----------------------------------------
+2022-10-29 06:05:43 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:05:43 info: -----------------------------------------
+2022-10-29 06:05:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (60 ms)
+    × should reject with an Error when a die rolls off the table (18 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: 1
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.338 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v18.7.0
+2022-10-29 06:08:07 info: -----------------------------------------
+2022-10-29 06:08:07 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:08:07 info: -----------------------------------------
+2022-10-29 06:08:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (127 ms)
+    × should reject with an Error when a die rolls off the table (113 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.531 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:09:26 info: -----------------------------------------
+2022-10-29 06:09:26 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:09:26 info: -----------------------------------------
+2022-10-29 06:09:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    × `rollDieUntil` should not contain unneeded console.log calls (3 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (137 ms)
+    × should reject with an Error when a die rolls off the table (406 ms)
+
+  ● ex3-rollAnAce › `rollDieUntil` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      130 |               ancestors
+      131 |             );
+    > 132 |             if (variableDeclarator?.id?.name === functionName) {
+          |                             ^
+      133 |               callsConsoleLog = true;
+      134 |             }
+      135 |           }
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:132:29)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.841 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:10:19 info: -----------------------------------------
+2022-10-29 06:10:19 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:10:19 info: -----------------------------------------
+2022-10-29 06:10:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (106 ms)
+    × should reject with an Error when a die rolls off the table (239 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.646 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:11:41 info: -----------------------------------------
+2022-10-29 06:11:41 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:11:41 info: -----------------------------------------
+2022-10-29 06:11:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (92 ms)
+    × should reject with an Error when a die rolls off the table (149 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.57 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:12:23 info: -----------------------------------------
+2022-10-29 06:12:23 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:12:23 info: -----------------------------------------
+2022-10-29 06:12:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (96 ms)
+    × should reject with an Error when a die rolls off the table (113 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.53 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:13:50 info: -----------------------------------------
+2022-10-29 06:13:50 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:13:50 info: -----------------------------------------
+2022-10-29 06:13:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (97 ms)
+    × should reject with an Error when a die rolls off the table (213 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.67 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:15:27 info: -----------------------------------------
+2022-10-29 06:15:27 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:15:27 info: -----------------------------------------
+2022-10-29 06:15:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call (1 ms)
+    × should use async/wait (1 ms)
+    × should use try/catch
+    × should resolve as soon as a die settles on an ACE
+    × should reject with an Error when a die rolls off the table
+
+  ● ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use async/wait', () => {
+    > 59 |     expect(state.async).toBeDefined();
+         |                         ^
+      60 |     expect(state.await).toBeDefined();
+      61 |   });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:59:25)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      68 |     expect.assertions(3);
+      69 |
+    > 70 |     expect(exported).toBeDefined();
+         |                      ^
+      71 |
+      72 |     // This sequence is known to settle on an ACE in three throws.
+      73 |     const randomSpy = jest
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:70:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+       99 |     expect.assertions(3);
+    > 100 |     expect(exported).toBeDefined();
+          |                      ^
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+      103 |     // in two throws.
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:100:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        1.428 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:15:34 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  17:3  error  Parsing error: Missing catch or finally clause
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-29 06:16:23 info: -----------------------------------------
+2022-10-29 06:16:23 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:16:23 info: -----------------------------------------
+2022-10-29 06:16:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (121 ms)
+    × should reject with an Error when a die rolls off the table (110 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.654 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:17:18 info: -----------------------------------------
+2022-10-29 06:17:18 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:17:18 info: -----------------------------------------
+2022-10-29 06:17:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (130 ms)
+    × should reject with an Error when a die rolls off the table (190 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.64 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:17:48 info: -----------------------------------------
+2022-10-29 06:17:48 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:17:48 info: -----------------------------------------
+2022-10-29 06:17:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (109 ms)
+    × should reject with an Error when a die rolls off the table (109 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.459 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:27:08 info: -----------------------------------------
+2022-10-29 06:27:08 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:27:08 info: -----------------------------------------
+2022-10-29 06:27:13 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (129 ms)
+    × should reject with an Error when a die rolls off the table (141 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.544 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:33:31 info: -----------------------------------------
+2022-10-29 06:33:31 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:33:31 info: -----------------------------------------
+2022-10-29 06:33:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (3 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (2 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait (2 ms)
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (121 ms)
+    × should reject with an Error when a die rolls off the table (254 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         return reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                       ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:23)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.588 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:35:22 info: -----------------------------------------
+2022-10-29 06:35:22 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:35:22 info: -----------------------------------------
+2022-10-29 06:35:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (94 ms)
+    × should reject with an Error when a die rolls off the table (317 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         return reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                       ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:23)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         return reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                       ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:23)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         return reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                       ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:23)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         return reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                       ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:23)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.478 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:38:58 info: -----------------------------------------
+2022-10-29 06:38:58 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:38:58 info: -----------------------------------------
+2022-10-29 06:39:02 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (108 ms)
+    × should reject with an Error when a die rolls off the table (123 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |         return;
+      85 |       }
+      86 |
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:97:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.331 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:45:44 info: -----------------------------------------
+2022-10-29 06:45:44 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:45:44 info: -----------------------------------------
+2022-10-29 06:45:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (101 ms)
+    × should reject with an Error when a die rolls off the table (224 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |         return;
+      85 |       }
+      86 |
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:97:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.528 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:83:16)
+    at Timeout.rollOnce [as _onTimeout] (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:97:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v18.7.0
+2022-10-29 06:46:52 info: -----------------------------------------
+2022-10-29 06:46:52 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:46:52 info: -----------------------------------------
+2022-10-29 06:46:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (4 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (115 ms)
+    × should reject with an Error when a die rolls off the table (182 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |         return;
+      85 |       }
+      86 |
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:97:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.556 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:47:42 info: -----------------------------------------
+2022-10-29 06:47:42 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:47:42 info: -----------------------------------------
+2022-10-29 06:47:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (3 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (2 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (106 ms)
+    × should reject with an Error when a die rolls off the table (113 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |         return;
+      85 |       }
+      86 |
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:97:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.39 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:48:12 info: -----------------------------------------
+2022-10-29 06:48:12 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:48:12 info: -----------------------------------------
+2022-10-29 06:48:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (5 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (88 ms)
+    × should reject with an Error when a die rolls off the table (122 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |         return;
+      85 |       }
+      86 |
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:97:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.321 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:50:35 info: -----------------------------------------
+2022-10-29 06:50:35 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:50:35 info: -----------------------------------------
+2022-10-29 06:50:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (2 ms)
+    √ should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    Die 1 rolled off the table.
+
+       98 |       }
+       99 |       if (!offTable) {
+    > 100 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+          |                ^
+      101 |         return;
+      102 |       }
+      103 |     };
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:100:16)
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:106:5)
+      at rollDie (3-UsingAPIs/helpers/pokerDiceRoller.js:49:10)
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:19:19)
+      at Object.rollDieUntil (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:89:23)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.213 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:51:44 info: -----------------------------------------
+2022-10-29 06:51:44 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:51:44 info: -----------------------------------------
+2022-10-29 06:51:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (3 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (4 ms)
+    √ should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    Die 1 rolled off the table.
+
+       97 |       }
+       98 |       if (!offTable) {
+    >  99 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+          |                ^
+      100 |       }
+      101 |     };
+      102 |
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:99:16)
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:104:5)
+      at rollDie (3-UsingAPIs/helpers/pokerDiceRoller.js:49:10)
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:19:19)
+      at Object.rollDieUntil (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:89:23)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.221 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 06:52:18 info: -----------------------------------------
+2022-10-29 06:52:18 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:52:18 info: -----------------------------------------
+2022-10-29 06:52:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (97 ms)
+    × should reject with an Error when a die rolls off the table (208 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.24 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:83:16)
+    at Timeout.rollOnce [as _onTimeout] (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:96:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v18.7.0
+2022-10-29 06:55:55 info: -----------------------------------------
+2022-10-29 06:55:55 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 06:55:55 info: -----------------------------------------
+2022-10-29 06:55:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (139 ms)
+    × should reject with an Error when a die rolls off the table (200 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.671 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 07:47:12 info: -----------------------------------------
+2022-10-29 07:47:12 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 07:47:12 info: -----------------------------------------
+2022-10-29 07:47:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (118 ms)
+    × should reject with an Error when a die rolls off the table (78 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.063 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v18.7.0
+2022-10-29 07:49:20 info: -----------------------------------------
+2022-10-29 07:49:20 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 07:49:20 info: -----------------------------------------
+2022-10-29 07:49:24 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (135 ms)
+    × should reject with an Error when a die rolls off the table (104 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.149 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 07:49:29 error: *** Spell Checker Report ***
+
+ex3-rollAnAce.js:28:23 - Unknown word (oopss)
+
+2022-10-29 07:50:33 info: -----------------------------------------
+2022-10-29 07:50:33 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 07:50:33 info: -----------------------------------------
+2022-10-29 07:50:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (103 ms)
+    × should reject with an Error when a die rolls off the table (172 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.165 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 07:50:54 info: -----------------------------------------
+2022-10-29 07:50:54 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 07:50:54 info: -----------------------------------------
+2022-10-29 07:50:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v18.7.0
+2022-10-29 07:51:20 info: -----------------------------------------
+2022-10-29 07:51:20 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 07:51:20 info: -----------------------------------------
+2022-10-29 07:51:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (5 ms)
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (99 ms)
+    × should reject with an Error when a die rolls off the table (115 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.879 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 07:51:51 info: -----------------------------------------
+2022-10-29 07:51:51 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 07:51:51 info: -----------------------------------------
+2022-10-29 07:51:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:83:16)
+    at Timeout.rollOnce [as _onTimeout] (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:96:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v18.7.0
+2022-10-29 07:52:13 info: -----------------------------------------
+2022-10-29 07:52:13 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 07:52:13 info: -----------------------------------------
+2022-10-29 07:52:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (3 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (112 ms)
+    × should reject with an Error when a die rolls off the table (481 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.292 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:03:14 info: -----------------------------------------
+2022-10-29 08:03:14 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:03:14 info: -----------------------------------------
+2022-10-29 08:03:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (107 ms)
+    × should reject with an Error when a die rolls off the table (103 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |         return;
+      85 |       }
+      86 |
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:97:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.321 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:05:23 info: -----------------------------------------
+2022-10-29 08:05:23 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:05:23 info: -----------------------------------------
+2022-10-29 08:05:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE (2 ms)
+    √ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    TypeError: Cannot read properties of undefined (reading 'catch')
+
+      100 |
+      101 |     // Start the first roll.
+    > 102 |     rollOnce(1).catch((error) => error);
+          |     ^
+      103 |   });
+      104 | }
+      105 |
+
+      at 3-UsingAPIs/helpers/pokerDiceRoller.js:102:5
+      at rollDie (3-UsingAPIs/helpers/pokerDiceRoller.js:49:10)
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:19:19)
+      at Object.rollDieUntil (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:89:23)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.328 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:07:49 info: -----------------------------------------
+2022-10-29 08:07:49 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:07:49 info: -----------------------------------------
+2022-10-29 08:07:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (1 ms)
+    √ should reject with an Error when a die rolls off the table
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    TypeError: Cannot read properties of undefined (reading 'catch')
+
+      100 |
+      101 |     // Start the first roll.
+    > 102 |     rollOnce(1).catch((error) => error);
+          |     ^
+      103 |   });
+      104 | }
+      105 |
+
+      at 3-UsingAPIs/helpers/pokerDiceRoller.js:102:5
+      at rollDie (3-UsingAPIs/helpers/pokerDiceRoller.js:49:10)
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:19:19)
+      at Object.rollDieUntil (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:89:23)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.042 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:25:23 info: -----------------------------------------
+2022-10-29 08:25:23 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:25:23 info: -----------------------------------------
+2022-10-29 08:25:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (3 ms)
+    × should reject with an Error when a die rolls off the table
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: [TypeError: Cannot read properties of undefined (reading 'catch')]
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.829 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:27:15 info: -----------------------------------------
+2022-10-29 08:27:15 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:27:15 info: -----------------------------------------
+2022-10-29 08:27:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE (3 ms)
+    × should reject with an Error when a die rolls off the table (4 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: [TypeError: Cannot read properties of undefined (reading 'catch')]
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.546 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:27:46 info: -----------------------------------------
+2022-10-29 08:27:46 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:27:46 info: -----------------------------------------
+2022-10-29 08:27:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (2 ms)
+    √ should reject with an Error when a die rolls off the table
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    TypeError: Cannot read properties of undefined (reading 'catch')
+
+      27 |     }
+      28 |   } catch (err) {
+    > 29 |     throw Error(err);
+         |           ^
+      30 |   }
+      31 | }
+      32 |
+
+      at Error (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:29:11)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:91:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.649 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:29:10 info: -----------------------------------------
+2022-10-29 08:29:10 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:29:10 info: -----------------------------------------
+2022-10-29 08:29:13 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (2 ms)
+    √ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    TypeError: Cannot read properties of undefined (reading 'catch')
+
+      27 |     }
+      28 |   } catch (err) {
+    > 29 |     throw Error(err);
+         |           ^
+      30 |   }
+      31 | }
+      32 |
+
+      at Error (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:29:11)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:91:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.921 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:30:19 info: -----------------------------------------
+2022-10-29 08:30:19 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:30:19 info: -----------------------------------------
+2022-10-29 08:30:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE (2 ms)
+    √ should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    TypeError: Cannot read properties of undefined (reading 'catch')
+
+      27 |     }
+      28 |   } catch (error) {
+    > 29 |     throw Error(error);
+         |           ^
+      30 |   }
+      31 | }
+      32 |
+
+      at Error (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:29:11)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:91:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.893 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:33:27 info: -----------------------------------------
+2022-10-29 08:33:27 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:33:27 info: -----------------------------------------
+2022-10-29 08:33:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (1 ms)
+    √ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    TypeError: Cannot read properties of undefined (reading 'catch')
+
+      27 |     }
+      28 |   } catch (error) {
+    > 29 |     throw Error(error);
+         |           ^
+      30 |   }
+      31 | }
+      32 |
+
+      at Error (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:29:11)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:91:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.552 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:35:12 info: -----------------------------------------
+2022-10-29 08:35:12 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:35:12 info: -----------------------------------------
+2022-10-29 08:35:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (2 ms)
+    √ should reject with an Error when a die rolls off the table
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    TypeError: Cannot read properties of undefined (reading 'catch')
+
+      28 |     }
+      29 |   } catch (error) {
+    > 30 |     throw Error(error);
+         |           ^
+      31 |   }
+      32 | }
+      33 |
+
+      at Error (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:30:11)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:91:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.71 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:37:32 info: -----------------------------------------
+2022-10-29 08:37:32 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:37:32 info: -----------------------------------------
+2022-10-29 08:37:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (2 ms)
+    √ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    TypeError: Cannot read properties of undefined (reading 'catch')
+
+       99 |
+      100 |     // Start the first roll.
+    > 101 |     rollOnce(1).catch((error) => error);
+          |     ^
+      102 |   });
+      103 | }
+      104 |
+
+      at 3-UsingAPIs/helpers/pokerDiceRoller.js:101:5
+      at rollDie (3-UsingAPIs/helpers/pokerDiceRoller.js:49:10)
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:19:19)
+      at Object.rollDieUntil (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:89:23)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.564 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:44:14 info: -----------------------------------------
+2022-10-29 08:44:14 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:44:14 info: -----------------------------------------
+2022-10-29 08:44:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (131 ms)
+    × should reject with an Error when a die rolls off the table (299 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.237 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:47:04 info: -----------------------------------------
+2022-10-29 08:47:04 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:47:04 info: -----------------------------------------
+2022-10-29 08:47:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE (1 ms)
+    × should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    TypeError: rollDieUntil is not a function
+
+      87 |
+      88 |     try {
+    > 89 |       const promise = rollDieUntil('ACE');
+         |                       ^
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+      92 |       expect(result).toBe('ACE');
+
+      at Object.rollDieUntil (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:89:23)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.965 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: NINE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: TEN".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: ACE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: KING".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: NINE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 settles on NINE in 6 rolls.".
+
+      74 |     const rollOnce = (roll) => {
+      75 |       // Compute the index of the side in the roll (round-robin fashion)
+    > 76 |       const index = rollOrder[(roll + offset) % 4];
+         |                 ^
+      77 |       const side = sides[index];
+      78 |       console.log(`Die ${die} is now: ${side}`);
+      79 |
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:76:17)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 scheduled for 6 rolls...".
+
+      50 | const getRandomNumber = (max) => Math.floor(Math.random() * max);
+      51 |
+    > 52 | function rollDie(die = 1) {
+         |             ^
+      53 |   return new Promise((resolve, reject) => {
+      54 |     // Introduce a slightly random variation in roll time.
+      55 |     // const rollTime = ROLL_TIME - 5 + getRandomNumber(10);
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at 3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:52:13
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:42:10)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:102:17)
+      at main (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:112:25)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: TEN".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at 3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:87:5
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:42:10)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:102:17)
+      at main (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:112:25)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 scheduled for 5 rolls...".
+
+      50 | const getRandomNumber = (max) => Math.floor(Math.random() * max);
+      51 |
+    > 52 | function rollDie(die = 1) {
+         |             ^
+      53 |   return new Promise((resolve, reject) => {
+      54 |     // Introduce a slightly random variation in roll time.
+      55 |     // const rollTime = ROLL_TIME - 5 + getRandomNumber(10);
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at 3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:52:13
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:42:10)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:97:21)
+      at main (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:112:25)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: JACK".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at 3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:87:5
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:42:10)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:97:21)
+      at main (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:112:25)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: NINE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: ACE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: KING".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: QUEEN".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: ACE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: NINE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: TEN".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: JACK".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 settles on JACK in 5 rolls.".
+
+      74 |     const rollOnce = (roll) => {
+      75 |       // Compute the index of the side in the roll (round-robin fashion)
+    > 76 |       const index = rollOrder[(roll + offset) % 4];
+         |                 ^
+      77 |       const side = sides[index];
+      78 |       console.log(`Die ${die} is now: ${side}`);
+      79 |
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:76:17)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 scheduled for 5 rolls...".
+
+      50 | const getRandomNumber = (max) => Math.floor(Math.random() * max);
+      51 |
+    > 52 | function rollDie(die = 1) {
+         |             ^
+      53 |   return new Promise((resolve, reject) => {
+      54 |     // Introduce a slightly random variation in roll time.
+      55 |     // const rollTime = ROLL_TIME - 5 + getRandomNumber(10);
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at 3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:52:13
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:42:10)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:102:17)
+      at main (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:112:25)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: ACE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at 3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:87:5
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:42:10)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:102:17)
+      at main (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:112:25)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 scheduled for 4 rolls...".
+
+      50 | const getRandomNumber = (max) => Math.floor(Math.random() * max);
+      51 |
+    > 52 | function rollDie(die = 1) {
+         |             ^
+      53 |   return new Promise((resolve, reject) => {
+      54 |     // Introduce a slightly random variation in roll time.
+      55 |     // const rollTime = ROLL_TIME - 5 + getRandomNumber(10);
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at 3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:52:13
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:42:10)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:97:21)
+      at main (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:112:25)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: QUEEN".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at 3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:87:5
+      at rollDie (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:42:10)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:97:21)
+      at main (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:112:25)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: NINE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 settles on NINE in 6 rolls.".
+
+      74 |     const rollOnce = (roll) => {
+      75 |       // Compute the index of the side in the roll (round-robin fashion)
+    > 76 |       const index = rollOrder[(roll + offset) % 4];
+         |                 ^
+      77 |       const side = sides[index];
+      78 |       console.log(`Die ${die} is now: ${side}`);
+      79 |
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:76:17)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: QUEEN".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: NINE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: NINE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: JACK".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: JACK".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: ACE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 settles on ACE in 4 rolls.".
+
+      74 |     const rollOnce = (roll) => {
+      75 |       // Compute the index of the side in the roll (round-robin fashion)
+    > 76 |       const index = rollOrder[(roll + offset) % 4];
+         |                 ^
+      77 |       const side = sides[index];
+      78 |       console.log(`Die ${die} is now: ${side}`);
+      79 |
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:76:17)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Resolved! ACE".
+
+      111 |   try {
+      112 |     let value = '';
+    > 113 |
+          | ^
+      114 |     while (value !== wantedValue) {
+      115 |       value = await rollDie();
+      116 |
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at main (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:113:13)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 is now: ACE".
+
+      58 |     const rollOrder = rollOrders[getRandomNumber(rollOrders.length)];
+      59 |
+    > 60 |     // Start the roll on a random side.
+         |               ^
+      61 |     const offset = getRandomNumber(rollOrder.length);
+      62 |
+      63 |     // Select a random number of roles to do before the die settles on a
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:60:15)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die 1 settles on ACE in 5 rolls.".
+
+      74 |     const rollOnce = (roll) => {
+      75 |       // Compute the index of the side in the roll (round-robin fashion)
+    > 76 |       const index = rollOrder[(roll + offset) % 4];
+         |                 ^
+      77 |       const side = sides[index];
+      78 |       console.log(`Die ${die} is now: ${side}`);
+      79 |
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at rollOnce (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:76:17)
+      at Timeout._onTimeout (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:82:26)
+2022-10-29 08:47:09 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+   13:1  warning  Remove commented-out code  hyf/no-commented-out-code
+   27:1  warning  Remove commented-out code  hyf/no-commented-out-code
+   42:1  warning  Remove commented-out code  hyf/no-commented-out-code
+   55:5  warning  Remove commented-out code  hyf/no-commented-out-code
+  140:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 5 problems (0 errors, 5 warnings)
+
+
+2022-10-29 08:53:36 info: -----------------------------------------
+2022-10-29 08:53:36 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:53:36 info: -----------------------------------------
+2022-10-29 08:53:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (144 ms)
+    × should reject with an Error when a die rolls off the table (158 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.05 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:54:50 info: -----------------------------------------
+2022-10-29 08:54:50 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:54:50 info: -----------------------------------------
+2022-10-29 08:54:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (114 ms)
+    × should reject with an Error when a die rolls off the table (514 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.605 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 08:56:01 info: -----------------------------------------
+2022-10-29 08:56:01 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 08:56:01 info: -----------------------------------------
+2022-10-29 08:56:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (116 ms)
+    × should reject with an Error when a die rolls off the table (116 ms)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.152 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-10-29 09:02:18 info: -----------------------------------------
+2022-10-29 09:02:18 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 09:02:18 info: -----------------------------------------
+2022-10-29 09:02:21 info: All unit tests passed.
+2022-10-29 09:02:23 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  3:9  error  'reject' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-29 09:02:46 info: -----------------------------------------
+2022-10-29 09:02:46 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 09:02:46 info: -----------------------------------------
+2022-10-29 09:02:50 info: All unit tests passed.
+2022-10-29 09:02:54 info: All steps were completed successfully
+2022-10-29 09:05:42 info: -----------------------------------------
+2022-10-29 09:05:42 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-10-29 09:05:42 info: -----------------------------------------
+2022-10-29 09:05:45 info: All unit tests passed.
+2022-10-29 09:05:50 info: All steps were completed successfully
+2022-10-29 10:24:50 info: ----------------------------------------
+2022-10-29 10:24:50 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:24:50 info: ----------------------------------------
+2022-10-29 10:24:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19
+  return dice.map(item => Promise.race(item));
+                                  ^
+
+TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at Function.race (<anonymous>)
+    at C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19:35
+    at Array.map (<anonymous>)
+    at rollDice (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19:15)
+    at Object.rollDice (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\unit-tests\ex4-diceRace.test.js:53:21)
+    at Promise.then.completed (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:91:9)
+    at run (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:31:3)
+    at runAndTransformResultsToJestFormat (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:136:21)
+    at jestAdapter (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:92:19)
+    at runTestInternal (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-runner\build\runTest.js:407:16)
+    at runTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-runner\build\runTest.js:491:34)
+
+Node.js v18.7.0
+2022-10-29 10:25:00 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  14:7  error  'rollDie' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-29 10:25:32 info: ----------------------------------------
+2022-10-29 10:25:32 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:25:32 info: ----------------------------------------
+2022-10-29 10:25:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19
+  return dice.map(item => Promise.race(item));
+                                  ^
+
+TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at Function.race (<anonymous>)
+    at C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19:35
+    at Array.map (<anonymous>)
+    at rollDice (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19:15)
+    at Object.rollDice (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\unit-tests\ex4-diceRace.test.js:53:21)
+    at Promise.then.completed (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:91:9)
+    at run (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:31:3)
+    at runAndTransformResultsToJestFormat (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:136:21)
+    at jestAdapter (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:92:19)
+    at runTestInternal (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-runner\build\runTest.js:407:16)
+    at runTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-runner\build\runTest.js:491:34)
+
+Node.js v18.7.0
+2022-10-29 10:25:39 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  14:7  error  'rollDie' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-29 10:26:24 info: ----------------------------------------
+2022-10-29 10:26:24 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:26:24 info: ----------------------------------------
+2022-10-29 10:26:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19
+  return dice.map(item => Promise.race(rollDie(item)));
+                                  ^
+
+TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator))
+    at Function.race (<anonymous>)
+    at C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19:35
+    at Array.map (<anonymous>)
+    at rollDice (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19:15)
+    at Object.rollDice (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\unit-tests\ex4-diceRace.test.js:53:21)
+    at Promise.then.completed (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:91:9)
+    at run (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:31:3)
+    at runAndTransformResultsToJestFormat (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:136:21)
+    at jestAdapter (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:92:19)
+    at runTestInternal (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-runner\build\runTest.js:407:16)
+    at runTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-runner\build\runTest.js:491:34)
+
+Node.js v18.7.0
+2022-10-29 10:27:00 info: ----------------------------------------
+2022-10-29 10:27:00 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:27:00 info: ----------------------------------------
+2022-10-29 10:27:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19
+  return dice.map(item => Promise.race(rollDie(item)));
+                                  ^
+
+TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator))
+    at Function.race (<anonymous>)
+    at C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19:35
+    at Array.map (<anonymous>)
+    at rollDice (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19:15)
+    at Object.rollDice (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\unit-tests\ex4-diceRace.test.js:53:21)
+    at Promise.then.completed (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:91:9)
+    at run (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:31:3)
+    at runAndTransformResultsToJestFormat (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:136:21)
+    at jestAdapter (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:92:19)
+    at runTestInternal (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-runner\build\runTest.js:407:16)
+    at runTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-runner\build\runTest.js:491:34)
+
+Node.js v18.7.0
+2022-10-29 10:28:57 info: ----------------------------------------
+2022-10-29 10:28:57 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:28:57 info: ----------------------------------------
+2022-10-29 10:29:01 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19
+  return dice.map(item => Promise.race(rollDie(item)));
+                                  ^
+
+TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator))
+    at Function.race (<anonymous>)
+    at C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19:35
+    at Array.map (<anonymous>)
+    at rollDice (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\homework\ex4-diceRace.js:19:15)
+    at Object.rollDice (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\Week2\unit-tests\ex4-diceRace.test.js:53:21)
+    at Promise.then.completed (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:91:9)
+    at run (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\run.js:31:3)
+    at runAndTransformResultsToJestFormat (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:136:21)
+    at jestAdapter (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:92:19)
+    at runTestInternal (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-runner\build\runTest.js:407:16)
+    at runTest (C:\Users\utente\Desktop\hyf-homework\Homework-class40\node_modules\jest-runner\build\runTest.js:491:34)
+
+Node.js v18.7.0
+2022-10-29 10:30:13 info: ----------------------------------------
+2022-10-29 10:30:13 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:30:13 info: ----------------------------------------
+2022-10-29 10:30:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    × should use `dice.map()` (1 ms)
+    × should use `Promise.race()`
+    × should resolve as soon as a die settles successfully (1 ms)
+    √ should reject with an Error as soon as a die rolls off the table (1 ms)
+
+  ● ex4-diceRace › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      38 |
+      39 |   test('should use `dice.map()`', () => {
+    > 40 |     expect(state.diceMap).toBeDefined();
+         |                           ^
+      41 |   });
+      42 |
+      43 |   test('should use `Promise.race()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:40:27)
+
+  ● ex4-diceRace › should use `Promise.race()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.race()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:44:30)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+    Received constructor: Array
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(typeof result).toBe('string');
+      57 |
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:54:21)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 4 passed, 7 total
+Snapshots:   0 total
+Time:        0.902 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+2022-10-29 10:30:19 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  14:7  error  'rollDie' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-10-29 10:41:59 info: ----------------------------------------
+2022-10-29 10:41:59 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:41:59 info: ----------------------------------------
+2022-10-29 10:42:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.race()`
+    × should resolve as soon as a die settles successfully (3 ms)
+    √ should reject with an Error as soon as a die rolls off the table (1 ms)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+    Received constructor: Array
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(typeof result).toBe('string');
+      57 |
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:54:21)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.883 s, estimated 1 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v18.7.0
+2022-10-29 10:44:30 info: ----------------------------------------
+2022-10-29 10:44:30 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:44:30 info: ----------------------------------------
+2022-10-29 10:44:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    √ should exist and be executable (1 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.race()`
+    × should resolve as soon as a die settles successfully (2 ms)
+    √ should reject with an Error as soon as a die rolls off the table (1 ms)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(typeof result).toBe('string');
+      57 |
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:54:21)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.823 s, estimated 1 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v18.7.0
+2022-10-29 10:45:43 info: ----------------------------------------
+2022-10-29 10:45:43 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:45:43 info: ----------------------------------------
+2022-10-29 10:45:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.race()`
+    × should resolve as soon as a die settles successfully (7 ms)
+    × should reject with an Error as soon as a die rolls off the table (2 ms)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "string"
+    Received: "object"
+
+      54 |     expect(promise).toBeInstanceOf(Promise);
+      55 |     const result = await promise;
+    > 56 |     expect(typeof result).toBe('string');
+         |                           ^
+      57 |
+      58 |     promise.finally(() => {
+      59 |       randomSpy.mockRestore();
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:56:27)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      62 |
+      63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+    > 64 |     expect.assertions(3);
+         |            ^
+      65 |     expect(exported).toBeDefined();
+      66 |
+      67 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:64:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.904 s, estimated 1 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\utente\Desktop\hyf-homework\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v18.7.0
+2022-10-29 10:47:10 info: ----------------------------------------
+2022-10-29 10:47:10 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:47:10 info: ----------------------------------------
+2022-10-29 10:47:14 info: All unit tests passed.
+2022-10-29 10:47:19 info: All steps were completed successfully
+2022-10-29 10:47:57 info: ----------------------------------------
+2022-10-29 10:47:57 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-10-29 10:47:57 info: ----------------------------------------
+2022-10-29 10:48:00 info: All unit tests passed.
+2022-10-29 10:48:06 info: All steps were completed successfully
+2022-10-30 09:28:56 info: ----------------------------------------
+2022-10-30 09:28:56 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-10-30 09:28:56 info: ----------------------------------------
+2022-10-30 09:28:56 warn: A unit test file was not provided.
+2022-10-30 09:29:02 info: All steps were completed successfully
+2022-11-01 10:32:19 info: ---------------------------------------------
+2022-11-01 10:32:19 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-11-01 10:32:19 info: ---------------------------------------------
+2022-11-01 10:32:29 info: All unit tests passed.
+2022-11-01 10:32:35 info: All steps were completed successfully
+2022-11-01 10:33:53 info: ---------------------------------------------
+2022-11-01 10:33:53 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-11-01 10:33:53 info: ---------------------------------------------
+2022-11-01 10:33:58 info: All unit tests passed.
+2022-11-01 10:34:03 info: All steps were completed successfully
+2022-11-01 10:34:13 info: ------------------------------------------
+2022-11-01 10:34:13 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-01 10:34:13 info: ------------------------------------------
+2022-11-01 10:34:18 info: All unit tests passed.
+2022-11-01 10:34:22 info: All steps were completed successfully
+2022-11-01 10:34:33 info: -----------------------------------------
+2022-11-01 10:34:33 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 10:34:33 info: -----------------------------------------
+2022-11-01 10:34:36 info: All unit tests passed.
+2022-11-01 10:34:40 info: All steps were completed successfully
+2022-11-01 10:34:56 info: ----------------------------------------
+2022-11-01 10:34:56 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-01 10:34:56 info: ----------------------------------------
+2022-11-01 10:34:59 info: All unit tests passed.
+2022-11-01 10:35:03 info: All steps were completed successfully
+2022-11-01 10:35:14 info: ----------------------------------------
+2022-11-01 10:35:14 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-11-01 10:35:14 info: ----------------------------------------
+2022-11-01 10:35:14 warn: A unit test file was not provided.
+2022-11-01 10:35:18 info: All steps were completed successfully
+2022-11-01 10:35:30 info: --------------------------------------------
+2022-11-01 10:35:30 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2022-11-01 10:35:30 info: --------------------------------------------
+2022-11-01 10:35:30 warn: A unit test file was not provided.
+2022-11-01 10:35:35 info: All steps were completed successfully
