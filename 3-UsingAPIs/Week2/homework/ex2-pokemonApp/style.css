@@ -1,1 +1,12 @@
 /* add your styling here */
+body {
+  max-width: max-content;
+  margin: auto;
+}
+button {
+  margin-top: 20px;
+  display: block;
+}
+select {
+  margin: 20px 0;
+}
