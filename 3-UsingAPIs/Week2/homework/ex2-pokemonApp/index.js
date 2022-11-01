@@ -73,8 +73,6 @@ function fetchAndPopulatePokemons(data) {
   select.addEventListener('change', populateImg);
 }
 
-// ===========================================
-
 function fetchImage(index) {
   const container = document.querySelector('.container');
   const image = document.createElement('img');
