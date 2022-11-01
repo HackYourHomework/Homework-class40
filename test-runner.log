@@ -615,3 +615,255 @@ ex2-pokemonApp/index.js
 2022-11-01 11:48:03 info: ------------------------------------------
 2022-11-01 11:48:48 info: All unit tests passed.
 2022-11-01 11:49:32 info: All steps were completed successfully
+2022-11-02 12:31:28 info: -----------------------------------------
+2022-11-02 12:31:28 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-02 12:31:28 info: -----------------------------------------
+2022-11-02 12:31:35 info: All unit tests passed.
+2022-11-02 12:31:45 info: All steps were completed successfully
+2022-11-02 12:48:28 info: ----------------------------------------
+2022-11-02 12:48:28 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-02 12:48:28 info: ----------------------------------------
+2022-11-02 12:48:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.race()` (1 ms)
+    × should resolve as soon as a die settles successfully (4 ms)
+    √ should reject with an Error as soon as a die rolls off the table (1 ms)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(typeof result).toBe('string');
+      57 |
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:54:21)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.677 s, estimated 2 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+C:\Users\lenovo\Desktop\MyHYF\class40\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\lenovo\Desktop\MyHYF\class40\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\lenovo\Desktop\MyHYF\class40\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+2022-11-02 12:49:49 info: ----------------------------------------
+2022-11-02 12:49:49 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-02 12:49:49 info: ----------------------------------------
+2022-11-02 12:49:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    × `rollDice` should not contain unneeded console.log calls (5 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.race()` (1 ms)
+    × should resolve as soon as a die settles successfully (2 ms)
+    √ should reject with an Error as soon as a die rolls off the table (2 ms)
+
+  ● ex4-diceRace › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(typeof result).toBe('string');
+      57 |
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:54:21)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.654 s, estimated 2 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "NINE".
+
+      17 |   const dice = [1, 2, 3, 4, 5];
+      18 |   Promise.race(dice.map((roll) => rollDie(roll)))
+    > 19 |     .then((resolve) => console.log(resolve))
+         |                                                                         ^
+      20 |     .catch((err) => console.log(err));
+      21 | }
+      22 |
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at 3-UsingAPIs/Week2/homework/ex4-diceRace.js:19:73
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Error: Die 1 rolled off the table.
+
+        at rollOnce (C:\Users\lenovo\Desktop\MyHYF\class40\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+        at Timeout._onTimeout (C:\Users\lenovo\Desktop\MyHYF\class40\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+        at listOnTimeout (node:internal/timers:559:17)
+        at processTimers (node:internal/timers:502:7)".
+
+      62 |       getRandomNumber(MAX_ROLLS - MIN_ROLLS + 1) + MIN_ROLLS;
+      63 |
+    > 64 |     logStamped(`Die ${die} scheduled for ${randomRollsToDo} rolls...`);
+         |                ^
+      65 |
+      66 |     let offTable = false;
+      67 |
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:64:16)
+      at Timeout._onTimeout (3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
+      at processTimers (node:internal/timers:502:7)".
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at 3-UsingAPIs/Week2/homework/ex4-diceRace.js:19:108
+2022-11-02 12:51:40 info: ----------------------------------------
+2022-11-02 12:51:40 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-02 12:51:40 info: ----------------------------------------
+2022-11-02 12:51:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.race()`
+    × should resolve as soon as a die settles successfully (6 ms)
+    √ should reject with an Error as soon as a die rolls off the table (2 ms)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(typeof result).toBe('string');
+      57 |
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:54:21)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        2.137 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+C:\Users\lenovo\Desktop\MyHYF\class40\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\lenovo\Desktop\MyHYF\class40\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\lenovo\Desktop\MyHYF\class40\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+2022-11-02 12:52:39 info: ----------------------------------------
+2022-11-02 12:52:39 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-02 12:52:39 info: ----------------------------------------
+2022-11-02 12:52:45 info: All unit tests passed.
+2022-11-02 12:52:55 info: All steps were completed successfully
