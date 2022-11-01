@@ -22,18 +22,82 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+
+const publicApi = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+
+async function fetchData(url) {
+  const response = await fetch(url);
+  console.log(response);
+  if (response.ok) {
+    const data = await response.json();
+    console.log(data);
+    return data;
+  } else {
+    throw new Error('Can not fetch data');
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons() {
+  try {
+    const selectEl = document.getElementById('select');
+    const data = await fetchData(publicApi);
+    const dataArray = data.results;
+    console.log(dataArray);
+
+    dataArray.forEach((pokemon, index) => {
+      const optionEl = document.createElement('option');
+      optionEl.textContent = `${index + 1}-${pokemon.name}`;
+      selectEl.appendChild(optionEl);
+    });
+
+    selectEl.onchange = fetchImage;
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(event) {
+  const selected = event.target.value;
+  console.log(selected);
+  const numberOfSelected = selected.split('-')[0];
+  const resForSelected = await fetch(
+    `https://pokeapi.co/api/v2/pokemon/${numberOfSelected}`
+  );
+  const resJson = await resForSelected.json();
+  const img = resJson.sprites.back_default;
+  console.log(img);
+  const pokemonImg = document.getElementById('img');
+  pokemonImg.src = img.toString();
+}
+
+function createElement() {
+  document.body;
+  const buttonEl = document.createElement('button');
+  buttonEl.id = 'btn';
+  buttonEl.type = 'button';
+  buttonEl.style.marginBottom = '10px';
+  buttonEl.textContent = 'See Pokemons!';
+  document.body.appendChild(buttonEl);
+
+  const selectEl = document.createElement('select');
+  selectEl.id = 'select';
+  document.body.appendChild(selectEl);
+
+  const imageEl = document.createElement('img');
+  imageEl.id = 'img';
+  imageEl.alt = 'pokemonImage';
+  imageEl.src = ' ';
+  imageEl.style.width = '100px';
+  document.body.appendChild(imageEl);
+
+  document.body.style.display = 'inline-grid';
 }
 
 function main() {
-  // TODO complete this function
+  createElement();
+  document
+    .getElementById('btn')
+    .addEventListener('click', fetchAndPopulatePokemons);
 }
+
+window.addEventListener('load', main);
