@@ -22,18 +22,78 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+const URL_FETCH = `https://pokeapi.co/api/v2/pokemon?limit=151`;
+
+async function fetchData(url) {
+  const fetchedData = await fetch(url);
+  const parsedData = await fetchedData.json();
+  return new Promise((resolve, reject) => {
+    if (fetchedData.ok) {
+      resolve(parsedData);
+    } else {
+      console.log(`Error Message: ${reject}`);
+    }
+  });
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function fetchAndPopulatePokemons() {
+  const buttonDiv = document.createElement('div');
+  buttonDiv.classList.add('button-div');
+  const buttonElement = document.createElement('button');
+  buttonElement.classList.add('button');
+  document.body.appendChild(buttonDiv);
+  buttonDiv.appendChild(buttonElement);
+  buttonElement.textContent = 'Get Pokemon!';
+  buttonElement.type = 'button';
+  const selectDiv = document.createElement('div');
+  selectDiv.classList.add('select-div');
+  const selectElement = document.createElement('select');
+  selectElement.classList.add('select');
+  document.body.appendChild(selectDiv);
+  selectDiv.appendChild(selectElement);
+  buttonElement.addEventListener('click', getPokemon);
+
+  async function getPokemon() {
+    try {
+      const pokemonsData = await fetchData(URL_FETCH);
+      pokemonsData.results.forEach((element) => {
+        const optionElement = document.createElement('option');
+        selectElement.appendChild(optionElement);
+        optionElement.textContent = element.name;
+        optionElement.value = element.name;
+        console.log(element.img);
+        selectElement.addEventListener('change', (event) => {
+          if (event.target.value === element.name) {
+            fetchImage(element.url);
+          }
+        });
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(url) {
+  try {
+    const fetchedImageData = await fetch(url);
+    const parsedImageData = await fetchedImageData.json();
+    if (document.images.length < 1) {
+      const imageElement = document.createElement('img');
+      imageElement.classList.add('pokemon-image');
+      document.body.appendChild(imageElement);
+      imageElement.src = parsedImageData.sprites.front_default;
+    } else {
+      document.getElementsByClassName('pokemon-image')[0].src =
+        parsedImageData.sprites.front_default;
+    }
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 function main() {
-  // TODO complete this function
+  fetchAndPopulatePokemons();
 }
+
+window.addEventListener('load', main);
