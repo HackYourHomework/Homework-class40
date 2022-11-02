@@ -1,1 +1,31 @@
 /* Write your style here */
+
+hi {
+  margin-left: 40px;
+  margin-top: 80px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: calc(100% - 41px);
+}
+
+li {
+  width: calc(25% - 51px);
+  margin: 15px;
+  padding: 10px;
+  min-width: 350px;
+
+}
+
+img {
+  width: 50%;
+
+}
+
+p {
+  font-size: 18px;
+}
