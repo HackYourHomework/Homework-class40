@@ -867,3 +867,8 @@ Error: Die 1 rolled off the table.
 2022-11-02 12:52:39 info: ----------------------------------------
 2022-11-02 12:52:45 info: All unit tests passed.
 2022-11-02 12:52:55 info: All steps were completed successfully
+2022-11-02 01:54:15 info: ----------------------------------------
+2022-11-02 01:54:15 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-11-02 01:54:15 info: ----------------------------------------
+2022-11-02 01:54:15 warn: A unit test file was not provided.
+2022-11-02 01:54:35 info: All steps were completed successfully
