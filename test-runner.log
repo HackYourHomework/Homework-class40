@@ -386,3 +386,8 @@ Tests:       5 failed, 5 total
 Snapshots:   0 total
 Time:        26.338 s
 Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-11-02 05:21:05 info: ----------------------------------------
+2022-11-02 05:21:05 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-02 05:21:05 info: ----------------------------------------
+2022-11-02 05:21:17 info: All unit tests passed.
+2022-11-02 05:21:28 info: All steps were completed successfully
