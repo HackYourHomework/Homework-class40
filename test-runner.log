@@ -149,3 +149,109 @@ ex3-rollAnAce.js
 2022-11-02 10:44:00 info: -----------------------------------------
 2022-11-02 10:44:01 info: All unit tests passed.
 2022-11-02 10:44:04 info: All steps were completed successfully
+2022-11-02 11:02:14 info: ----------------------------------------
+2022-11-02 11:02:14 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-02 11:02:14 info: ----------------------------------------
+2022-11-02 11:02:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    ✓ should exist and be executable (1 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✓ should use `dice.map()`
+    ✓ should use `Promise.race()`
+    ✕ should resolve as soon as a die settles successfully (1 ms)
+    ✕ should reject with an Error as soon as a die rolls off the table
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    TypeError: Promise.race is not a constructor
+
+      17 |   const dice = [1, 2, 3, 4, 5];
+      18 |   const newArray = dice.map((element) => rollDie(element));
+    > 19 |   return new Promise.race(newArray);
+         |          ^
+      20 | }
+      21 |
+      22 | // Refactor this function to use async/await and try/catch
+
+      at rollDice (3-UsingAPIs/Week2/homework/ex4-diceRace.js:19:10)
+      at Object.rollDice (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:53:21)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      62 |
+      63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+    > 64 |     expect.assertions(3);
+         |            ^
+      65 |     expect(exported).toBeDefined();
+      66 |
+      67 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:64:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.482 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+/Users/hackyourfuture/HYF/Homework-class40/3-UsingAPIs/helpers/pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (/Users/hackyourfuture/HYF/Homework-class40/3-UsingAPIs/helpers/pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (/Users/hackyourfuture/HYF/Homework-class40/3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+2022-11-02 11:02:17 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  19:22  error  A constructor name should not start with a lowercase letter  new-cap
+  26:62  error  Unnecessary semicolon                                        no-extra-semi
+
+✖ 2 problems (2 errors, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-02 11:03:36 info: ----------------------------------------
+2022-11-02 11:03:36 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-02 11:03:36 info: ----------------------------------------
+2022-11-02 11:03:37 info: All unit tests passed.
+2022-11-02 11:03:39 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  26:62  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-02 11:04:18 info: ----------------------------------------
+2022-11-02 11:04:18 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-02 11:04:18 info: ----------------------------------------
+2022-11-02 11:04:20 info: All unit tests passed.
+2022-11-02 11:04:22 info: All steps were completed successfully
