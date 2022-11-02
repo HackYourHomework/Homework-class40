@@ -1,0 +1,141 @@
+2022-11-02 02:16:21 info: ---------------------------------------
+2022-11-02 02:16:21 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-11-02 02:16:21 info: ---------------------------------------
+2022-11-02 02:16:41 info: All unit tests passed.
+2022-11-02 02:17:02 info: All steps were completed successfully
+2022-11-02 02:24:24 info: -------------------------------------------------
+2022-11-02 02:24:24 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-11-02 02:24:24 info: -------------------------------------------------
+2022-11-02 02:24:36 info: All unit tests passed.
+2022-11-02 02:24:47 info: All steps were completed successfully
+2022-11-02 02:40:16 info: ---------------------------------------
+2022-11-02 02:40:16 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-11-02 02:40:16 info: ---------------------------------------
+2022-11-02 02:40:26 info: All unit tests passed.
+2022-11-02 02:40:39 info: All steps were completed successfully
+2022-11-02 02:52:01 info: --------------------------------------------
+2022-11-02 02:52:01 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-11-02 02:52:01 info: --------------------------------------------
+2022-11-02 02:52:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (3 ms)
+    √ should use `dice.map()` (1 ms)
+    × should use `Promise.all()` (4 ms)
+    × should resolve when all dice settle successfully (5 ms)
+    × should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex4-pokerDiceAll › should use `Promise.all()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.all()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:44:30)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    TypeError: Promise resolver [object Array] is not a function
+        at new Promise (<anonymous>)
+
+      29 | function rollDice() {
+      30 |   const dice = [1, 2, 3, 4, 5];
+    > 31 |   return new Promise(dice.map((roll) => rollDie(roll)));
+         |          ^
+      32 | }
+      33 |
+      34 | function main() {
+
+      at rollDice (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:31:10)
+      at Object.rollDice (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:53:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 4 passed, 7 total
+Snapshots:   0 total
+Time:        2.39 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\alraz\Desktop\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\alraz\Desktop\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\alraz\Desktop\Homework-class40\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+2022-11-02 02:53:23 info: --------------------------------------------
+2022-11-02 02:53:23 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-11-02 02:53:23 info: --------------------------------------------
+2022-11-02 02:53:32 info: All unit tests passed.
+2022-11-02 02:53:44 info: All steps were completed successfully
+2022-11-02 02:56:23 info: ----------------------------------------------
+2022-11-02 02:56:23 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-11-02 02:56:23 info: ----------------------------------------------
+2022-11-02 02:56:33 info: All unit tests passed.
+2022-11-02 02:56:44 info: All steps were completed successfully
