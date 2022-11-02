@@ -1,0 +1,1441 @@
+2022-09-21 05:45:12 info: ----------------------------------------------
+2022-09-21 05:45:12 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 05:45:12 info: ----------------------------------------------
+2022-09-21 05:45:19 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 05:45:23 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  22:9  warning  Identifier 'Compliment' is not in camelCase  hyf/camelcase
+  23:1  warning  Remove commented-out code                    hyf/no-commented-out-code
+  25:1  warning  Remove commented-out code                    hyf/no-commented-out-code
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2022-09-21 05:47:02 info: ----------------------------------------------
+2022-09-21 05:47:02 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 05:47:02 info: ----------------------------------------------
+2022-09-21 05:47:07 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 05:47:11 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  22:9   error    'cnpompliment' is assigned a value but never used  no-unused-vars
+  32:3   warning  Remove commented-out code                          hyf/no-commented-out-code
+  33:44  error    'Compliment' is not defined                        no-undef
+  34:3   warning  Remove commented-out code                          hyf/no-commented-out-code
+  36:21  error    'compliment' is not defined                        no-undef
+
+✖ 5 problems (3 errors, 2 warnings)
+
+
+2022-09-21 05:47:14 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:22:9 - Unknown word (cnpompliment)
+
+2022-09-21 05:50:35 info: ----------------------------------------------
+2022-09-21 05:50:35 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 05:50:35 info: ----------------------------------------------
+2022-09-21 05:50:40 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great,HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 05:50:43 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  32:3  warning  Remove commented-out code  hyf/no-commented-out-code
+  34:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-09-21 05:52:00 info: ----------------------------------------------
+2022-09-21 05:52:00 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 05:52:00 info: ----------------------------------------------
+2022-09-21 05:52:06 error: *** Unit Test Error Report ***
+
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great,HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 05:56:43 info: ----------------------------------------------
+2022-09-21 05:56:43 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 05:56:43 info: ----------------------------------------------
+2022-09-21 05:56:47 error: *** Unit Test Error Report ***
+
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 05:57:51 info: ----------------------------------------
+2022-09-21 05:57:51 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 05:57:51 info: ----------------------------------------
+2022-09-21 05:57:56 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: your doggie is 7 in dog years!
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: your doggie is 14 in dog years!
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: your doggie is 21 in dog years!
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-09-21 06:09:46 info: ----------------------------------------------
+2022-09-21 06:09:46 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 06:09:46 info: ----------------------------------------------
+2022-09-21 06:09:50 error: *** Unit Test Error Report ***
+
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:11:53 info: ----------------------------------------------
+2022-09-21 06:11:53 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-09-21 06:11:53 info: ----------------------------------------------
+2022-09-21 06:11:57 info: All unit tests passed.
+2022-09-21 06:12:03 info: All steps were completed successfully
+2022-09-21 06:13:10 info: ----------------------------------------
+2022-09-21 06:13:10 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 06:13:10 info: ----------------------------------------
+2022-09-21 06:13:14 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: your doggie is 7 in dog years!
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: your doggie is 14 in dog years!
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: your doggie is 21 in dog years!
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:14:21 info: ----------------------------------------
+2022-09-21 06:14:21 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 06:14:21 info: ----------------------------------------
+2022-09-21 06:14:25 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: your doggie is 7 years old in dog years!
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: your doggie is 14 years old in dog years!
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: your doggie is 21 years old in dog years!
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:16:04 info: ----------------------------------------
+2022-09-21 06:16:04 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 06:16:04 info: ----------------------------------------
+2022-09-21 06:16:09 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: your doggie is 7 years old in dog years!
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: your doggie is 14 years old in dog years!
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: your doggie is 21 years old in dog years!
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:18:23 info: ----------------------------------------
+2022-09-21 06:18:23 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 06:18:23 info: ----------------------------------------
+2022-09-21 06:18:27 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: your doggie is 7 years old in dog years!
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: your doggie is 14 years old in dog years!
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: your doggie is 21 years old in dog years!
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:19:31 info: ----------------------------------------
+2022-09-21 06:19:31 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-09-21 06:19:31 info: ----------------------------------------
+2022-09-21 06:19:35 info: All unit tests passed.
+2022-09-21 06:19:41 info: All steps were completed successfully
+2022-09-21 06:20:19 info: -------------------------------------------
+2022-09-21 06:20:19 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:20:19 info: -------------------------------------------
+2022-09-21 06:20:24 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amesterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amesterdam married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:20:27 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  37:53  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-21 06:20:30 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:47:39 - Unknown word (alaa)
+ex3-tellFortune.js:47:53 - Unknown word (saly)
+ex3-tellFortune.js:49:23 - Unknown word (Amesterdam)
+ex3-tellFortune.js:49:75 - Unknown word (Haag)
+ex3-tellFortune.js:51:36 - Unknown word (devloper)
+
+2022-09-21 06:22:01 info: -------------------------------------------
+2022-09-21 06:22:01 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:22:01 info: -------------------------------------------
+2022-09-21 06:22:05 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amesterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amesterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:22:08 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  37:55  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-21 06:22:11 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:51:41 - Unknown word (alaa)
+ex3-tellFortune.js:51:57 - Unknown word (saly)
+ex3-tellFortune.js:54:6 - Unknown word (Amesterdam)
+ex3-tellFortune.js:58:10 - Unknown word (Haag)
+ex3-tellFortune.js:61:37 - Unknown word (devloper)
+
+2022-09-21 06:25:40 info: -------------------------------------------
+2022-09-21 06:25:40 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:25:40 info: -------------------------------------------
+2022-09-21 06:25:44 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:25:47 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  37:55  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-09-21 06:25:51 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:51:41 - Unknown word (alaa)
+ex3-tellFortune.js:51:57 - Unknown word (saly)
+ex3-tellFortune.js:58:9 - Unknown word (Haag)
+ex3-tellFortune.js:61:37 - Unknown word (devloper)
+
+2022-09-21 06:28:41 info: -------------------------------------------
+2022-09-21 06:28:41 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:28:41 info: -------------------------------------------
+2022-09-21 06:28:45 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:28:52 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:51:57 - Unknown word (heba)
+ex3-tellFortune.js:58:6 - Unknown word (Drachten)
+
+2022-09-21 06:31:02 info: -------------------------------------------
+2022-09-21 06:31:02 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:31:02 info: -------------------------------------------
+2022-09-21 06:31:06 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:31:12 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:51:57 - Unknown word (yara)
+
+2022-09-21 06:32:33 info: -------------------------------------------
+2022-09-21 06:32:33 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:32:33 info: -------------------------------------------
+2022-09-21 06:32:38 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: you will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:33:40 info: -------------------------------------------
+2022-09-21 06:33:40 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:33:40 info: -------------------------------------------
+2022-09-21 06:33:45 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: You will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:34:54 info: --------------------------------------------
+2022-09-21 06:34:54 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-09-21 06:34:54 info: --------------------------------------------
+2022-09-21 06:34:54 warn: A unit test file was not provided.
+2022-09-21 06:35:01 info: All steps were completed successfully
+2022-09-21 06:35:20 info: ------------------------------------------------
+2022-09-21 06:35:20 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-09-21 06:35:20 info: ------------------------------------------------
+2022-09-21 06:35:20 warn: A unit test file was not provided.
+2022-09-21 06:35:26 error: *** Spell Checker Report ***
+
+ex5-shoppingCartPure.js:19:28 - Unknown word (groceryitem)
+ex5-shoppingCartPure.js:20:26 - Unknown word (groceryitem)
+
+2022-09-21 06:36:46 info: ------------------------------------------------
+2022-09-21 06:36:46 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-09-21 06:36:46 info: ------------------------------------------------
+2022-09-21 06:36:46 warn: A unit test file was not provided.
+2022-09-21 06:36:52 info: All steps were completed successfully
+2022-09-21 06:37:22 info: -----------------------------------------
+2022-09-21 06:37:22 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-21 06:37:22 info: -----------------------------------------
+2022-09-21 06:37:22 warn: A unit test file was not provided.
+2022-09-21 06:37:28 error: *** Spell Checker Report ***
+
+ex6-totalCost.js:24:3 - Unknown word (berrs)
+
+2022-09-21 06:38:24 info: -----------------------------------------
+2022-09-21 06:38:24 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-09-21 06:38:24 info: -----------------------------------------
+2022-09-21 06:38:24 warn: A unit test file was not provided.
+2022-09-21 06:38:29 info: All steps were completed successfully
+2022-09-21 06:38:50 info: -------------------------------------------
+2022-09-21 06:38:50 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-09-21 06:38:50 info: -------------------------------------------
+2022-09-21 06:38:50 warn: A unit test file was not provided.
+2022-09-21 06:38:56 info: All steps were completed successfully
+2022-09-21 06:39:29 info: -------------------------------------------
+2022-09-21 06:39:29 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:39:29 info: -------------------------------------------
+2022-09-21 06:39:34 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Doctor in Amsterdam, married to lama with 1 kids.
+  Received: You will be a Doctor in Amsterdam, married to lama with 1 Kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\hp\Desktop\Homework-class40\test-runner\CustomReporter.js"
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+● Deprecation Warning:
+
+  Option "extraGlobals" was replaced by "sandboxInjectedGlobals".
+
+  Please update your configuration.
+
+  Configuration Documentation:
+  https://jestjs.io/docs/configuration
+
+2022-09-21 06:41:42 info: -------------------------------------------
+2022-09-21 06:41:42 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:41:42 info: -------------------------------------------
+2022-09-21 06:41:47 info: All unit tests passed.
+2022-09-21 06:41:54 info: All steps were completed successfully
+2022-09-21 06:42:31 info: -------------------------------------------
+2022-09-21 06:42:31 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-09-21 06:42:31 info: -------------------------------------------
+2022-09-21 06:42:36 info: All unit tests passed.
+2022-09-21 06:42:43 info: All steps were completed successfully
+2022-11-01 05:33:30 info: ---------------------------------------------
+2022-11-01 05:33:30 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-11-01 05:33:30 info: ---------------------------------------------
+2022-11-01 05:33:37 info: All unit tests passed.
+2022-11-01 05:33:46 error: *** Spell Checker Report ***
+
+ex1-programmerFun/index.js:25:24 - Unknown word (faild)
+
+2022-11-01 05:35:06 info: ---------------------------------------------
+2022-11-01 05:35:06 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-11-01 05:35:06 info: ---------------------------------------------
+2022-11-01 05:35:13 info: All unit tests passed.
+2022-11-01 05:35:18 info: All steps were completed successfully
+2022-11-01 05:39:10 info: ---------------------------------------------
+2022-11-01 05:39:10 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-11-01 05:39:10 info: ---------------------------------------------
+2022-11-01 05:39:16 info: All unit tests passed.
+2022-11-01 05:39:22 info: All steps were completed successfully
+2022-11-01 06:21:51 info: -----------------------------------------
+2022-11-01 06:21:51 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 06:21:51 info: -----------------------------------------
+2022-11-01 06:22:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[6920:00000274EA1F1780]    24849 ms: Scavenge 2033.4 (2067.2) -> 2032.4 (2067.5) MB, 5.3 / 0.0 ms  (average mu = 0.290, current mu = 0.415) allocation failure 
+[6920:00000274EA1F1780]    24859 ms: Scavenge 2034.0 (2067.5) -> 2033.4 (2078.2) MB, 5.8 / 0.0 ms  (average mu = 0.290, current mu = 0.415) allocation failure 
+[6920:00000274EA1F1780]    26065 ms: Scavenge (reduce) 2040.9 (2079.0) -> 2039.1 (2072.5) MB, 18.8 / 0.0 ms  (average mu = 0.290, current mu = 0.415) allocation failure 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+ 1: 00007FF72F86B1EF v8::internal::CodeObjectRegistry::~CodeObjectRegistry+123599
+ 2: 00007FF72F7F8BA6 v8::internal::MicrotaskQueue::GetMicrotasksScopeDepth+65206
+ 3: 00007FF72F7F9C7D node::OnFatalError+301
+ 4: 00007FF73012C20E v8::Isolate::ReportExternalAllocationLimitReached+94
+ 5: 00007FF7301167ED v8::SharedArrayBuffer::Externalize+781
+ 6: 00007FF72FFB9DCC v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1468
+ 7: 00007FF72FFC6A79 v8::internal::Heap::PublishPendingAllocations+1129
+ 8: 00007FF72FFC3A4A v8::internal::Heap::PageFlagsAreConsistent+2842
+ 9: 00007FF72FFB66A9 v8::internal::Heap::CollectGarbage+2137
+10: 00007FF72FFBEF6B v8::internal::Heap::GlobalSizeOfObjects+331
+11: 00007FF7300056DB v8::internal::StackGuard::HandleInterrupts+891
+12: 00007FF72FD0D636 v8::internal::DateCache::Weekday+8630
+13: 00007FF7301B9F01 v8::internal::SetupIsolateDelegate::SetupHeap+494417
+14: 00000274EBF66F25
+2022-11-01 06:22:25 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  17:16  error  Expected '!==' and instead saw '!='  eqeqeq
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-01 06:22:51 info: -----------------------------------------
+2022-11-01 06:22:51 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 06:22:51 info: -----------------------------------------
+2022-11-01 06:23:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[13604:000001DA50896290]    23470 ms: Scavenge 2029.5 (2063.0) -> 2028.7 (2064.2) MB, 6.4 / 0.0 ms  (average mu = 0.216, current mu = 0.319) allocation failure 
+[13604:000001DA50896290]    23482 ms: Scavenge 2030.4 (2064.2) -> 2029.8 (2074.7) MB, 6.5 / 0.0 ms  (average mu = 0.216, current mu = 0.319) allocation failure 
+[13604:000001DA50896290]    24499 ms: Scavenge (reduce) 2037.2 (2075.5) -> 2035.7 (2069.2) MB, 24.3 / 0.0 ms  (average mu = 0.216, current mu = 0.319) allocation failure 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+ 1: 00007FF72F86B1EF v8::internal::CodeObjectRegistry::~CodeObjectRegistry+123599
+ 2: 00007FF72F7F8BA6 v8::internal::MicrotaskQueue::GetMicrotasksScopeDepth+65206
+ 3: 00007FF72F7F9C7D node::OnFatalError+301
+ 4: 00007FF73012C20E v8::Isolate::ReportExternalAllocationLimitReached+94
+ 5: 00007FF7301167ED v8::SharedArrayBuffer::Externalize+781
+ 6: 00007FF72FFB9DCC v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1468
+ 7: 00007FF72FFC6A79 v8::internal::Heap::PublishPendingAllocations+1129
+ 8: 00007FF72FFC3A4A v8::internal::Heap::PageFlagsAreConsistent+2842
+ 9: 00007FF72FFB66A9 v8::internal::Heap::CollectGarbage+2137
+10: 00007FF72FFBEF6B v8::internal::Heap::GlobalSizeOfObjects+331
+11: 00007FF7300056DB v8::internal::StackGuard::HandleInterrupts+891
+12: 00007FF72FD0D636 v8::internal::DateCache::Weekday+8630
+13: 00007FF7301B9F01 v8::internal::SetupIsolateDelegate::SetupHeap+494417
+14: 000001DA527A0745
+2022-11-01 06:24:04 info: -----------------------------------------
+2022-11-01 06:24:04 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 06:24:04 info: -----------------------------------------
+2022-11-01 06:24:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[1988:0000024ABFE99A20]    25574 ms: Scavenge 2033.5 (2067.5) -> 2032.9 (2078.0) MB, 8.5 / 0.0 ms  (average mu = 0.246, current mu = 0.384) allocation failure 
+[1988:0000024ABFE99A20]    26954 ms: Scavenge (reduce) 2040.5 (2079.0) -> 2038.9 (2072.7) MB, 36.6 / 0.0 ms  (average mu = 0.246, current mu = 0.384) allocation failure 
+[1988:0000024ABFE99A20]    27322 ms: Scavenge (reduce) 2041.8 (2072.7) -> 2040.6 (2073.5) MB, 82.2 / 0.0 ms  (average mu = 0.246, current mu = 0.384) allocation failure 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+ 1: 00007FF72F86B1EF v8::internal::CodeObjectRegistry::~CodeObjectRegistry+123599
+ 2: 00007FF72F7F8BA6 v8::internal::MicrotaskQueue::GetMicrotasksScopeDepth+65206
+ 3: 00007FF72F7F9C7D node::OnFatalError+301
+ 4: 00007FF73012C20E v8::Isolate::ReportExternalAllocationLimitReached+94
+ 5: 00007FF7301167ED v8::SharedArrayBuffer::Externalize+781
+ 6: 00007FF72FFB9DCC v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1468
+ 7: 00007FF72FFC6A79 v8::internal::Heap::PublishPendingAllocations+1129
+ 8: 00007FF72FFC3A4A v8::internal::Heap::PageFlagsAreConsistent+2842
+ 9: 00007FF72FFB66A9 v8::internal::Heap::CollectGarbage+2137
+10: 00007FF72FFB4860 v8::internal::Heap::AllocateExternalBackingStore+2000
+11: 00007FF72FFD93E6 v8::internal::Factory::NewFillerObject+214
+12: 00007FF72FD0BA3A v8::internal::DateCache::Weekday+1466
+13: 00007FF7301B9F01 v8::internal::SetupIsolateDelegate::SetupHeap+494417
+14: 0000024AC1C21E9F
+2022-11-01 06:24:59 info: -----------------------------------------
+2022-11-01 06:24:59 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 06:24:59 info: -----------------------------------------
+2022-11-01 06:25:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[13212:0000018151D328B0]    22724 ms: Scavenge 2031.5 (2065.2) -> 2030.9 (2076.0) MB, 6.1 / 0.0 ms  (average mu = 0.215, current mu = 0.287) allocation failure 
+[13212:0000018151D328B0]    23474 ms: Scavenge (reduce) 2038.3 (2076.7) -> 2036.8 (2070.5) MB, 83.2 / 0.0 ms  (average mu = 0.215, current mu = 0.287) allocation failure 
+[13212:0000018151D328B0]    23763 ms: Scavenge (reduce) 2039.6 (2070.5) -> 2038.4 (2071.2) MB, 30.7 / 0.0 ms  (average mu = 0.215, current mu = 0.287) allocation failure 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+ 1: 00007FF72F86B1EF v8::internal::CodeObjectRegistry::~CodeObjectRegistry+123599
+ 2: 00007FF72F7F8BA6 v8::internal::MicrotaskQueue::GetMicrotasksScopeDepth+65206
+ 3: 00007FF72F7F9C7D node::OnFatalError+301
+ 4: 00007FF73012C20E v8::Isolate::ReportExternalAllocationLimitReached+94
+ 5: 00007FF7301167ED v8::SharedArrayBuffer::Externalize+781
+ 6: 00007FF72FFB9DCC v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1468
+ 7: 00007FF72FFC6A79 v8::internal::Heap::PublishPendingAllocations+1129
+ 8: 00007FF72FFC3A4A v8::internal::Heap::PageFlagsAreConsistent+2842
+ 9: 00007FF72FFB66A9 v8::internal::Heap::CollectGarbage+2137
+10: 00007FF72FFB4860 v8::internal::Heap::AllocateExternalBackingStore+2000
+11: 00007FF72FFD93E6 v8::internal::Factory::NewFillerObject+214
+12: 00007FF72FD0BA3A v8::internal::DateCache::Weekday+1466
+13: 00007FF7301B9F01 v8::internal::SetupIsolateDelegate::SetupHeap+494417
+14: 0000018153A2DC3F
+2022-11-01 06:26:55 info: -----------------------------------------
+2022-11-01 06:26:55 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 06:26:55 info: -----------------------------------------
+2022-11-01 06:27:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[11504:0000023D5B601E00]    25696 ms: Scavenge 2037.6 (2071.5) -> 2037.1 (2082.0) MB, 9.9 / 0.0 ms  (average mu = 0.253, current mu = 0.401) allocation failure 
+[11504:0000023D5B601E00]    27013 ms: Scavenge (reduce) 2044.7 (2082.7) -> 2043.1 (2076.2) MB, 78.8 / 0.0 ms  (average mu = 0.253, current mu = 0.401) allocation failure 
+[11504:0000023D5B601E00]    27307 ms: Scavenge (reduce) 2045.8 (2076.2) -> 2044.6 (2076.7) MB, 78.0 / 0.0 ms  (average mu = 0.253, current mu = 0.401) allocation failure 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+ 1: 00007FF72F86B1EF v8::internal::CodeObjectRegistry::~CodeObjectRegistry+123599
+ 2: 00007FF72F7F8BA6 v8::internal::MicrotaskQueue::GetMicrotasksScopeDepth+65206
+ 3: 00007FF72F7F9C7D node::OnFatalError+301
+ 4: 00007FF73012C20E v8::Isolate::ReportExternalAllocationLimitReached+94
+ 5: 00007FF7301167ED v8::SharedArrayBuffer::Externalize+781
+ 6: 00007FF72FFB9DCC v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1468
+ 7: 00007FF72FFC6A79 v8::internal::Heap::PublishPendingAllocations+1129
+ 8: 00007FF72FFC3A4A v8::internal::Heap::PageFlagsAreConsistent+2842
+ 9: 00007FF72FFB66A9 v8::internal::Heap::CollectGarbage+2137
+10: 00007FF72FFBEF6B v8::internal::Heap::GlobalSizeOfObjects+331
+11: 00007FF7300056DB v8::internal::StackGuard::HandleInterrupts+891
+12: 00007FF72FD0D636 v8::internal::DateCache::Weekday+8630
+13: 00007FF7301B9F01 v8::internal::SetupIsolateDelegate::SetupHeap+494417
+14: 0000023D5D2E1185
+2022-11-01 06:27:58 info: -----------------------------------------
+2022-11-01 06:27:58 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-01 06:27:58 info: -----------------------------------------
+2022-11-01 06:28:01 info: All unit tests passed.
+2022-11-01 06:28:07 info: All steps were completed successfully
+2022-11-01 06:32:33 info: ----------------------------------------
+2022-11-01 06:32:33 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-11-01 06:32:33 info: ----------------------------------------
+2022-11-01 06:32:37 info: All unit tests passed.
+2022-11-01 06:32:42 info: All steps were completed successfully
+2022-11-01 06:46:26 info: --------------------------------------------
+2022-11-01 06:46:26 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2022-11-01 06:46:26 info: --------------------------------------------
+2022-11-01 06:46:26 warn: A unit test file was not provided.
+2022-11-01 06:46:33 info: All steps were completed successfully
+2022-11-01 06:47:34 info: ----------------------------------------
+2022-11-01 06:47:34 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-11-01 06:47:34 info: ----------------------------------------
+2022-11-01 06:47:35 warn: A unit test file was not provided.
+2022-11-01 06:47:41 info: All steps were completed successfully
+2022-11-01 06:58:00 info: --------------------------------------------
+2022-11-01 06:58:00 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2022-11-01 06:58:00 info: --------------------------------------------
+2022-11-01 06:58:00 warn: A unit test file was not provided.
+2022-11-01 06:58:06 info: All steps were completed successfully
+2022-11-01 07:38:43 info: ------------------------------------------
+2022-11-01 07:38:43 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-01 07:38:43 info: ------------------------------------------
+2022-11-01 07:38:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (5.786 s)
+  pokemonApp
+    √ HTML should be syntactically valid (190 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    × should use `await fetch()` (42 ms)
+    × should use try/catch (1 ms)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        5.93 s, estimated 16 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-11-01 07:38:56 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  52:9   error  'select' is not defined           no-undef
+  77:10  error  'main' is defined but never used  no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2022-11-01 07:43:10 info: ------------------------------------------
+2022-11-01 07:43:10 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-01 07:43:10 info: ------------------------------------------
+2022-11-01 07:43:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    √ HTML should be syntactically valid (194 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    × should use `await fetch()` (1 ms)
+    × should use try/catch (1 ms)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        3.805 s, estimated 6 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-11-01 07:46:32 info: ------------------------------------------
+2022-11-01 07:46:32 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-01 07:46:32 info: ------------------------------------------
+2022-11-01 07:46:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    √ HTML should be syntactically valid (150 ms)
+    √ should have all TODO comments removed
+    × should use `fetch()` (2 ms)
+    × should use `await fetch()` (1 ms)
+    × should use try/catch
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        3.696 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-11-01 07:46:42 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  28:25  error  Parsing error: Unexpected token fetch
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-01 07:47:23 info: ------------------------------------------
+2022-11-01 07:47:23 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-01 07:47:23 info: ------------------------------------------
+2022-11-01 07:47:29 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    √ HTML should be syntactically valid (150 ms)
+    √ should have all TODO comments removed (1 ms)
+    × should use `fetch()` (2 ms)
+    × should use `await fetch()`
+    × should use try/catch
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        3.701 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-11-01 07:47:32 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  81:1  error  Parsing error: Unexpected token
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-01 07:51:06 info: ------------------------------------------
+2022-11-01 07:51:06 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-01 07:51:06 info: ------------------------------------------
+2022-11-01 07:51:13 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    √ HTML should be syntactically valid (146 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()`
+    × should use `await fetch()` (2 ms)
+    × should use try/catch (1 ms)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        3.735 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-11-01 07:51:15 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  52:9  error  'select' is not defined  no-undef
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-01 07:51:42 info: ------------------------------------------
+2022-11-01 07:51:42 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-01 07:51:42 info: ------------------------------------------
+2022-11-01 07:51:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    √ HTML should be syntactically valid (154 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()`
+    × should use `await fetch()` (2 ms)
+    × should use try/catch
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        3.717 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-11-01 08:26:25 info: ------------------------------------------
+2022-11-01 08:26:25 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-01 08:26:25 info: ------------------------------------------
+2022-11-01 08:26:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    √ HTML should be syntactically valid (147 ms)
+    × should have all TODO comments removed (2 ms)
+    × should use `fetch()` (1 ms)
+    × should use `await fetch()`
+    × should use try/catch
+
+  ● pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 1 passed, 5 total
+Snapshots:   0 total
+Time:        4.664 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-11-01 08:26:36 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  25:10  error  'fetchData' is defined but never used                 no-unused-vars
+  29:10  error  'fetchAndPopulatePokemons' is defined but never used  no-unused-vars
+  33:10  error  'fetchImage' is defined but never used                no-unused-vars
+  37:10  error  'main' is defined but never used                      no-unused-vars
+
+✖ 4 problems (4 errors, 0 warnings)
+
+
+2022-11-02 06:19:43 info: ------------------------------------------
+2022-11-02 06:19:43 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-02 06:19:43 info: ------------------------------------------
+2022-11-02 06:19:53 info: All unit tests passed.
+2022-11-02 06:19:57 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  60:16  error  'fetchImage' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-02 06:33:50 info: ------------------------------------------
+2022-11-02 06:33:50 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-02 06:33:50 info: ------------------------------------------
+2022-11-02 06:33:56 info: All unit tests passed.
+2022-11-02 06:34:01 info: All steps were completed successfully
+2022-11-02 06:40:44 info: ------------------------------------------
+2022-11-02 06:40:44 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-02 06:40:44 info: ------------------------------------------
+2022-11-02 06:40:50 info: All unit tests passed.
+2022-11-02 06:40:57 info: All steps were completed successfully
