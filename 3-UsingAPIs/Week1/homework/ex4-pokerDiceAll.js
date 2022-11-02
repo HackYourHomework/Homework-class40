@@ -27,9 +27,12 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promiseArr = dice.map((die) => {
+    return rollDie(die);
+  });
+
+  return Promise.all(promiseArr);
 }
 
 function main() {
@@ -43,3 +46,8 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// Promise.all fulfills if all of its promises fulfill and rejects if even one of them is rejected.
+// After changing of promise status (fulfill or reject) dice continue their roll,
+// because there is setTimeout with if condition (roll < randomRollsToDo). Changing of
+// promise status doesn't influence setTimeout which are already in the queue.
