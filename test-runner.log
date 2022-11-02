@@ -23,3 +23,187 @@
 2022-10-27 10:45:24 info: ----------------------------------------------
 2022-10-27 10:45:34 info: All unit tests passed.
 2022-10-27 10:45:46 info: All steps were completed successfully
+2022-11-02 09:26:49 info: ----------------------------------------------
+2022-11-02 09:26:49 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-11-02 09:26:49 info: ----------------------------------------------
+2022-11-02 09:26:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Debugger listening on ws://127.0.0.1:63513/7869dcb1-836c-4326-b9b9-08120baab101
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:63516/03287785-5ee1-41a8-b87b-cfbb2cc9443b
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✕ should resolve when all dice settle successfully (28 ms)
+    ✓ should reject with an Error when a die rolls off the table (27 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      32 |     expect(promise).toBeInstanceOf(Promise);
+      33 |     const result = await promise;
+    > 34 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      35 |     expect(result).toHaveLength(5);
+      36 |
+      37 |     promise.finally(() => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:34:35)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      24 |
+      25 |   test('should resolve when all dice settle successfully', async () => {
+    > 26 |     expect.assertions(4);
+         |            ^
+      27 |     expect(exported).toBeDefined();
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:26:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.888 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-11-02 09:36:22 info: ----------------------------------------------
+2022-11-02 09:36:22 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-11-02 09:36:22 info: ----------------------------------------------
+2022-11-02 09:36:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Debugger listening on ws://127.0.0.1:63618/c7050146-3e1e-412e-bd87-154915a4f923
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:63621/2f01b73a-c546-4ae9-9c27-04aaf5c71273
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ `rollDice` should not contain unneeded console.log calls (4 ms)
+    ✓ should resolve when all dice settle successfully (2 ms)
+    ✕ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex5-pokerDiceChain › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        1.679 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+Waiting for the debugger to disconnect...
+/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (/Users/yuliannikolaiev/Desktop/Homework-class40-1/3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+Waiting for the debugger to disconnect...
+2022-11-02 09:38:50 info: ----------------------------------------------
+2022-11-02 09:38:50 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-11-02 09:38:50 info: ----------------------------------------------
+2022-11-02 09:38:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Debugger listening on ws://127.0.0.1:63660/9dfbeaa3-938d-4563-96db-faf75e5268c4
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:63664/ed6eb0c6-129e-44f2-9fe8-06866f9a055e
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (3 ms)
+    ✓ should have all TODO comments removed
+    ✕ `rollDice` should not contain unneeded console.log calls (4 ms)
+    ✓ should resolve when all dice settle successfully (18 ms)
+    ✓ should reject with an Error when a die rolls off the table (35 ms)
+
+  ● ex5-pokerDiceChain › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.705 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-11-02 09:39:38 info: ----------------------------------------------
+2022-11-02 09:39:38 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-11-02 09:39:38 info: ----------------------------------------------
+2022-11-02 09:39:43 info: All unit tests passed.
+2022-11-02 09:39:52 info: All steps were completed successfully
+2022-11-02 03:25:43 info: --------------------------------------------
+2022-11-02 03:25:43 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-11-02 03:25:43 info: --------------------------------------------
+2022-11-02 03:25:49 info: All unit tests passed.
+2022-11-02 03:25:57 info: All steps were completed successfully

@@ -47,5 +47,7 @@ if (process.env.NODE_ENV !== 'test') {
 }
 module.exports = rollDice;
 
-// I think, in the case of a rejected promise, dice continue to roll
-// because reject doesn't act like return. I mean, reject doesn't stop the execution of the function rollDice().
+// Promise.all fulfills if all of its promises fulfill and rejects if even one of them is rejected.
+// After changing of promise status (fulfill or reject) dice continue their roll,
+// because there is setTimeout with if condition (roll < randomRollsToDo). Changing of
+// promise status doesn't influence setTimeout which are already in the queue.
