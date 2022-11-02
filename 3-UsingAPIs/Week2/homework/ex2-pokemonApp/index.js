@@ -22,18 +22,67 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      return data;
+    } else {
+      throw 'error';
+    }
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons(data) {
+  const pokData = await fetchData(data);
+
+  const selectElement = document.createElement('select');
+  const imgContainer = document.createElement('div');
+  const button = document.createElement('button');
+  button.setAttribute('type', 'button');
+
+  button.textContent = 'Get Pokemon';
+
+  button.addEventListener('click', () => {
+    pokData.results.forEach((result) => {
+      const { name, url } = result;
+
+      const option = document.createElement('option');
+      option.text = name;
+      option.value = url;
+      selectElement.appendChild(option);
+    });
+
+    selectElement.addEventListener('change', (e) => {
+      fetchImage(e.target.value, imgContainer);
+    });
+  });
+
+  document.body.appendChild(button);
+  document.body.appendChild(selectElement);
+  document.body.appendChild(imgContainer);
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(url, imgContainer) {
+  const imgSrc = await fetchData(url);
+  const img = document.createElement('img');
+  img.src = imgSrc.sprites.front_shiny;
+  img.alt = imgSrc.name;
+  imgContainer.textContent = ' ';
+  imgContainer.appendChild(img);
 }
 
-function main() {
-  // TODO complete this function
+async function main() {
+  try {
+    return fetchAndPopulatePokemons(
+      'https://pokeapi.co/api/v2/pokemon?limit=151'
+    );
+  } catch (err) {
+    console.log(err);
+  }
 }
+
+main();

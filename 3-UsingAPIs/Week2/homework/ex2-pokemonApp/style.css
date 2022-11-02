@@ -1,1 +1,24 @@
 /* add your styling here */
+body {
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  margin: auto;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%);
+}
+
+button {
+  display: block;
+  padding: 5px 10px;
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
