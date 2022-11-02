@@ -27,9 +27,8 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  return Promise.all(dice.map((die) => rollDie(die)));
 }
 
 function main() {
@@ -43,3 +42,13 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/*
+here are the explanations:
+>> PromiseAll.(): orders such an array of promises then it will wait for them to fullfil and then returns with a promise 
+>> if (all the promises we have, have been resolved then => it will bring us all resolved value from them all :|
+>> if one of the promises has been rejected then it will reject the return promise ...
+>> Another meaning (if we have more than one promises and all of them resolved then PromiseAll() will gather them all and then print them out)
+>> Another meaning (if we have more than one promises and one of them rejected then PromiseAll() will stop and print the rejected one out)
+>> 
+*/
