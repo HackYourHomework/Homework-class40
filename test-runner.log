@@ -1,3 +1,10 @@
 2022-11-02 02:27:47 info: ---------------------------------------
 2022-11-02 02:27:47 info: >>> Running Unit Test `ex1-johnWho` <<<
 2022-11-02 02:27:47 info: ---------------------------------------
+2022-11-02 02:28:22 info: All unit tests passed.
+2022-11-02 02:28:51 info: All steps were completed successfully
+2022-11-02 02:34:14 info: -------------------------------------------------
+2022-11-02 02:34:14 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-11-02 02:34:14 info: -------------------------------------------------
+2022-11-02 02:34:22 info: All unit tests passed.
+2022-11-02 02:34:33 info: All steps were completed successfully
