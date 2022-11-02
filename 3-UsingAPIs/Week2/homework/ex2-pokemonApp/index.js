@@ -22,18 +22,57 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
+async function fetchData(url) {
   // TODO complete this function
+  const response = await fetch(url);
+  if (response.ok) {
+    const parsedData = await response.json();
+    return parsedData;
+  }
+  console.log('HTTP error', response.status);
+}
+console.log(fetchData);
+
+
+async function fetchAndPopulatePokemons() {
+  // TODO complete this function
+  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
+  console.log(data);
+  const pokemonsList = data.results;
+  const selectList = document.createElement('select');
+  selectList.id = 'mySelect';
+  document.body.appendChild(selectList);
+  for (let i = 0; i < pokemonsList.length; i++) {
+    const option = document.createElement('option');
+    option.value = pokemonsList[i].url;
+    option.text = pokemonsList[i].name;
+    selectList.appendChild(option);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
+
+async function fetchImage(url) {
   // TODO complete this function
+  const pokemon = await fetchData(url);
+  const data = pokemon.sprites.other['official-artwork'].front_default;
+
+  const img = document.createElement('img');
+  img.src = data;
+  document.body.appendChild(img);
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
+async function main() {
   // TODO complete this function
+  try {
+    await fetchAndPopulatePokemons();
+    const selector = document.getElementById('mySelect');
+
+    selector.addEventListener('change', async () => {
+      await fetchImage(selector.value);
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function main() {
-  // TODO complete this function
-}
+window.addEventListener('load', main);
