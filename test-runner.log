@@ -79,3 +79,73 @@ ex1-programmerFun/index.js:22:23 - Unknown word (responce)
 2022-11-01 12:01:37 info: ---------------------------------------------
 2022-11-01 12:01:41 info: All unit tests passed.
 2022-11-01 12:01:43 info: All steps were completed successfully
+2022-11-02 10:41:44 info: ------------------------------------------
+2022-11-02 10:41:44 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-11-02 10:41:44 info: ------------------------------------------
+2022-11-02 10:41:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (113 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()`
+    ✓ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2   error  <button> is missing required \"type\" attribute  element-required-attributes
+      12:31  error  <img> is missing required \"src\" attribute      element-required-attributes
+      12:31  error  <img> is missing required \"alt\" attribute      wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.085 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-11-02 10:41:50 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  85:3  error  'button' is not defined  no-undef
+  89:3  error  'select' is not defined  no-undef
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2022-11-02 10:42:23 info: -----------------------------------------
+2022-11-02 10:42:23 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-02 10:42:23 info: -----------------------------------------
+2022-11-02 10:42:25 info: All unit tests passed.
+2022-11-02 10:42:26 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  26:56  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-02 10:44:00 info: -----------------------------------------
+2022-11-02 10:44:00 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-11-02 10:44:00 info: -----------------------------------------
+2022-11-02 10:44:01 info: All unit tests passed.
+2022-11-02 10:44:04 info: All steps were completed successfully
