@@ -1,1 +1,47 @@
 /* add your styling here */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+.selectStyling {
+  position: absolute;
+  height: 3.5em;
+  width: 15%;
+  border-radius: 4px;
+  font-size: 1.1em;
+  color: white;
+  color: #2f2b85;
+  border-radius: 0 2px 2px 0;
+  top: 20%;
+  left: 20%;
+}
+.selectStyling:hover {
+  background-color: white;
+  color: #2f2b85;
+}
+
+.btnStyling {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  background-color: #3c7335;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 1.1em;
+  border-radius: 0 2px 2px 0;
+  top: 10%;
+  left: 20%;
+}
+
+.btnStyling:hover {
+  background-color: #45a049;
+}
+
+.imageStyling {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
