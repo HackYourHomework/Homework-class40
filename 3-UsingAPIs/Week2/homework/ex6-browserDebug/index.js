@@ -31,10 +31,12 @@ function addTableRow(table, label, value) {
 function renderLaureate(ul, { knownName, birth, death }) {
   const li = createAndAppend('li', ul);
   const table = createAndAppend('table', li);
-  addTableRow(table, 'Name', knownName.en);
-  addTableRow(table, 'Birth', `${birth.date}, ${birth.place.locationString}`);
-  addTableRow(table, 'Death', `${death.date}, ${death.place.locationString}`);
-}
+  const birthLocation = birth.place.locationString.en;
+  addTableRow(table, 'Birth', `${birth.date}, ${birthLocation}`);
+  if (death) {
+    const location = death.place.locationString.en;
+    addTableRow(table, 'Death', `${death.date}, ${location}`);
+  }
 
 function renderLaureates(laureates) {
   const ul = createAndAppend('ul', document.body);
@@ -43,7 +45,7 @@ function renderLaureates(laureates) {
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    const { laureates } = await getData(
       'https://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
     renderLaureates(laureates);
@@ -52,4 +54,4 @@ async function fetchAndRender() {
   }
 }
 
-window.addEventListener('load', fetchAndRender);
+window.addEventListener('load', fetchAndRender)
