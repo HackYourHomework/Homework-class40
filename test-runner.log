@@ -891,3 +891,8 @@ Tests:       5 failed, 5 total
 Snapshots:   0 total
 Time:        21.382 s
 Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-11-10 01:08:07 info: ----------------------------------------
+2022-11-10 01:08:07 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-11-10 01:08:07 info: ----------------------------------------
+2022-11-10 01:08:07 warn: A unit test file was not provided.
+2022-11-10 01:08:29 info: All steps were completed successfully

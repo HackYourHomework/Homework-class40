@@ -4,7 +4,7 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
 
 Use the VSCode Debugger to fix the bugs
 --------------------------------------------------------------- --------------*/
-const fetch = require('node-fetch');
+/*const fetch = require('node-fetch');*/
 
 async function getData(url) {
   const response = await fetch(url);
@@ -14,11 +14,15 @@ async function getData(url) {
 function renderLaureate({ knownName, birth, death }) {
   console.log(`\nName: ${knownName.en}`);
   console.log(`Birth: ${birth.date}, ${birth.place.locationString}`);
-  console.log(`Death: ${death.date}, ${death.place.locationString}`);
+  if (death) {
+    console.log(`Death: ${death.date}, ${death.place.locationString}`);
+  }
 }
 
 function renderLaureates(laureates) {
-  laureates.forEach(renderLaureate);
+  laureates.then((res) => {
+    res.laureates.forEach(renderLaureate);
+  });
 }
 
 async function fetchAndRender() {
