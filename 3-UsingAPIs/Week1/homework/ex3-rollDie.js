@@ -61,3 +61,7 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+/*problem doesn't occur now because callback function callbacks again even after an error roll.
+If we use promice and promice gets an error it's stop execution.
+*/
