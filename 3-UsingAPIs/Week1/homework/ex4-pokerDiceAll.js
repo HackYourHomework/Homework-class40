@@ -27,9 +27,10 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
+  
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promises = dice.map((number) => rollDie(number));
+  return Promise.all(promises);
 }
 
 function main() {
@@ -43,3 +44,8 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/*
+If we use promise, in the case of a rejected promise, dice that have not
+yet finished their roll continue to do so because promis works asynchronous.
+*/
